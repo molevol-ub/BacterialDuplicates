@@ -1,0 +1,205 @@
+1,plasmid,13,870,EC042_pAA001,replication protein A,+
+1,plasmid,107317,108174,EC042_pAA152,plasmid replication,-
+2,chrm,5687,6409,EC042_0005,transposase,-
+2,chrm,1236965,1237687,EC042_1156,transposase,-
+2,chrm,4575077,4575799,EC042_4285,transposase,+
+2,chrm,1631762,1632484,EC042_1562,transposase,-
+2,chrm,566333,567055,EC042_0517,transposase,+
+2,chrm,2969552,2970274,EC042_2782,transposase,+
+3,chrm,6514,7035,EC042_0006,transposase,-
+3,chrm,2968917,2969447,EC042_2781,transposase,+
+3,chrm,1632589,1633110,EC042_1563,transposase,-
+3,chrm,565707,566228,EC042_0516,transposase,+
+3,chrm,4574451,4574972,EC042_4284,transposase,+
+3,chrm,1237792,1238313,EC042_1157,transposase,-
+4,chrm,5134657,5135004,EC042_4790,transposase,-
+4,plasmid,11336,11683,EC042_pAA013,transposase,-
+5,chrm,5135001,5135402,EC042_4791,transposase,-
+5,plasmid,11680,12081,EC042_pAA014,transposase,-
+6,chrm,5118217,5119038,EC042_4772,putative polysaccharide deacetylase,-
+6,plasmid,15610,16401,EC042_pAA021,polysaccharide deacetylase,+
+7,chrm,5117126,5118214,EC042_4771,glycosyl transferase,-
+7,plasmid,16404,17492,EC042_pAA022,glycosyl transferase,+
+8,chrm,5116171,5117121,EC042_4770,virulence protein,-
+8,plasmid,17497,18447,EC042_pAA023,virulence protein required for expression/correct membrane localisation of IcsA (VirG),+
+9,plasmid,20277,21167,EC042_pAA027,transposase,-
+9,plasmid,110767,111657,EC042_pAA157,transposase,-
+9,plasmid,33619,34509,EC042_pAA039,transposase,+
+9,plasmid,109528,110418,EC042_pAA155,transposase,-
+10,chrm,20565,20942,EC042_0020,IS1 transposase B,-
+10,plasmid,40269,40646,EC042_pAA050,transposase,-
+10,chrm,4946694,4946969,EC042_1536,transposase,-
+10,chrm,2746181,2746558,EC042_2591,putative insertion element IS1 protein InsB,-
+10,plasmid,27400,27777,EC042_pAA034,transposase,+
+11,chrm,20987,21262,EC042_0021,IS1 transposase A,-
+11,chrm,4352641,4352916,EC042_4086,transposase,-
+11,chrm,5168154,5168429,EC042_4825,transposase,-
+11,chrm,4376849,4377124,EC042_4114,transposase,-
+11,plasmid,27080,27355,EC042_pAA033,transposase,+
+11,chrm,665641,665916,EC042_0595,insertion element IS1 protein InsA,-
+11,chrm,1601300,1601575,EC042_1537,transposase,-
+11,chrm,5129176,5129451,EC042_4783,transposase,+
+11,plasmid,40691,40966,EC042_pAA051,transposase,-
+11,chrm,5187663,5187938,EC042_4845,transposase,+
+11,chrm,4946694,4946969,EC042_1536,transposase,-
+11,chrm,2746603,2746878,EC042_2592,putative transposase,-
+12,chrm,4915245,4915525,EC042_4581A,transposase (partial),+
+12,plasmid,21164,21490,EC042_pAA028,transposase,-
+12,plasmid,111654,111980,EC042_pAA158,transposase,-
+12,plasmid,33296,33622,EC042_pAA038,transposase,+
+13,plasmid,108474,108731,EC042_pAA153,replication regulatory protein 1,-
+13,plasmid,112802,113059,EC042_pAA160,replication regulatory protein 2,+
+14,chrm,273523,274659,EC042_0233,H repeat_associated protein,+
+14,chrm,662561,663697,EC042_0589,H repeat_associated protein (putative transposase),-
+15,chrm,665219,665722,EC042_0594,putative insertion element IS1 protein InsB,-
+15,chrm,4946272,4946775,EC042_4824,transposase,-
+15,chrm,4946272,4946775,EC042_4824,transposase,-
+15,chrm,4376427,4376930,EC042_4113,transposase,-
+15,chrm,4352219,4352722,EC042_4085,transposase,-
+16,chrm,685956,686108,EC042_0617,putative host cell_killing modulation protein,+
+16,chrm,686458,686610,EC042_0619,putative host cell_killing modulation protein,+
+17,chrm,1354495,1354602,EC042_1272A,small toxic polypeptide,-
+17,chrm,1355030,1355137,EC042_1272B,small toxic polypeptide,-
+18,chrm,1398245,1400716,EC042_1312,putative phage exodeoxyribonuclease,-
+18,chrm,1807070,1809541,EC042_1724,putative exodeoxyribonuclease,+
+19,chrm,1403284,1403502,EC042_1317,putative phage protein,-
+19,chrm,2267349,2267567,EC042_2201,putative prophage protein,+
+19,chrm,1805815,1806033,EC042_1721,putative prophage protein,+
+20,chrm,1409283,1409465,EC042_1328,putative phage protein,+
+20,chrm,2263046,2263228,EC042_2193,putative prophage protein,-
+21,chrm,1409458,1409634,EC042_1329,putative phage protein,+
+21,chrm,2262877,2263053,EC042_2192,putative prophage protein,-
+22,chrm,1409631,1409990,EC042_1330,putative phage protein,+
+22,chrm,2262521,2262880,EC042_2191,putative prophage protein,-
+23,chrm,1410428,1410691,EC042_1333,phage protein,+
+23,chrm,2261762,2262025,EC042_2189,putative prophage protein,-
+24,chrm,1411502,1411657,EC042_1336,putative host cell_killing modulation protein,+
+24,chrm,2260402,2260557,EC042_2186,putative prophage protein,-
+25,chrm,1414222,1415268,EC042_1342,phage protein,+
+25,chrm,2258240,2259289,EC042_2183,putative prophage protein,-
+26,chrm,1415281,1415655,EC042_1343,putative phage endodeoxyribonuclease,+
+26,chrm,2257871,2258227,EC042_2182,putative prophage endonuclease,-
+27,chrm,1415652,1416473,EC042_1344,phage antitermination protein,+
+27,chrm,2257035,2257856,EC042_2181,prophage antitermination protein,-
+28,chrm,1421298,1421591,EC042_1348,putative phage lysis protein,+
+28,chrm,2254420,2254740,EC042_2177,putative prophage lysis protein,-
+29,chrm,1421967,1422500,EC042_1349,putative phage lysozyme,+
+29,chrm,1791700,1792248,EC042_1703E,probable prophage lysozyme (endolysin),-
+29,chrm,2253468,2254001,EC042_2175,prophage lysozyme,-
+30,chrm,1424039,1424272,EC042_1353,putative phage protein,-
+30,chrm,1789054,1789287,EC042_1702,putative conserved hypothetical protein,+
+31,chrm,1437812,1438141,EC042_1371,phage minor tail protein,+
+31,chrm,1775410,1775739,EC042_1685,phage minor tail protein,-
+32,chrm,1438141,1438839,EC042_1372,phage minor tail protein,+
+32,chrm,1569751,1570449,EC042_1509,putative phage minor tail protein,+
+32,chrm,1774712,1775410,EC042_1684,phage minor tail protein,-
+32,chrm,2224496,2225194,EC042_2138,prophage minor tail protein,-
+33,chrm,1438844,1439587,EC042_1373,phage tail assembly protein,+
+33,chrm,2223748,2224533,EC042_2137,putative prophage tail assembly protein,-
+33,chrm,1773963,1774706,EC042_1683,putative phage minor tail protein,-
+33,chrm,1570454,1571197,EC042_1510,putative phage tail assembly protein,+
+34,chrm,1444151,1444750,EC042_1377,putative prophage_encoded outer membrane protein,+
+34,chrm,1575266,1575865,EC042_1513,putative prophage_encoded outer membrane protein,+
+34,chrm,1769251,1769850,EC042_1680,putative prophage_encoded outer membrane protein,-
+34,chrm,2219080,2219679,EC042_2134,putative prophage_encoded outer membrane protein,-
+35,chrm,1447916,1448500,EC042_1379,phage tail fiber assembly protein,+
+35,chrm,1765648,1766223,EC042_1678,tail fiber assembly protein,-
+36,chrm,1545755,1546171,EC042_1481,putative phage protein,+
+36,chrm,1802698,1803120,EC042_1714,putative prophage protein,-
+37,chrm,1571134,1571742,EC042_1511,putative phage tail assembly protein,+
+37,chrm,2223203,2223751,EC042_2136,putative prophage tail assembly protein,-
+38,chrm,1571803,1575198,EC042_1512,putative phage host specificity protein,+
+38,chrm,1769920,1773333,EC042_1681,phage host specificity protein,-
+38,chrm,2219747,2223142,EC042_2135,prophage host specificity protein,-
+39,chrm,1578305,1578586,EC042_1515,putative phage protein,+
+39,chrm,2216338,2216619,EC042_2132,putative prophage protein,-
+40,chrm,1579673,1579972,EC042_1517,putative phage protein,+
+40,chrm,2215326,2215613,EC042_2130,putative prophage protein,-
+41,chrm,1699700,1701100,EC042_1625,glutamate decarboxylase beta subunit,-
+41,chrm,4042972,4044372,EC042_3812,glutamate decarboxylase alpha subunit,-
+42,chrm,2243677,2244102,EC042_2161,putative prophage single_stranded DNA binding protein,-
+42,chrm,2557520,2557945,EC042_2428,putative single_strand DNA binding prophage protein,+
+43,chrm,2327335,2327742,EC042_2236A,conserved hypothetical protein,-
+43,chrm,5136158,5136565,EC042_4793,conserved hypothetical protein,-
+43,chrm,4850065,4850454,EC042_4519,conserved hypothetical protein,+
+44,chrm,2327996,2328565,EC042_2237,conserved hypothetical protein,-
+44,chrm,5136819,5137388,EC042_4794,conserved hypothetical protein,-
+44,chrm,4849334,4849903,EC042_4518,conserved hypothetical protein,+
+45,chrm,2328764,2328958,EC042_2238,hypothetical protein,+
+45,chrm,5137587,5137787,EC042_4795,hypothetical protein,+
+46,chrm,2330575,2331183,EC042_2239,conserved hypothetical protein,+
+46,chrm,5139312,5139920,EC042_4798,conserved hypothetical protein,+
+47,chrm,2334180,2335091,EC042_2241,putative GTP_binding protein,+
+47,chrm,4843446,4844318,EC042_4512,putative ATP/GTP_binding protein,-
+47,chrm,5142124,5142996,EC042_4802,putative ATP/GTP_binding protein,+
+48,chrm,2335419,2338538,EC042_2242,antigen 43 precursor (fluffing protein) (autotransporter),+
+48,chrm,4839993,4843118,EC042_4511,,-
+49,chrm,2338653,2341175,EC042_2243,putative membrane protein,+
+49,chrm,4837356,4839872,EC042_4510,putative membrane protein,-
+50,chrm,2341251,2341706,EC042_2244,putative exported protein,+
+50,chrm,4836825,4837280,EC042_4509,conserved hypothetical protein,-
+51,chrm,2341785,2342018,EC042_2244A,conserved hypothetical protein,+
+51,chrm,4836513,4836746,EC042_4508A,putative plasmid_related protein,-
+52,chrm,2342118,2342936,EC042_2245,conserved hypothetical protein,+
+52,chrm,3436895,3437713,EC042_3221,conserved hypothetical protein,+
+52,chrm,5146599,5147417,EC042_4805,conserved hypothetical protein,+
+52,chrm,4835595,4836413,EC042_4507,conserved hypothetical protein,-
+53,chrm,2343018,2343497,EC042_2246,putative antirestriction protein,+
+53,chrm,4834820,4835293,EC042_4506,putative plasmid_related protein,-
+53,chrm,3437804,3438289,EC042_3222,putative antirestriction protein,+
+54,chrm,2343498,2343989,EC042_2247,putative DNA repair protein,+
+54,chrm,5148233,5148724,EC042_4807,putative RadC_like DNA repair protein,+
+54,chrm,4834328,4834819,EC042_4505,putative plasmid_related protein,-
+54,chrm,3438290,3438781,EC042_3223,putative DNA repair protein,+
+55,chrm,2344052,2344273,EC042_2247A,conserved hypothetical protein,+
+55,chrm,4834020,4834241,EC042_4504,conserved hypothetical protein,-
+55,chrm,5148787,5149008,EC042_4808,conserved hypothetical protein,+
+55,chrm,3438844,3439065,EC042_3224,conserved hypothetical protein,+
+56,chrm,2344347,2344715,EC042_2248,conserved hypothetical protein,+
+56,chrm,4833563,4833940,EC042_4503,conserved hypothetical protein,-
+56,chrm,3439145,3439522,EC042_3225,conserved hypothetical protein,+
+57,chrm,2344804,2345178,EC042_2249,conserved hypothetical protein,+
+57,chrm,5149629,5150003,EC042_4810,conserved hypothetical protein,+
+58,chrm,3387398,3388663,EC042_3174,integrase,+
+58,chrm,4947382,4948644,EC042_4610,integrase,-
+59,chrm,3398271,3398915,EC042_3180,conserved hypothetical protein,-
+59,chrm,4889316,4889960,EC042_4556,conserved hypothetical protein,+
+60,chrm,3398936,3399205,EC042_3181,putative transcriptional regulator,-
+60,chrm,4889026,4889295,EC042_4555,putative transcriptional regulator,+
+61,chrm,3399284,3399922,EC042_3182,ParB_like nuclease,-
+61,chrm,4888303,4888947,EC042_4554,ParB_like nuclease,+
+62,chrm,3399907,3401139,EC042_3183,conserved hypothetical protein,-
+62,chrm,4887086,4888318,EC042_4553,conserved hypothetical protein,+
+63,chrm,3403782,3405569,EC042_3187,putative helicase,-
+63,chrm,4881858,4883645,EC042_4548,conserved hypothetical protein,+
+64,chrm,3406645,3406836,EC042_3189,phage protein,+
+64,chrm,4852177,4852368,EC042_4523,conserved hypothetical protein,-
+65,chrm,3406889,3407122,EC042_3190,conserved hypothetical protein,-
+65,chrm,4851891,4852124,EC042_4522,conserved hypothetical protein,+
+66,chrm,3407218,3407853,EC042_3191,putative DNA_binding protein,-
+66,chrm,4851172,4851795,EC042_4521,conserved hypothetical protein,+
+67,chrm,3427233,3428384,EC042_3212,transposase InsI for insertion sequence element IS30b/c/d,-
+67,chrm,4931764,4932915,EC042_4597,transposase,+
+68,chrm,3439569,3439946,EC042_3226,conserved hypothetical protein,+
+68,chrm,4833139,4833516,EC042_4502,conserved hypothetical protein,-
+69,chrm,3440725,3441567,EC042_3229,conserved hypothetical protein,+
+69,chrm,4831793,4832635,EC042_4500,conserved hypothetical protein,-
+70,chrm,3816407,3817591,EC042_3600,elongation factor Tu,-
+70,chrm,4650337,4651521,EC042_4347,elongation factor Tu,+
+71,chrm,4079060,4079167,EC042_3839,small toxic polypeptide,-
+71,chrm,4080509,4080616,EC042_3842,small toxic polypeptide,-
+71,chrm,4080992,4081099,EC042_3843,small toxic polypeptide,-
+71,chrm,4079543,4079650,EC042_3840,small toxic polypeptide,-
+71,chrm,4080026,4080133,EC042_3841,small toxic polypeptide,-
+72,chrm,4847600,4847878,EC042_4515,putative phage_related regulatory protein,-
+72,chrm,5138945,5139223,EC042_4797,putative regulatory protein,+
+73,chrm,4867307,4867984,EC042_4535,putative type VI secretion protein,+
+73,chrm,4868128,4868805,EC042_4536,putative type VI secretion protein,+
+74,chrm,4918128,4919261,EC042_4584,transposase,+
+74,chrm,4920245,4921378,EC042_4587,putative transposase,+
+75,chrm,4921488,4923056,EC042_4588,transposase,-
+75,chrm,5105199,5106812,EC042_4761,transposase,+
+76,chrm,4923087,4923437,EC042_4589,transposase,-
+76,chrm,5104818,5105168,EC042_4760,transposase,+
+77,chrm,5103084,5103449,EC042_4757,transposase,+
+77,chrm,5151006,5151416,EC042_4813,transposase,-

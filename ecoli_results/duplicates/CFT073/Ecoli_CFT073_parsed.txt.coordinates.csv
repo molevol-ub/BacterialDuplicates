@@ -1,0 +1,255 @@
+1,chrm,245,496,C_RS25965,transposase,+
+1,chrm,542166,542396,C_RS26310,hypothetical protein,+
+1,chrm,2231882,2232112,C_RS27095,hypothetical protein,-
+1,chrm,749623,749850,C_RS26390,hypothetical protein,+
+2,chrm,402,911,C_RS00010,IS200/IS605 family transposase IS200C,+
+2,chrm,82026,82535,C_RS00400,IS200/IS605 family transposase,+
+2,chrm,3026388,3026897,C_RS14985,IS200/IS605 family transposase,-
+2,chrm,3329981,3330490,C_RS16480,IS200/IS605 family transposase IS200C,-
+2,chrm,67723,68232,C_RS00335,IS200/IS605 family transposase IS200C,+
+2,chrm,2148324,2148833,C_RS11060,IS200/IS605 family transposase IS200C,-
+2,chrm,2231467,2231976,C_RS11510,IS200/IS605 family transposase,-
+2,chrm,1311803,1312312,C_RS06485,IS200/IS605 family transposase,+
+2,chrm,1239426,1239935,C_RS06065,IS200/IS605 family transposase,+
+2,chrm,1208636,1209145,C_RS05895,IS200/IS605 family transposase IS200C,+
+2,chrm,192782,193291,C_RS00915,IS200/IS605 family transposase,+
+2,chrm,542302,542811,C_RS02590,IS200/IS605 family transposase IS200C,+
+2,chrm,1574110,1574619,C_RS08135,IS200/IS605 family transposase,+
+2,chrm,2467471,2467980,C_RS12440,IS200/IS605 family transposase,-
+2,chrm,2483231,2483740,C_RS12520,IS200/IS605 family transposase IS200C,-
+2,chrm,5210429,5210938,C_RS25840,IS200/IS605 family transposase IS200C,+
+2,chrm,1341649,1342158,C_RS06680,IS200/IS605 family transposase IS200C,+
+2,chrm,3283735,3284244,C_RS16295,IS200/IS605 family transposase,-
+2,chrm,749756,750265,C_RS03595,IS200/IS605 family transposase IS200C,+
+3,chrm,67620,67817,C_RS26045,hypothetical protein,+
+3,chrm,1239320,1239520,C_RS26665,hypothetical protein,+
+3,chrm,81920,82120,C_RS26065,hypothetical protein,+
+3,chrm,192688,192876,C_RS26105,hypothetical protein,+
+3,chrm,5210311,5210523,C_RS28200,hypothetical protein,+
+3,chrm,3026803,3027021,C_RS27360,hypothetical protein,-
+3,chrm,2148739,2148927,C_RS27035,hypothetical protein,-
+3,chrm,3330396,3330584,C_RS27450,hypothetical protein,-
+3,chrm,1208542,1208730,C_RS26610,hypothetical protein,+
+3,chrm,3284150,3284353,C_RS27435,hypothetical protein,-
+3,chrm,1574016,1574204,C_RS26820,hypothetical protein,+
+3,chrm,2483646,2483834,C_RS27220,hypothetical protein,-
+3,chrm,1311709,1311897,C_RS26680,hypothetical protein,+
+4,chrm,115363,115893,C_RS25970,IS3 family transposase,+
+4,chrm,226983,227513,C_RS26115,IS3 family transposase,-
+5,chrm,250214,250564,C_RS01210,IS66 family insertion sequence hypothetical protein,+
+5,chrm,3454615,3454965,C_RS17180,IS66 family insertion sequence hypothetical protein,-
+5,chrm,3480612,3480962,C_RS17295,IS66 family insertion sequence hypothetical protein,+
+6,chrm,256927,257682,C_RS01265,ATPase AAA,+
+6,chrm,1402870,1403625,C_RS07130,ATPase AAA,-
+6,chrm,4921500,4922255,C_RS24345,ATPase AAA,+
+6,chrm,2344917,2345672,C_RS11895,ATPase AAA,+
+6,chrm,1235995,1236750,C_RS06025,ATPase AAA,+
+6,chrm,3447354,3448109,C_RS17135,ATPase AAA,+
+7,chrm,257757,258134,C_RS01270,toxin,-
+7,chrm,1238191,1238571,C_RS06050,toxin,+
+7,chrm,4340059,4340436,C_RS21565,toxin,+
+7,chrm,3507297,3507674,C_RS17440,toxin,+
+7,chrm,4923618,4923995,C_RS24365,toxin,-
+8,chrm,258181,258555,C_RS01275,type IV toxin_antitoxin system YeeU family antitoxin,-
+8,chrm,4924085,4924453,C_RS24370,type IV toxin_antitoxin system YeeU family antitoxin,-
+8,chrm,4339604,4339969,C_RS21560,type IV toxin_antitoxin system YeeU family antitoxin,+
+8,chrm,2366616,2366984,C_RS12005,type IV toxin_antitoxin system YeeU family antitoxin,+
+8,chrm,3506840,3507220,C_RS17435,type IV toxin_antitoxin system YeeU family antitoxin,+
+9,chrm,258605,259249,C_RS01280,hypothetical protein,-
+9,chrm,1237076,1237720,C_RS06035,hypothetical protein,+
+9,chrm,3506146,3506790,C_RS28815,hypothetical protein,+
+10,chrm,259268,259489,C_RS01285,DUF987 domain_containing protein,-
+10,chrm,4339304,4339525,C_RS21555,DUF987 domain_containing protein,+
+10,chrm,2366321,2366542,C_RS12000,DUF987 domain_containing protein,+
+10,chrm,3505906,3506127,C_RS17425,DUF987 domain_containing protein,+
+10,chrm,1236836,1237057,C_RS06030,DUF987 domain_containing protein,+
+10,chrm,4924532,4924753,C_RS24375,DUF987 domain_containing protein,-
+11,chrm,259552,260028,C_RS01290,hypothetical protein,-
+11,chrm,4924822,4925298,C_RS24380,hypothetical protein,-
+11,chrm,4338765,4339241,C_RS21550,hypothetical protein,+
+11,chrm,2365776,2366252,C_RS11995,hypothetical protein,+
+11,chrm,1233881,1234357,C_RS06015,hypothetical protein,+
+11,chrm,3505367,3505843,C_RS17420,hypothetical protein,+
+12,chrm,260044,260517,C_RS01295,antirestriction protein,-
+12,chrm,1233392,1233865,C_RS06010,antirestriction protein,+
+12,chrm,3504866,3505351,C_RS17415,antirestriction protein,+
+12,chrm,2365275,2365760,C_RS11990,antirestriction protein,+
+12,chrm,4925313,4925798,C_RS24385,antirestriction protein,-
+13,chrm,260856,261677,C_RS01305,DUF945 domain_containing protein,-
+13,chrm,1232308,1233129,C_RS06005,DUF945 domain_containing protein,+
+13,chrm,3503993,3504811,C_RS17410,DUF945 domain_containing protein,+
+13,chrm,2364363,2365184,C_RS11985,DUF945 domain_containing protein,+
+13,chrm,4925889,4926707,C_RS24390,DUF945 domain_containing protein,-
+13,chrm,4337355,4338173,C_RS21540,DUF945 domain_containing protein,+
+14,chrm,264296,265366,C_RS01335,phospholipase,-
+14,chrm,2361833,2362903,C_RS11970,phospholipase,+
+15,chrm,265363,266268,C_RS01340,chemotaxis protein,-
+15,chrm,2360931,2361836,C_RS11965,chemotaxis protein,+
+16,chrm,274013,276178,C_RS01380,TonB_dependent siderophore receptor,+
+16,chrm,2355304,2357469,C_RS11950,TonB_dependent siderophore receptor,-
+17,chrm,276189,277178,C_RS01385,ABC transporter substrate_binding protein,+
+17,chrm,2354304,2355293,C_RS11945,ABC transporter substrate_binding protein,-
+18,chrm,277197,278255,C_RS01390,iron ABC transporter permease,+
+18,chrm,2353227,2354285,C_RS11940,iron ABC transporter permease,-
+19,chrm,278252,279019,C_RS01395,ABC transporter ATP_binding protein,+
+19,chrm,2352463,2353230,C_RS11935,ABC transporter ATP_binding protein,-
+20,chrm,279073,279330,C_RS01400,hypothetical protein,+
+20,chrm,2352152,2352409,C_RS11930,hypothetical protein,-
+21,chrm,280463,280693,C_RS26150,hypothetical protein,-
+21,chrm,2349837,2350067,C_RS27170,hypothetical protein,+
+22,chrm,286352,286741,C_RS01440,hypothetical protein,+
+22,chrm,2338699,2339100,C_RS11850,hypothetical protein,-
+22,chrm,3483812,3484231,C_RS17315,hypothetical protein,-
+23,chrm,298646,299104,C_RS01505,hypothetical protein,-
+23,chrm,1184358,1184816,C_RS26585,hypothetical protein,-
+24,chrm,322282,322740,C_RS01585,hypothetical protein,+
+24,chrm,1164791,1165249,C_RS05670,hypothetical protein,+
+25,chrm,323207,323422,C_RS01595,hypothetical protein,+
+25,chrm,1165715,1165930,C_RS05680,hypothetical protein,+
+26,chrm,456705,457478,C_RS02170,YaiO family outer membrane beta_barrel protein,-
+26,chrm,2330166,2330939,C_RS11795,YaiO family outer membrane beta_barrel protein,+
+27,chrm,457480,458061,C_RS02175,acetyltransferase,-
+27,chrm,2329583,2330164,C_RS11790,acetyltransferase,+
+28,chrm,458039,459235,C_RS02180,membrane protein,-
+28,chrm,2328409,2329605,C_RS11785,membrane protein,+
+29,chrm,628118,628243,C_RS28320,hypothetical protein,+
+29,chrm,1371747,1371872,C_RS26705,hypothetical protein,+
+30,chrm,628200,628784,C_RS03010,class I SAM_dependent methyltransferase,-
+30,chrm,1371829,1372413,C_RS06900,class I SAM_dependent methyltransferase,-
+31,chrm,997596,998213,C_RS04885,dimethylsulfoxide reductase; chain B,+
+31,chrm,1823697,1824314,C_RS09330,dimethylsulfoxide reductase,+
+32,chrm,1140617,1140880,C_RS26480,hypothetical protein,-
+32,chrm,3715917,3716219,C_RS27670,hypothetical protein,+
+33,chrm,1186872,1187093,C_RS05805,Major pilus subunit operon regulatory protein,-
+33,chrm,4949711,4949944,C_RS24530,P fimbrial regulatory protein KS71A,+
+33,chrm,3438457,3438690,C_RS17055,Major pilus subunit operon regulatory protein,+
+34,chrm,1196018,1196569,C_RS05855,transcriptional regulator,+
+34,chrm,3428779,3429330,C_RS16995,transcriptional regulator,-
+35,chrm,1218879,1219061,C_RS05950,transposase,-
+35,chrm,4294099,4294284,C_RS21295,transposase,+
+36,chrm,1224368,1225279,C_RS05980,50S ribosome_binding GTPase,+
+36,chrm,3490569,3491480,C_RS17355,50S ribosome_binding GTPase,+
+37,chrm,1225610,1228729,C_RS05985,autotransporter domain_containing protein,+
+37,chrm,3491814,3494936,C_RS17360,autotransporter domain_containing protein,+
+38,chrm,1228850,1231366,C_RS05990,hypothetical protein,+
+38,chrm,3500533,3503049,C_RS17395,hypothetical protein,+
+39,chrm,1231442,1231897,C_RS05995,hypothetical protein,+
+39,chrm,3503125,3503580,C_RS17400,hypothetical protein,+
+40,chrm,1234499,1235998,C_RS06020,IS21 family transposase ISEc10,+
+40,chrm,3445858,3447357,C_RS17130,IS21 family transposase ISEc10,+
+40,chrm,2343421,2344920,C_RS11890,IS21 family transposase ISEc10,+
+40,chrm,1403622,1405121,C_RS07135,IS21 family transposase ISEc10,-
+40,chrm,4920004,4921503,C_RS24340,IS21 family transposase ISEc10,+
+41,chrm,1238568,1239056,C_RS06055,hypothetical protein,+
+41,chrm,3507671,3508159,C_RS17445,hypothetical protein,+
+42,chrm,1239076,1239273,C_RS06060,DUF957 domain_containing protein,+
+42,chrm,3508176,3508373,C_RS17450,DUF957 domain_containing protein,+
+42,chrm,4922924,4923121,C_RS24355,DUF957 domain_containing protein,-
+43,chrm,1240069,1240896,C_RS06070,DUF4942 domain_containing protein,+
+43,chrm,3508458,3509303,C_RS17455,DUF4942 domain_containing protein,+
+43,chrm,4340940,4341782,C_RS21580,DUF4942 domain_containing protein,+
+44,chrm,1345465,1345998,C_RS06735,lysozyme,+
+44,chrm,3049754,3050287,C_RS15130,lysozyme,-
+45,chrm,1349209,1351137,C_RS06780,phage terminase large subunit family protein,+
+45,chrm,1425452,1427380,C_RS07355,phage terminase large subunit family protein,+
+46,chrm,1351121,1351327,C_RS06785,head_tail joining protein,+
+46,chrm,1427364,1427570,C_RS07360,phage head_stabilizing protein,+
+47,chrm,1351324,1352916,C_RS06790,phage portal protein,+
+47,chrm,1427567,1429159,C_RS07365,phage portal protein,+
+48,chrm,1352906,1354411,C_RS06795,S49 family peptidase,+
+48,chrm,1429149,1430654,C_RS07370,S49 family peptidase,+
+49,chrm,1354448,1354795,C_RS06800,head decoration protein,+
+49,chrm,1430691,1431038,C_RS07375,head decoration protein,+
+50,chrm,1354853,1355881,C_RS06805,minor capsid protein E,+
+50,chrm,1431096,1432124,C_RS07380,minor capsid protein E,+
+51,chrm,1356309,1356662,C_RS06815,tail attachment protein,+
+51,chrm,1432543,1432896,C_RS07390,tail attachment protein,+
+52,chrm,1359228,1361789,C_RS06845,phage tail tape measure protein,+
+52,chrm,1435469,1438030,C_RS07420,phage tail tape measure protein,+
+52,chrm,3033591,3036152,C_RS15020,phage tail tape measure protein,-
+53,chrm,1362819,1363562,C_RS06860,phage tail protein,+
+53,chrm,3031819,3032562,C_RS15005,phage tail protein,-
+53,chrm,1439060,1439803,C_RS07435,phage tail protein,+
+54,chrm,1368244,1368843,C_RS06880,Ail/Lom family protein,+
+54,chrm,3027043,3027642,C_RS14990,Ail/Lom family protein,-
+55,chrm,1371343,1371636,C_RS06895,hypothetical protein,+
+55,chrm,3022204,3022497,C_RS14965,hypothetical protein,-
+55,chrm,1446322,1446615,C_RS07460,hypothetical protein,+
+56,chrm,1420007,1421089,C_RS07310,phosphoporin PhoE,-
+56,chrm,2160680,2161762,C_RS11125,porin OmpD,+
+57,chrm,1421678,1421893,C_RS07315,lysis protein S,+
+57,chrm,3051165,3051380,C_RS15140,holin,-
+58,chrm,1432908,1433486,C_RS07395,tail protein,+
+58,chrm,3038139,3038717,C_RS15045,tail protein,-
+59,chrm,1433483,1433878,C_RS07400,tail protein,+
+59,chrm,3037747,3038142,C_RS15040,tail protein,-
+60,chrm,1434638,1435060,C_RS07410,phage minor tail protein G,+
+60,chrm,3036561,3036983,C_RS15030,phage minor tail protein G,-
+61,chrm,1435042,1435476,C_RS07415,phage tail assembly protein T,+
+61,chrm,3036145,3036579,C_RS15025,phage tail assembly protein T,-
+62,chrm,1438027,1438356,C_RS07425,tail protein,+
+62,chrm,3033265,3033594,C_RS15015,tail protein,-
+63,chrm,1438356,1439054,C_RS07430,phage minor tail protein L,+
+63,chrm,3032567,3033265,C_RS15010,phage minor tail protein L,-
+64,chrm,1439701,1440372,C_RS07440,tail assembly protein,+
+64,chrm,3031250,3031921,C_RS15000,tail assembly protein,-
+65,chrm,1440433,1443915,C_RS07445,host specificity protein J,+
+65,chrm,3027710,3031189,C_RS14995,host specificity protein J,-
+66,chrm,1716066,1716350,C_RS08830,type VI secretion system PAAR protein,+
+66,chrm,1721906,1722190,C_RS08855,type VI secretion system PAAR protein,+
+67,chrm,1756318,1757718,C_RS09015,glutamate decarboxylase beta,-
+67,chrm,4104924,4106324,C_RS20450,glutamate decarboxylase alpha,-
+68,chrm,1814634,1815848,C_RS09290,starvation_sensing protein RspA,-
+68,chrm,4685450,4686664,C_RS23255,D_galactonate dehydratase family protein,+
+69,chrm,1847426,1849072,C_RS09450,fumarate hydratase class I; aerobic,-
+69,chrm,4902575,4904221,C_RS24260,fumarate hydratase,-
+70,chrm,2325471,2326694,C_RS11775,phosphoadenosine phosphosulfate reductase,-
+70,chrm,4962832,4964064,C_RS24615,phosphoadenosine phosphosulfate reductase,-
+71,chrm,2339266,2339871,C_RS11855,inovirus Gp2 family protein,-
+71,chrm,3484397,3485002,C_RS17320,inovirus Gp2 family protein,-
+72,chrm,2389574,2390944,C_RS12135,phosphomannomutase CpsG,-
+72,chrm,2409057,2410427,C_RS12210,phosphomannomutase CpsG,-
+73,chrm,3330630,3332147,C_RS16485,lysine__tRNA ligase,-
+73,chrm,4910097,4911614,C_RS24305,lysine__tRNA ligase heat inducible,-
+74,chrm,3406498,3407763,C_RS16885,DUF4102 domain_containing protein,+
+74,chrm,4970125,4971387,C_RS24645,DUF4102 domain_containing protein,-
+75,chrm,3407989,3409062,C_RS16890,hypothetical protein,+
+75,chrm,4276297,4277340,C_RS21210,hypothetical protein,+
+76,chrm,3409205,3409423,C_RS27505,hypothetical protein,+
+76,chrm,4277483,4277713,C_RS27835,hypothetical protein,+
+77,chrm,3410874,3411221,C_RS16905,IS66 family insertion sequence hypothetical protein,+
+77,chrm,3427567,3427914,C_RS16980,IS66 family insertion sequence hypothetical protein,+
+78,chrm,3429593,3430603,C_RS17000,fimbrial protein,-
+78,chrm,4940831,4941841,C_RS24480,fimbrial protein,-
+79,chrm,3430647,3431177,C_RS17005,fimbrial protein,-
+79,chrm,4941885,4942415,C_RS24485,fimbrial protein,-
+80,chrm,3431222,3431743,C_RS17010,fimbrial protein,-
+80,chrm,4942460,4942981,C_RS24490,fimbrial protein,-
+81,chrm,3431770,3432309,C_RS17015,type 1 fimbrial protein,-
+81,chrm,4943008,4943547,C_RS24495,type 1 fimbrial protein,-
+82,chrm,3432316,3432897,C_RS17020,protein papJ,-
+82,chrm,4943554,4944135,C_RS24500,protein papJ,-
+83,chrm,3432934,3433668,C_RS17025,molecular chaperone,-
+83,chrm,4944172,4944906,C_RS24505,molecular chaperone,-
+84,chrm,3433739,3436270,C_RS17030,PapC/FimD family outer membrane usher protein,-
+84,chrm,4944977,4947508,C_RS24510,PapC/FimD family outer membrane usher protein,-
+85,chrm,3436308,3436895,C_RS17035,type 1 fimbrial protein,-
+85,chrm,4947546,4948133,C_RS24515,type 1 fimbrial protein,-
+86,chrm,3437738,3438052,C_RS17045,major pilus subunit operon regulatory protein PapB,-
+86,chrm,4948974,4949288,C_RS24525,major pilus subunit operon regulatory protein PapB,-
+87,chrm,3901533,3902717,C_RS19470,translation elongation factor EF_Tu 1,-
+87,chrm,4708192,4709376,C_RS23370,translation elongation factor EF_Tu 2,+
+88,chrm,4329644,4329877,C_RS21495,AlpA family transcriptional regulator,-
+88,chrm,4950287,4950520,C_RS24540,AlpA family transcriptional regulator,-
+89,chrm,4329946,4330521,C_RS21500,hypothetical protein,-
+89,chrm,4950589,4951161,C_RS24545,hypothetical protein,-
+90,chrm,4330868,4331599,C_RS21505,inovirus Gp2 family protein,-
+90,chrm,4934476,4935216,C_RS24445,inovirus Gp2 family protein,+
+91,chrm,4334434,4335318,C_RS21515,GTPase,+
+91,chrm,4928744,4929628,C_RS24410,GTPase,-
+92,chrm,4335521,4336201,C_RS21525,WYL domain_containing protein,+
+92,chrm,4927861,4928541,C_RS24400,WYL domain_containing protein,-
+93,chrm,4336349,4337026,C_RS21530,hypothetical protein,+
+93,chrm,4927036,4927713,C_RS24395,hypothetical protein,-
+94,chrm,4337032,4337265,C_RS21535,DUF905 domain_containing protein,+
+94,chrm,4926797,4927030,C_RS28070,DUF905 domain_containing protein,-

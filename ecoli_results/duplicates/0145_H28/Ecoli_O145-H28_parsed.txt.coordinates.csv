@@ -1,0 +1,503 @@
+1,chrm,3047863,3049071,ECRM13516_RS15660,transposase,-
+1,chrm,5122268,5123464,ECRM13516_RS25830,transposase,-
+1,chrm,10129,11337,ECRM13516_RS28135,transposase,+
+2,chrm,18346,18633,ECRM13516_RS27560,type II toxin_antitoxin system RelE/ParE family toxin,+
+2,chrm,78052,78339,ECRM13516_RS27940,type II toxin_antitoxin system mRNA interferase toxin; RelE/StbE family,-
+3,chrm,22280,22645,ECRM13516_RS27595,hypothetical protein,+
+3,chrm,77477,77842,ECRM13516_RS27935,hypothetical protein,-
+3,chrm,68601,68966,ECRM13516_RS27880,hypothetical protein,+
+3,chrm,83352,83717,ECRM13516_RS27975,hypothetical protein,-
+4,chrm,22645,23832,ECRM13516_RS27600,IS91 family transposase,+
+4,chrm,68966,70153,ECRM13516_RS27885,IS91 family transposase,+
+4,chrm,82165,83352,ECRM13516_RS27970,IS91 family transposase,-
+4,chrm,76290,77477,ECRM13516_RS27930,IS91 family transposase,-
+5,chrm,1218393,1219931,ECRM13516_RS05905,IS66 family transposase,-
+5,chrm,1761428,1762966,ECRM13516_RS08935,IS66 family transposase,-
+5,chrm,2659576,2661114,ECRM13516_RS13710,IS66 family transposase,-
+5,chrm,5190290,5191828,ECRM13516_RS26200,IS66 family transposase,-
+5,chrm,92893,94431,ECRM13516_RS28015,IS66 family transposase,-
+5,chrm,5033095,5034630,ECRM13516_RS25470,IS66 family transposase,+
+5,chrm,5347524,5349062,ECRM13516_RS27105,IS66 family transposase,-
+5,chrm,30767,32305,ECRM13516_RS27640,IS66 family transposase,-
+5,chrm,2515792,2517327,ECRM13516_RS12980,IS66 family transposase,-
+6,chrm,1219981,1220328,ECRM13516_RS05910,IS66 family insertion sequence hypothetical protein,-
+6,chrm,2661164,2661511,ECRM13516_RS13715,IS66 family insertion sequence hypothetical protein,-
+6,chrm,5032698,5033045,ECRM13516_RS25465,IS66 family insertion sequence hypothetical protein,+
+6,chrm,5349112,5349459,ECRM13516_RS27110,IS66 family insertion sequence hypothetical protein,-
+6,chrm,1763016,1763363,ECRM13516_RS08940,IS66 family insertion sequence hypothetical protein,-
+6,chrm,94481,94828,ECRM13516_RS28020,IS66 family insertion sequence hypothetical protein,-
+6,chrm,5191878,5192225,ECRM13516_RS26205,IS66 family insertion sequence hypothetical protein,-
+6,chrm,32355,32702,ECRM13516_RS27645,IS66 family insertion sequence hypothetical protein,-
+6,chrm,2517377,2517724,ECRM13516_RS12985,IS66 family insertion sequence hypothetical protein,-
+6,chrm,5017855,5018202,ECRM13516_RS25380,IS66 family insertion sequence hypothetical protein,+
+7,chrm,1220325,1220705,ECRM13516_RS05915,IS66 family insertion sequence hypothetical protein,-
+7,chrm,32699,33079,ECRM13516_RS27650,IS66 family insertion sequence hypothetical protein,-
+7,chrm,1763360,1763740,ECRM13516_RS08945,IS66 family insertion sequence hypothetical protein,-
+7,chrm,94825,95205,ECRM13516_RS28025,IS66 family insertion sequence hypothetical protein,-
+7,chrm,5349456,5349836,ECRM13516_RS27115,IS66 family insertion sequence hypothetical protein,-
+7,chrm,2661508,2661888,ECRM13516_RS13720,IS66 family insertion sequence hypothetical protein,-
+7,chrm,5017478,5017858,ECRM13516_RS25375,IS66 family insertion sequence hypothetical protein,+
+8,chrm,39358,39783,ECRM13516_RS00200,IS66 family insertion sequence hypothetical protein,+
+8,chrm,2523103,2523528,ECRM13516_RS13020,IS66 family insertion sequence hypothetical protein,-
+8,chrm,5016890,5017315,ECRM13516_RS25370,IS66 family insertion sequence hypothetical protein,-
+8,chrm,1288060,1288485,ECRM13516_RS06335,IS66 family insertion sequence hypothetical protein,+
+8,chrm,1241499,1241924,ECRM13516_RS06080,IS66 family insertion sequence hypothetical protein,+
+8,chrm,5237980,5238405,ECRM13516_RS26445,IS66 family insertion sequence hypothetical protein,+
+8,chrm,33242,33667,ECRM13516_RS27655,IS66 family insertion sequence hypothetical protein,+
+8,chrm,5215563,5215988,ECRM13516_RS26300,IS66 family insertion sequence hypothetical protein,+
+9,chrm,39780,40130,ECRM13516_RS00205,IS66 family insertion sequence hypothetical protein,+
+9,chrm,5215985,5216335,ECRM13516_RS26305,IS66 family insertion sequence hypothetical protein,+
+9,chrm,1237914,1238264,ECRM13516_RS06055,IS66 family insertion sequence hypothetical protein,+
+9,chrm,5016543,5016893,ECRM13516_RS25365,IS66 family insertion sequence hypothetical protein,-
+9,chrm,5238402,5238752,ECRM13516_RS26450,IS66 family insertion sequence hypothetical protein,+
+9,chrm,1241921,1242271,ECRM13516_RS06085,IS66 family insertion sequence hypothetical protein,+
+9,chrm,2522756,2523106,ECRM13516_RS13015,IS66 family insertion sequence hypothetical protein,-
+9,chrm,33664,34014,ECRM13516_RS27660,IS66 family insertion sequence hypothetical protein,+
+10,chrm,40161,41774,ECRM13516_RS00210,IS66 family transposase,+
+10,chrm,2521112,2522725,ECRM13516_RS13010,IS66 family transposase ISEc23,-
+10,chrm,1238295,1239908,ECRM13516_RS06060,IS66 family transposase IS682,+
+10,chrm,34045,35658,ECRM13516_RS27665,IS66 family transposase ISEc23,+
+10,chrm,5238783,5240396,ECRM13516_RS26455,IS66 family transposase ISEc23,+
+10,chrm,1242302,1243915,ECRM13516_RS06090,IS66 family transposase ISEc23,+
+11,chrm,171747,172943,ECRM13516_RS00800,IS110 family transposase,-
+11,chrm,3132851,3134047,ECRM13516_RS16090,IS110 family transposase,+
+11,chrm,260607,261803,ECRM13516_RS01230,IS110 family transposase,-
+11,chrm,1585623,1586819,ECRM13516_RS08085,IS110 family transposase,-
+11,chrm,1700480,1701676,ECRM13516_RS08660,IS110 family transposase,+
+11,chrm,1256010,1257206,ECRM13516_RS06160,IS110 family transposase,-
+12,chrm,292618,292881,ECRM13516_RS01385,50S ribosomal protein L31 type B,-
+12,chrm,1233057,1233320,ECRM13516_RS06015,50S ribosomal protein L31,+
+13,chrm,799859,800560,ECRM13516_RS03805,Replication protein P,+
+13,chrm,3320285,3320986,ECRM13516_RS16985,hypothetical protein,-
+14,chrm,800557,800847,ECRM13516_RS03810,protein ren,+
+14,chrm,3319998,3320288,ECRM13516_RS16980,protein ren,-
+15,chrm,800903,801361,ECRM13516_RS03815,recombination protein NinB,+
+15,chrm,3319484,3319942,ECRM13516_RS16975,recombination protein NinB,-
+16,chrm,801358,801885,ECRM13516_RS03820,phage N_6_adenine_methyltransferase,+
+16,chrm,3318960,3319487,ECRM13516_RS16970,phage N_6_adenine_methyltransferase,-
+17,chrm,801882,802064,ECRM13516_RS03825,NinE family protein,+
+17,chrm,3318781,3318963,ECRM13516_RS30035,NinE family protein,-
+18,chrm,804886,805452,ECRM13516_RS03835,endonuclease,+
+18,chrm,3315394,3315960,ECRM13516_RS16955,endonuclease,-
+19,chrm,805427,806038,ECRM13516_RS03840,protein ninG,+
+19,chrm,3314808,3315419,ECRM13516_RS16950,protein ninG,-
+20,chrm,806035,806700,ECRM13516_RS03845,serine/threonine protein phosphatase,+
+20,chrm,3314146,3314811,ECRM13516_RS16945,serine/threonine protein phosphatase,-
+21,chrm,809246,809962,ECRM13516_RS03875,hypothetical protein,+
+21,chrm,3312530,3313246,ECRM13516_RS16935,hypothetical protein,-
+22,chrm,810505,812355,ECRM13516_RS03885,DUF1737 domain_containing protein,+
+22,chrm,3310132,3311985,ECRM13516_RS16925,DUF1737 domain_containing protein,-
+22,chrm,2743493,2745343,ECRM13516_RS14160,DUF1737 domain_containing protein,-
+22,chrm,1406758,1408608,ECRM13516_RS07050,DUF1737 domain_containing protein,+
+22,chrm,1082889,1084739,ECRM13516_RS05250,DUF1737 domain_containing protein,+
+22,chrm,1942600,1944453,ECRM13516_RS09825,9_O_acetyl_N_acetylneuraminic acid deacetylase,-
+22,chrm,2446124,2447974,ECRM13516_RS12575,9_O_acetyl_N_acetylneuraminic acid deacetylase,-
+23,chrm,812508,812723,ECRM13516_RS03890,holin,+
+23,chrm,2445756,2445971,ECRM13516_RS12570,holin,-
+23,chrm,1942235,1942450,ECRM13516_RS09820,holin,-
+23,chrm,1084892,1085107,ECRM13516_RS05255,holin,+
+23,chrm,2291050,2291265,ECRM13516_RS11665,holin,-
+23,chrm,2742994,2743200,ECRM13516_RS14155,holin,-
+23,chrm,3309767,3309982,ECRM13516_RS16920,holin,-
+23,chrm,1409058,1409264,ECRM13516_RS07060,holin,+
+24,chrm,812728,813072,ECRM13516_RS03895,DUF1327 domain_containing protein,+
+24,chrm,1085112,1085456,ECRM13516_RS05260,DUF1327 domain_containing protein,+
+24,chrm,1941886,1942230,ECRM13516_RS09815,DUF1327 domain_containing protein,-
+24,chrm,2445407,2445751,ECRM13516_RS12565,DUF1327 domain_containing protein,-
+24,chrm,3309418,3309762,ECRM13516_RS16915,DUF1327 domain_containing protein,-
+24,chrm,2742645,2742989,ECRM13516_RS14150,DUF1327 domain_containing protein,-
+25,chrm,813123,813656,ECRM13516_RS03900,lysozyme,+
+25,chrm,1409952,1410485,ECRM13516_RS07075,lysozyme,+
+25,chrm,1941302,1941835,ECRM13516_RS09810,lysozyme,-
+25,chrm,2742061,2742594,ECRM13516_RS14145,lysozyme,-
+25,chrm,2444823,2445356,ECRM13516_RS12560,lysozyme,-
+25,chrm,1085507,1086040,ECRM13516_RS05265,lysozyme,+
+25,chrm,2290512,2291045,ECRM13516_RS11660,lysozyme,-
+25,chrm,3308834,3309367,ECRM13516_RS16910,lysozyme,-
+25,chrm,5335852,5336385,ECRM13516_RS27020,lysozyme,+
+26,chrm,813877,813990,ECRM13516_RS03905,hypothetical protein,+
+26,chrm,1086261,1086374,ECRM13516_RS05270,hypothetical protein,+
+26,chrm,2444488,2444601,ECRM13516_RS12555,hypothetical protein,-
+27,chrm,813992,814459,ECRM13516_RS03910,lysis protein,+
+27,chrm,2289746,2290213,ECRM13516_RS11655,lysis protein,-
+27,chrm,2444019,2444486,ECRM13516_RS31420,lysis protein,-
+27,chrm,1086376,1086843,ECRM13516_RS05275,lysis protein,+
+27,chrm,1940345,1940812,ECRM13516_RS09800,lysis protein,-
+28,chrm,814542,814682,ECRM13516_RS03915,hypothetical protein,+
+28,chrm,1086926,1087066,ECRM13516_RS29045,hypothetical protein,+
+28,chrm,2443796,2443936,ECRM13516_RS29675,hypothetical protein,-
+28,chrm,1940122,1940262,ECRM13516_RS29455,hypothetical protein,-
+29,chrm,814925,815239,ECRM13516_RS03920,PerC family transcriptional regulator,+
+29,chrm,2443239,2443553,ECRM13516_RS12545,PerC family transcriptional regulator,-
+29,chrm,1087309,1087623,ECRM13516_RS05280,PerC family transcriptional regulator,+
+29,chrm,1939565,1939879,ECRM13516_RS09795,PerC family transcriptional regulator,-
+30,chrm,815321,815545,ECRM13516_RS03925,DUF3950 domain_containing protein,-
+30,chrm,1939259,1939483,ECRM13516_RS29450,DUF3950 domain_containing protein,+
+30,chrm,2442933,2443157,ECRM13516_RS29670,DUF3950 domain_containing protein,+
+30,chrm,1087705,1087929,ECRM13516_RS29050,DUF3950 domain_containing protein,-
+31,chrm,815940,816449,ECRM13516_RS03935,terminase,+
+31,chrm,2442029,2442538,ECRM13516_RS12540,terminase,-
+31,chrm,1088324,1088833,ECRM13516_RS05285,terminase,+
+32,chrm,816421,818349,ECRM13516_RS03940,phage terminase large subunit family protein,+
+32,chrm,2440129,2442057,ECRM13516_RS12535,phage terminase large subunit family protein,-
+32,chrm,1088805,1090733,ECRM13516_RS05290,phage terminase large subunit family protein,+
+33,chrm,818333,818539,ECRM13516_RS03945,head_tail joining protein,+
+33,chrm,1090717,1090923,ECRM13516_RS05295,head_tail joining protein,+
+33,chrm,2439939,2440145,ECRM13516_RS12530,head_tail joining protein,-
+34,chrm,818536,820128,ECRM13516_RS03950,phage portal protein,+
+34,chrm,2438350,2439942,ECRM13516_RS12525,phage portal protein,-
+34,chrm,1090920,1092512,ECRM13516_RS05300,phage portal protein,+
+35,chrm,820118,821623,ECRM13516_RS03955,S49 family peptidase,+
+35,chrm,1092502,1094007,ECRM13516_RS05305,scaffolding protein,+
+35,chrm,2436855,2438360,ECRM13516_RS12520,S49 family peptidase,-
+36,chrm,821660,822007,ECRM13516_RS03960,head decoration protein,+
+36,chrm,2436471,2436818,ECRM13516_RS12515,head decoration protein,-
+36,chrm,1094044,1094391,ECRM13516_RS05310,head decoration protein,+
+37,chrm,822065,823093,ECRM13516_RS03965,minor capsid protein E,+
+37,chrm,1094449,1095477,ECRM13516_RS05315,minor capsid protein E,+
+37,chrm,2435385,2436413,ECRM13516_RS12510,minor capsid protein E,-
+38,chrm,824038,824610,ECRM13516_RS03980,hypothetical protein,+
+38,chrm,2422719,2423318,ECRM13516_RS12440,Ail/Lom family protein,-
+38,chrm,1919138,1919737,ECRM13516_RS09685,hypothetical protein,-
+38,chrm,1108146,1108745,ECRM13516_RS05395,hypothetical protein,+
+38,chrm,2267820,2268419,ECRM13516_RS11540,Ail/Lom family protein,-
+38,chrm,5360196,5360795,ECRM13516_RS27165,hypothetical protein,+
+38,chrm,2718707,2719306,ECRM13516_RS14005,Ail/Lom family protein,-
+38,chrm,3285596,3286195,ECRM13516_RS16785,hypothetical protein,-
+38,chrm,1422241,1422840,ECRM13516_RS07170,hypothetical protein,+
+39,chrm,824675,825988,ECRM13516_RS03985,tail fiber protein,+
+39,chrm,2717329,2718642,ECRM13516_RS14000,tail fiber protein,-
+39,chrm,3284188,3285531,ECRM13516_RS16780,tail fiber protein,-
+39,chrm,1917760,1919073,ECRM13516_RS09680,tail fiber protein,-
+39,chrm,2266442,2267755,ECRM13516_RS11535,tail fiber protein,-
+39,chrm,1422905,1424218,ECRM13516_RS07175,tail fiber protein,+
+39,chrm,1108810,1110123,ECRM13516_RS05400,tail fiber protein,+
+39,chrm,2421449,2422654,ECRM13516_RS12435,tail fiber protein,-
+40,chrm,825990,826259,ECRM13516_RS03990,phage tail protein,+
+40,chrm,2266171,2266440,ECRM13516_RS11530,phage tail protein,-
+40,chrm,1110125,1110394,ECRM13516_RS05405,phage tail protein,+
+40,chrm,1917489,1917797,ECRM13516_RS09675,hypothetical protein,-
+40,chrm,3282634,3282903,ECRM13516_RS16765,phage tail protein,-
+40,chrm,1424220,1424489,ECRM13516_RS07180,phage tail protein,+
+40,chrm,2421178,2421447,ECRM13516_RS12430,phage tail protein,-
+40,chrm,2717058,2717327,ECRM13516_RS13995,phage tail protein,-
+41,chrm,976758,977375,ECRM13516_RS04700,dimethyl sulfoxide reductase subunit B,+
+41,chrm,1973259,1973876,ECRM13516_RS10020,dimethylsulfoxide reductase; chain B,+
+42,chrm,1066164,1068599,ECRM13516_RS05115,exonuclease,-
+42,chrm,1571544,1574015,ECRM13516_RS07975,exonuclease,-
+42,chrm,1390722,1393193,ECRM13516_RS06915,exonuclease,-
+43,chrm,1070318,1070470,ECRM13516_RS05135,DUF1391 domain_containing protein,-
+43,chrm,1956833,1956985,ECRM13516_RS09930,DUF1391 domain_containing protein,+
+43,chrm,2460081,2460233,ECRM13516_RS12695,DUF1391 domain_containing protein,+
+44,chrm,1072111,1072536,ECRM13516_RS05160,Rha family transcriptional regulator,+
+44,chrm,2458407,2458832,ECRM13516_RS12680,hypothetical protein,-
+45,chrm,1072608,1073714,ECRM13516_RS05165,hypothetical protein,+
+45,chrm,2457229,2458335,ECRM13516_RS12675,hypothetical protein,-
+46,chrm,1077361,1077573,ECRM13516_RS05190,Hok/Gef family protein,+
+46,chrm,1949272,1949484,ECRM13516_RS09865,type I toxin_antitoxin system hok family toxin,-
+46,chrm,2453545,2453757,ECRM13516_RS12635,Hok/Gef family protein,-
+47,chrm,1077741,1078019,ECRM13516_RS31170,hypothetical protein,+
+47,chrm,1403053,1403331,ECRM13516_RS31245,hypothetical protein,+
+47,chrm,1948826,1949104,ECRM13516_RS31350,hypothetical protein,-
+48,chrm,1078021,1079070,ECRM13516_RS05200,DUF968 domain_containing protein,+
+48,chrm,1947775,1948824,ECRM13516_RS09855,DUF968 domain_containing protein,-
+48,chrm,2451636,2452685,ECRM13516_RS12620,DUF968 domain_containing protein,-
+48,chrm,1403333,1404382,ECRM13516_RS07025,DUF968 domain_containing protein,+
+49,chrm,1079083,1079454,ECRM13516_RS05205,endodeoxyribonuclease,+
+49,chrm,2451264,2451623,ECRM13516_RS12615,RusA family crossover junction endodeoxyribonuclease,-
+49,chrm,1947403,1947762,ECRM13516_RS09850,RusA family crossover junction endodeoxyribonuclease,-
+49,chrm,1404395,1404769,ECRM13516_RS07030,RusA family crossover junction endodeoxyribonuclease,+
+49,chrm,1584022,1584387,ECRM13516_RS08065,RusA family crossover junction endodeoxyribonuclease,+
+50,chrm,1081533,1082120,ECRM13516_RS05225,transcriptional regulator,+
+50,chrm,2449428,2450015,ECRM13516_RS12600,AraC family transcriptional regulator,-
+51,chrm,1095481,1095903,ECRM13516_RS05320,hypothetical protein,+
+51,chrm,2434959,2435381,ECRM13516_RS12505,hypothetical protein,-
+52,chrm,1095896,1096249,ECRM13516_RS05325,tail attachment protein,+
+52,chrm,2434613,2434966,ECRM13516_RS12500,tail attachment protein,-
+53,chrm,1096265,1096798,ECRM13516_RS05330,tail protein,+
+53,chrm,2434064,2434597,ECRM13516_RS12495,tail protein,-
+54,chrm,1096795,1097190,ECRM13516_RS05335,tail protein,+
+54,chrm,1930110,1930505,ECRM13516_RS09735,tail protein,-
+54,chrm,2433672,2434067,ECRM13516_RS12490,tail protein,-
+55,chrm,1097198,1097950,ECRM13516_RS05340,tail protein,+
+55,chrm,1929350,1930102,ECRM13516_RS09730,tail protein,-
+55,chrm,2432912,2433664,ECRM13516_RS12485,tail protein,-
+56,chrm,1097964,1098395,ECRM13516_RS05345,phage minor tail protein G,+
+56,chrm,2432467,2432898,ECRM13516_RS12480,phage minor tail protein G,-
+57,chrm,1098422,1098835,ECRM13516_RS05350,phage tail assembly protein T,+
+57,chrm,1928474,1928887,ECRM13516_RS09720,phage tail assembly protein T,-
+57,chrm,2432027,2432440,ECRM13516_RS12475,phage tail assembly protein T,-
+58,chrm,1098816,1101395,ECRM13516_RS05355,phage tail tape measure protein,+
+58,chrm,2429467,2432046,ECRM13516_RS12470,phage tail tape measure protein,-
+59,chrm,1101392,1101721,ECRM13516_RS05360,tail protein,+
+59,chrm,2429141,2429470,ECRM13516_RS12465,tail protein,-
+59,chrm,1925555,1925884,ECRM13516_RS09710,tail protein,-
+60,chrm,1101721,1102419,ECRM13516_RS05365,phage minor tail protein L,+
+60,chrm,3291308,3292006,ECRM13516_RS16805,phage minor tail protein L,-
+60,chrm,2428443,2429141,ECRM13516_RS12460,phage minor tail protein L,-
+60,chrm,1924857,1925555,ECRM13516_RS09705,phage minor tail protein L,-
+60,chrm,2724422,2725120,ECRM13516_RS14025,phage minor tail protein L,-
+60,chrm,1601079,1601777,ECRM13516_RS08170,phage minor tail protein L,+
+60,chrm,2274171,2274869,ECRM13516_RS11565,phage minor tail protein L,-
+61,chrm,1102430,1103173,ECRM13516_RS05370,phage tail protein,+
+61,chrm,2723668,2724411,ECRM13516_RS14020,phage tail protein,-
+61,chrm,2427689,2428432,ECRM13516_RS12455,phage tail protein,-
+61,chrm,1924108,1924851,ECRM13516_RS09700,phage tail protein,-
+61,chrm,2273417,2274160,ECRM13516_RS11560,phage tail protein,-
+61,chrm,1603506,1604243,ECRM13516_RS08190,phage tail protein,+
+61,chrm,3290554,3291297,ECRM13516_RS16800,phage tail protein,-
+62,chrm,1103071,1103751,ECRM13516_RS05375,tail assembly protein,+
+62,chrm,1604141,1604821,ECRM13516_RS08195,tail assembly protein,+
+62,chrm,3289979,3290656,ECRM13516_RS16795,tail assembly protein,-
+62,chrm,2723090,2723770,ECRM13516_RS14015,tail assembly protein,-
+62,chrm,2272839,2273519,ECRM13516_RS11555,tail assembly protein,-
+62,chrm,1923530,1924210,ECRM13516_RS09695,tail assembly protein,-
+62,chrm,2427111,2427791,ECRM13516_RS12450,tail assembly protein,-
+63,chrm,1103705,1103911,ECRM13516_RS05380,hypothetical protein,+
+63,chrm,2272679,2272885,ECRM13516_RS29570,hypothetical protein,-
+64,chrm,1103942,1104469,ECRM13516_RS05385,superoxide dismutase,-
+64,chrm,2272121,2272648,ECRM13516_RS11550,superoxide dismutase,+
+65,chrm,1104603,1108079,ECRM13516_RS05390,host specificity protein J,+
+65,chrm,2423385,2426861,ECRM13516_RS12445,host specificity protein J,-
+65,chrm,1605057,1608530,ECRM13516_RS08200,host specificity protein J,+
+65,chrm,3286262,3289738,ECRM13516_RS16790,host specificity protein J,-
+65,chrm,2719373,2722852,ECRM13516_RS14010,host specificity protein J,-
+65,chrm,1919804,1923283,ECRM13516_RS09690,host specificity protein J,-
+66,chrm,1276839,1277726,ECRM13516_RS06290,IS3 family transposase,-
+66,chrm,5324666,5325553,ECRM13516_RS26930,IS3 family transposase,-
+67,chrm,1289257,1290168,ECRM13516_RS06345,50S ribosome_binding GTPase,+
+67,chrm,5006086,5006997,ECRM13516_RS25305,50S ribosome_binding GTPase,-
+67,chrm,5225878,5226789,ECRM13516_RS26370,hypothetical protein,+
+68,chrm,1293442,1295826,ECRM13516_RS06355,hypothetical protein,+
+68,chrm,2524537,2526933,ECRM13516_RS13030,hypothetical protein,+
+69,chrm,1295823,1296728,ECRM13516_RS06360,chemotaxis protein,+
+69,chrm,2526930,2527835,ECRM13516_RS13035,chemotaxis protein,+
+70,chrm,1296725,1297795,ECRM13516_RS06365,phospholipase,+
+70,chrm,2527832,2528902,ECRM13516_RS13040,phospholipase,+
+71,chrm,1298135,1298953,ECRM13516_RS06375,DUF945 domain_containing protein,+
+71,chrm,4998194,4999015,ECRM13516_RS25280,DUF945 domain_containing protein,-
+71,chrm,2530368,2531189,ECRM13516_RS13055,DUF945 domain_containing protein,+
+71,chrm,5233860,5234678,ECRM13516_RS26395,DUF945 domain_containing protein,+
+72,chrm,1299044,1299529,ECRM13516_RS06380,antirestriction protein,+
+72,chrm,4997383,4997856,ECRM13516_RS25270,antirestriction protein,-
+72,chrm,2531271,2531750,ECRM13516_RS13060,antirestriction protein,+
+72,chrm,5234733,5235218,ECRM13516_RS26400,antirestriction protein,+
+73,chrm,1299545,1300021,ECRM13516_RS06385,hypothetical protein,+
+73,chrm,5235234,5235710,ECRM13516_RS26405,hypothetical protein,+
+73,chrm,2531766,2532242,ECRM13516_RS13065,hypothetical protein,+
+73,chrm,4996891,4997367,ECRM13516_RS25265,hypothetical protein,-
+74,chrm,1300084,1300305,ECRM13516_RS06390,DUF987 domain_containing protein,+
+74,chrm,2532305,2532526,ECRM13516_RS13070,DUF987 domain_containing protein,+
+74,chrm,4996601,4996822,ECRM13516_RS25260,DUF987 domain_containing protein,-
+74,chrm,5235773,5235994,ECRM13516_RS26410,DUF987 domain_containing protein,+
+75,chrm,1300468,1300842,ECRM13516_RS06400,type IV toxin_antitoxin system YeeU family antitoxin,+
+75,chrm,2532600,2532968,ECRM13516_RS13075,type IV toxin_antitoxin system YeeU family antitoxin,+
+75,chrm,5236157,5236525,ECRM13516_RS26420,type IV toxin_antitoxin system YeeU family antitoxin,+
+75,chrm,4996152,4996526,ECRM13516_RS25255,type IV toxin_antitoxin system YeeU family antitoxin,-
+76,chrm,1300889,1301263,ECRM13516_RS06405,toxin,+
+76,chrm,5236615,5236989,ECRM13516_RS26425,toxin,+
+76,chrm,4995728,4996105,ECRM13516_RS25250,toxin,-
+77,chrm,1301263,1301751,ECRM13516_RS06410,hypothetical protein,+
+77,chrm,5236986,5237474,ECRM13516_RS26430,hypothetical protein,+
+78,chrm,1301763,1301960,ECRM13516_RS06415,DUF957 domain_containing protein,+
+78,chrm,4995034,4995231,ECRM13516_RS25240,DUF957 domain_containing protein,-
+78,chrm,5237486,5237683,ECRM13516_RS26435,DUF957 domain_containing protein,+
+79,chrm,1302045,1302887,ECRM13516_RS06420,DUF4942 domain_containing protein,+
+79,chrm,4994107,4994949,ECRM13516_RS25235,DUF4942 domain_containing protein,-
+80,chrm,1396419,1396637,ECRM13516_RS06950,hypothetical protein,-
+80,chrm,1575692,1575910,ECRM13516_RS07995,hypothetical protein,-
+81,chrm,1397156,1397563,ECRM13516_RS06960,transcriptional regulator,-
+81,chrm,1576547,1576954,ECRM13516_RS08005,transcriptional regulator,-
+82,chrm,1397640,1397867,ECRM13516_RS06965,transcriptional regulator,+
+82,chrm,1577031,1577258,ECRM13516_RS08010,transcriptional regulator,+
+83,chrm,1397851,1398402,ECRM13516_RS06970,hypothetical protein,+
+83,chrm,1577242,1577793,ECRM13516_RS08015,hypothetical protein,+
+84,chrm,1399203,1399868,ECRM13516_RS31235,replication protein,+
+84,chrm,1578594,1579259,ECRM13516_RS31280,replication protein,+
+85,chrm,1400378,1400734,ECRM13516_RS06990,hypothetical protein,+
+85,chrm,1951069,1951425,ECRM13516_RS09880,hypothetical protein,-
+86,chrm,1400783,1400995,ECRM13516_RS06995,hypothetical protein,+
+86,chrm,1950808,1951020,ECRM13516_RS09875,hypothetical protein,-
+87,chrm,1401974,1402078,ECRM13516_RS31240,hypothetical protein,+
+87,chrm,1949674,1949778,ECRM13516_RS31355,hypothetical protein,-
+88,chrm,1406184,1406351,ECRM13516_RS07045,membrane protein,+
+88,chrm,2448382,2448549,ECRM13516_RS12580,membrane protein,-
+88,chrm,2745658,2745825,ECRM13516_RS14170,membrane protein,-
+89,chrm,1412481,1412846,ECRM13516_RS07115,HNH endonuclease,+
+89,chrm,2738992,2739357,ECRM13516_RS14105,HNH endonuclease,-
+89,chrm,2288749,2289114,ECRM13516_RS11645,HNH endonuclease,-
+89,chrm,3306376,3306741,ECRM13516_RS16885,HNH endonuclease,-
+90,chrm,1413135,1413698,ECRM13516_RS07120,terminase small subunit,+
+90,chrm,1587325,1587888,ECRM13516_RS08095,terminase small subunit,+
+90,chrm,2287896,2288459,ECRM13516_RS11640,terminase small subunit,-
+90,chrm,3305521,3306084,ECRM13516_RS16880,terminase small subunit,-
+90,chrm,2738140,2738703,ECRM13516_RS14100,terminase small subunit,-
+91,chrm,1413695,1415356,ECRM13516_RS07125,terminase large subunit,+
+91,chrm,3303863,3305524,ECRM13516_RS16875,terminase large subunit,-
+91,chrm,2736482,2738143,ECRM13516_RS14095,terminase large subunit,-
+91,chrm,1587885,1589546,ECRM13516_RS08100,terminase large subunit,+
+91,chrm,2286238,2287899,ECRM13516_RS11635,terminase large subunit,-
+92,chrm,1415420,1417357,ECRM13516_RS07130,phage major capsid protein,+
+92,chrm,3301862,3303799,ECRM13516_RS16870,phage major capsid protein,-
+92,chrm,2734481,2736418,ECRM13516_RS14090,phage major capsid protein,-
+92,chrm,2284237,2286174,ECRM13516_RS11630,phage major capsid protein,-
+92,chrm,1589610,1591547,ECRM13516_RS08105,phage major capsid protein,+
+93,chrm,1417402,1417623,ECRM13516_RS07135,hypothetical protein,+
+93,chrm,1591592,1591813,ECRM13516_RS08110,hypothetical protein,+
+93,chrm,3301596,3301817,ECRM13516_RS16865,hypothetical protein,-
+93,chrm,2734215,2734436,ECRM13516_RS14085,hypothetical protein,-
+93,chrm,2283971,2284192,ECRM13516_RS11625,hypothetical protein,-
+94,chrm,1419989,1420315,ECRM13516_RS07145,phage gp6_like head_tail connector protein,+
+94,chrm,2731362,2731688,ECRM13516_RS14070,phage gp6_like head_tail connector protein,-
+94,chrm,2281118,2281444,ECRM13516_RS11610,phage gp6_like head_tail connector protein,-
+94,chrm,3298257,3298583,ECRM13516_RS16850,phage gp6_like head_tail connector protein,-
+94,chrm,1594502,1594828,ECRM13516_RS08125,phage gp6_like head_tail connector protein,+
+95,chrm,1420325,1420675,ECRM13516_RS07150,head_tail adaptor protein,+
+95,chrm,2280757,2281107,ECRM13516_RS11605,head_tail adaptor protein,-
+95,chrm,1594839,1595189,ECRM13516_RS08130,head_tail adaptor protein,+
+95,chrm,3297896,3298246,ECRM13516_RS16845,head_tail adaptor protein,-
+95,chrm,2731001,2731351,ECRM13516_RS14065,head_tail adaptor protein,-
+96,chrm,1420672,1421118,ECRM13516_RS07155,hypothetical protein,+
+96,chrm,2280314,2280760,ECRM13516_RS11600,hypothetical protein,-
+96,chrm,3297453,3297899,ECRM13516_RS16840,hypothetical protein,-
+96,chrm,2730558,2731004,ECRM13516_RS14060,hypothetical protein,-
+96,chrm,1595186,1595632,ECRM13516_RS08135,hypothetical protein,+
+97,chrm,1574296,1574484,ECRM13516_RS07980,cell division inhibitor,-
+97,chrm,2461658,2461846,ECRM13516_RS12715,cell division inhibitor,+
+97,chrm,1958410,1958598,ECRM13516_RS09950,cell division inhibitor,+
+98,chrm,1595629,1595973,ECRM13516_RS08140,DUF3168 domain_containing protein,+
+98,chrm,3297112,3297456,ECRM13516_RS16835,DUF3168 domain_containing protein,-
+98,chrm,2730217,2730561,ECRM13516_RS14055,DUF3168 domain_containing protein,-
+98,chrm,2279973,2280317,ECRM13516_RS11595,DUF3168 domain_containing protein,-
+99,chrm,1596041,1596757,ECRM13516_RS08145,tail protein,+
+99,chrm,2729433,2730149,ECRM13516_RS14050,tail protein,-
+99,chrm,3296328,3297044,ECRM13516_RS16830,tail protein,-
+99,chrm,2279190,2279906,ECRM13516_RS11590,tail protein,-
+100,chrm,1596772,1597146,ECRM13516_RS08150,tail assembly chaperon,+
+100,chrm,3295939,3296313,ECRM13516_RS16825,tail assembly chaperon,-
+100,chrm,2729053,2729427,ECRM13516_RS14045,tail assembly protein,-
+100,chrm,2278801,2279175,ECRM13516_RS11585,tail assembly protein,-
+101,chrm,1597170,1597451,ECRM13516_RS08155,phage tail protein,+
+101,chrm,2278496,2278777,ECRM13516_RS11580,DUF4035 domain_containing protein,-
+101,chrm,2728748,2729029,ECRM13516_RS14040,phage tail protein,-
+101,chrm,3295634,3295915,ECRM13516_RS16820,phage tail protein,-
+102,chrm,1597503,1600745,ECRM13516_RS08160,phage tail tape measure protein,+
+102,chrm,2725454,2728696,ECRM13516_RS14035,phage tail tape measure protein,-
+102,chrm,3292340,3295582,ECRM13516_RS16815,phage tail tape measure protein,-
+102,chrm,2275203,2278445,ECRM13516_RS11575,phage tail tape measure protein,-
+103,chrm,1600738,1601079,ECRM13516_RS08165,tail protein,+
+103,chrm,2274869,2275210,ECRM13516_RS11570,tail protein,-
+103,chrm,3292006,3292347,ECRM13516_RS16810,tail protein,-
+103,chrm,2725120,2725461,ECRM13516_RS14030,tail protein,-
+104,chrm,1852432,1853832,ECRM13516_RS09385,glutamate decarboxylase beta,-
+104,chrm,4245852,4247252,ECRM13516_RS21650,glutamate decarboxylase alpha,-
+105,chrm,1916073,1917059,ECRM13516_RS09670,peptidase M85,-
+105,chrm,2264755,2265741,ECRM13516_RS11525,peptidase M85,-
+106,chrm,1917088,1917279,ECRM13516_RS29445,hypothetical protein,-
+106,chrm,2265770,2265961,ECRM13516_RS29565,hypothetical protein,-
+107,chrm,1945097,1946155,ECRM13516_RS09835,site_specific DNA_methyltransferase,-
+107,chrm,2296395,2297453,ECRM13516_RS11715,site_specific DNA_methyltransferase,-
+108,chrm,1946307,1946627,ECRM13516_RS09840,hypothetical protein,-
+108,chrm,2450279,2450599,ECRM13516_RS31425,hypothetical protein,-
+109,chrm,1956997,1957635,ECRM13516_RS09935,hypothetical protein,+
+109,chrm,2460245,2460883,ECRM13516_RS12700,hypothetical protein,+
+110,chrm,1957636,1957845,ECRM13516_RS09940,hypothetical protein,-
+110,chrm,2460884,2461093,ECRM13516_RS12705,hypothetical protein,-
+111,chrm,1957894,1958154,ECRM13516_RS09945,hypothetical protein,-
+111,chrm,2461142,2461402,ECRM13516_RS12710,hypothetical protein,-
+112,chrm,1958595,1958783,ECRM13516_RS09955,DUF1482 domain_containing protein,+
+112,chrm,2461843,2462031,ECRM13516_RS12720,DUF1482 domain_containing protein,+
+113,chrm,1958876,1961338,ECRM13516_RS09960,exonuclease,+
+113,chrm,2462124,2464631,ECRM13516_RS12725,exonuclease,+
+114,chrm,1997000,1998646,ECRM13516_RS10140,fumarate hydratase class I; aerobic,-
+114,chrm,4977103,4978749,ECRM13516_RS25155,fumarate hydratase class I; anaerobic,-
+115,chrm,2264135,2264383,ECRM13516_RS11520,DNA_damage_inducible protein DinI,+
+115,chrm,5366697,5366945,ECRM13516_RS27205,DNA_damage_inducible protein DinI,-
+115,chrm,3279902,3280150,ECRM13516_RS16750,DNA damage_inducible protein DinI,+
+116,chrm,2289156,2289383,ECRM13516_RS11650,DUF3950 domain_containing protein,+
+116,chrm,3306783,3307010,ECRM13516_RS16890,DUF3950 domain_containing protein,+
+117,chrm,2298417,2299412,ECRM13516_RS11725,DUF968 domain_containing protein,-
+117,chrm,2749619,2750572,ECRM13516_RS14230,DUF968 domain_containing protein,-
+117,chrm,5331101,5332096,ECRM13516_RS26990,DUF968 domain_containing protein,+
+118,chrm,2309567,2309821,ECRM13516_RS11805,excisionase,+
+118,chrm,2764336,2764590,ECRM13516_RS14360,excisionase,+
+119,chrm,2448546,2448977,ECRM13516_RS12585,tellurite resistance protein,-
+119,chrm,2745822,2746253,ECRM13516_RS14175,tellurite resistance protein,-
+120,chrm,2510772,2511269,ECRM13516_RS12940,hypothetical protein,-
+120,chrm,3680145,3680666,ECRM13516_RS18730,hypothetical protein,+
+121,chrm,2511170,2511577,ECRM13516_RS12945,hypothetical protein,-
+121,chrm,5219236,5219619,ECRM13516_RS26335,hypothetical protein,-
+121,chrm,3679837,3680244,ECRM13516_RS18725,hypothetical protein,+
+121,chrm,5013259,5013642,ECRM13516_RS25335,hypothetical protein,+
+122,chrm,2511831,2512400,ECRM13516_RS12950,inovirus Gp2 family protein,-
+122,chrm,5219787,5220392,ECRM13516_RS26340,inovirus Gp2 family protein,-
+122,chrm,5012486,5013091,ECRM13516_RS25330,inovirus Gp2 family protein,+
+122,chrm,3679015,3679584,ECRM13516_RS18720,inovirus Gp2 family protein,+
+123,chrm,2512605,2512805,ECRM13516_RS12955,hypothetical protein,+
+123,chrm,5220555,5220755,ECRM13516_RS30755,hypothetical protein,+
+123,chrm,3678610,3678810,ECRM13516_RS30170,hypothetical protein,-
+123,chrm,5012122,5012322,ECRM13516_RS30610,hypothetical protein,-
+124,chrm,2513859,2514137,ECRM13516_RS12970,AlpA family phage regulatory protein,+
+124,chrm,5010695,5010973,ECRM13516_RS25320,AlpA family phage regulatory protein,-
+124,chrm,3677088,3677366,ECRM13516_RS18705,AlpA family transcriptional regulator,-
+124,chrm,5221904,5222182,ECRM13516_RS26350,AlpA family phage regulatory protein,+
+125,chrm,2514216,2514833,ECRM13516_RS12975,hypothetical protein,+
+125,chrm,5009998,5010615,ECRM13516_RS25315,hypothetical protein,-
+126,chrm,2517721,2518104,ECRM13516_RS29750,IS66 family insertion sequence hypothetical protein,-
+126,chrm,5032318,5032701,ECRM13516_RS25460,IS66 family insertion sequence hypothetical protein,+
+127,chrm,2714933,2715304,ECRM13516_RS31505,DUF1076 domain_containing protein,+
+127,chrm,3281022,3281393,ECRM13516_RS31605,DUF1076 domain_containing protein,+
+128,chrm,2740396,2740863,ECRM13516_RS31520,lysis protein,-
+128,chrm,3307373,3307840,ECRM13516_RS16895,lysis protein,-
+129,chrm,2751149,2751958,ECRM13516_RS14240,hypothetical protein,-
+129,chrm,5330302,5331099,ECRM13516_RS26985,hypothetical protein,+
+130,chrm,2751978,2752367,ECRM13516_RS14245,RusA family crossover junction endodeoxyribonuclease,-
+130,chrm,5329893,5330282,ECRM13516_RS26980,RusA family crossover junction endodeoxyribonuclease,+
+131,chrm,2752364,2752690,ECRM13516_RS14250,LexA family transcriptional regulator,-
+131,chrm,5329537,5329896,ECRM13516_RS26975,LexA family transcriptional regulator,+
+132,chrm,2753831,2754772,ECRM13516_RS14265,helix_turn_helix domain_containing protein,-
+132,chrm,5328147,5329088,ECRM13516_RS26965,helix_turn_helix domain_containing protein,+
+133,chrm,2754762,2754941,ECRM13516_RS29885,DUF4222 domain_containing protein,-
+133,chrm,5327978,5328157,ECRM13516_RS30820,DUF4222 domain_containing protein,+
+134,chrm,2759056,2759418,ECRM13516_RS14295,hypothetical protein,+
+134,chrm,5323416,5323778,ECRM13516_RS26915,hypothetical protein,-
+135,chrm,2759484,2760308,ECRM13516_RS14300,DUF2303 domain_containing protein,+
+135,chrm,5322526,5323350,ECRM13516_RS26910,DUF2303 domain_containing protein,-
+136,chrm,2760436,2760972,ECRM13516_RS14305,HD family hydrolase,+
+136,chrm,5321862,5322398,ECRM13516_RS26905,HD family hydrolase,-
+137,chrm,2760963,2761325,ECRM13516_RS14310,hypothetical protein,+
+137,chrm,5321509,5321871,ECRM13516_RS26900,hypothetical protein,-
+138,chrm,2803878,2805128,ECRM13516_RS14560,nucleoside permease NupX,-
+138,chrm,2807065,2808315,ECRM13516_RS14575,NupC/NupG family nucleoside CNT transporter,-
+139,chrm,3582614,3584131,ECRM13516_RS18210,lysine__tRNA ligase,-
+139,chrm,4984623,4986140,ECRM13516_RS25205,lysine__tRNA ligase heat inducible,-
+140,chrm,3666132,3667394,ECRM13516_RS18645,DUF4102 domain_containing protein,+
+140,chrm,5188908,5190173,ECRM13516_RS26195,DUF4102 domain_containing protein,+
+141,chrm,3668554,3669075,ECRM13516_RS18665,RNA polymerase sigma factor FecI,+
+141,chrm,5024126,5024647,ECRM13516_RS25425,RNA polymerase sigma factor FecI,+
+142,chrm,3669072,3670025,ECRM13516_RS18670,protein FecR,+
+142,chrm,5024644,5025597,ECRM13516_RS25430,FecR family protein,+
+143,chrm,3670112,3672436,ECRM13516_RS18675,TonB_dependent siderophore receptor,+
+143,chrm,5025684,5028008,ECRM13516_RS25435,TonB_dependent siderophore receptor,+
+144,chrm,3672481,3673383,ECRM13516_RS18680,Fe(3+)_dicitrate ABC transporter substrate_binding protein FecB,+
+144,chrm,5028053,5028955,ECRM13516_RS25440,Fe(3+)_dicitrate ABC transporter substrate_binding protein FecB,+
+145,chrm,3673380,3674378,ECRM13516_RS18685,Fe3+ dicitrate ABC transporter permease,+
+145,chrm,5028952,5029950,ECRM13516_RS25445,Fe3+ dicitrate ABC transporter permease,+
+146,chrm,3674375,3675331,ECRM13516_RS18690,Fe3+ dicitrate ABC transporter permease,+
+146,chrm,5029947,5030903,ECRM13516_RS25450,Fe3+ dicitrate ABC transporter permease,+
+147,chrm,3675332,3676099,ECRM13516_RS18695,Fe(3+) dicitrate transport ATP_binding protein FecE,+
+147,chrm,5030904,5031671,ECRM13516_RS25455,Fe(3+) dicitrate transport ATP_binding protein FecE,+
+148,chrm,4027903,4029087,ECRM13516_RS20570,translation elongation factor EF_Tu 1,-
+148,chrm,4796719,4797903,ECRM13516_RS24335,translation elongation factor EF_Tu 2,+
+149,chrm,4999425,4999880,ECRM13516_RS25290,hypothetical protein,-
+149,chrm,5232993,5233448,ECRM13516_RS26385,hypothetical protein,+
+150,chrm,4999956,5002472,ECRM13516_RS25295,hypothetical protein,-
+150,chrm,5230401,5232917,ECRM13516_RS26380,hypothetical protein,+
+151,chrm,5009776,5009961,ECRM13516_RS30585,hypothetical protein,-
+151,chrm,5222917,5223102,ECRM13516_RS30780,hypothetical protein,+
+152,chrm,5009892,5010092,ECRM13516_RS30590,hypothetical protein,+
+152,chrm,5222786,5222986,ECRM13516_RS30775,hypothetical protein,-
+153,chrm,5013639,5014064,ECRM13516_RS25340,hypothetical protein,+
+153,chrm,5218814,5219239,ECRM13516_RS26330,hypothetical protein,-
+154,chrm,5014309,5014506,ECRM13516_RS30615,inovirus Gp2 family protein,+
+154,chrm,5218372,5218569,ECRM13516_RS30750,inovirus Gp2 family protein,-
