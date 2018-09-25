@@ -1,0 +1,43 @@
+## Commensal
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/482/265/GCF_000482265.1_EC_K12_MG1655_Broad_SNP,GCF_000482265.1_K-12_MG1655
+
+## EAEC
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/027/125/GCA_000027125.1_ASM2712v1,GCA_000027125.1_Ecoli042
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/299/455/GCF_000299455.1_ASM29945v1,GCF_000299455.1_O104:H4
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/215/685/GCA_000215685.3_Ecoli.O104_H4.LB226692_2.0,GCA_000215685.3_Ecoli.O104_H4.LB226692
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/026/245/GCF_000026245.1_ASM2624v1,GCF_000026245.1_55989
+
+## EHEC
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/091/005/GCF_000091005.1_ASM9100v1,GCF_000091005.1_O26:H11_11368
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1,GCF_000008865.1_O157:H7_Sakai
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/010/765/GCF_000010765.1_ASM1076v1,GCF_000010765.1_O111:H-11128
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/520/055/GCF_000520055.1_ASM52005v1,GCF_000520055.1_O145:H28
+
+## ETEC
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/220/005/GCF_000220005.1_ASM22000v2,GCF_000220005.1_UMNF18
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/017/745/GCF_000017745.1_ASM1774v1,GCF_000017745.1_O139:H28_E24377A
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/210/475/GCF_000210475.1_ASM21047v1,GCF_000210475.1_ETEC_H10407
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/616/345/GCF_000616345.2_Ec2011C-3750,O103:H2_2011C-3750
+
+## EPEC
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/025/165/GCF_000025165.1_ASM2516v1,GCF_000025165.1_O55:H7_CB9615
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/026/545/GCF_000026545.1_ASM2654v1,O127:H6_E2348/69
+
+## EIEC
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/007/915/GCF_001007915.1_ASM100791v1,GCF_001007915.1_Ecoli_O96-H19
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/805/835/GCF_000805835.1_ASM80583v1,GCF_000805835.1_Ecoli_O143-H26_4608-58
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/805/815/GCF_000805815.1_ASM80581v1,GCF_000805815.1_Ecoli_O124-H30_M4163
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/617/165/GCF_000617165.2_Ec02-3404,O28ac:NM_02-3404
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/167/915/GCF_000167915.2_ASM16791v2,Ecoli_53638
+
+## ST131
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/285/655/GCF_000285655.3_EC958.v1,GCF_000285655.3_O25b:H4-ST131_EC958
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/493/755/GCF_000493755.1_ASM49375v1,GCF_000493755.1_JJ1886
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/214/765/GCF_000214765.2_ASM21476v3,GCF_000214765.2_NA114
+
+## UPEC
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/026/325/GCF_000026325.1_ASM2632v1,GCF_000026325.1_UMN026
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/026/345/GCF_000026345.1_ASM2634v1,Ecoli_IAI39
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/013/265/GCF_000013265.1_ASM1326v1,GCF_000013265.1_UTI89
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/007/445/GCF_000007445.1_ASM744v1,GCF_000007445.1_CFT073_v2002	
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/013/305/GCF_000013305.1_ASM1330v1,Ecoli_536
