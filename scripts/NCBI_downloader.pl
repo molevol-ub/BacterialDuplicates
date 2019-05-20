@@ -1,15 +1,15 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-use Data::Dumper;
+
 ##############################################################################
 ##	Jose Fco. Sanchez Herrero, 25/09/2018 jfsanchezherrero@ub.edu			##
 ##############################################################################
 
 if (!@ARGV) {
-	print "Usage: perl $0 ftp_folder id\n";
-	print "\t- file: containing ftp site and name\n";
-	print "\t- id: gff,protein,feature,CDS,genome,ALL\n";
+	print "Usage: perl $0 csv_file option\n";
+	print "\t- csv_file: containing ftp site and name\n";
+	print "\t- option: gff,protein,feature,CDS,genome,ALL\n";
 	exit();
 }
 
@@ -64,7 +64,6 @@ foreach my $keys (keys %strains) {
 		push (@files, $temp_CDS);
 		push (@files, $temp_geno);
 	}
-
 	
 	print "+ Downloading now:\n\n";
 	print "\n\n+ Download file(s) for: $name\n\n";
@@ -76,7 +75,7 @@ foreach my $keys (keys %strains) {
 		# Gunzip file
 		my @array_tmp2 = split("/", $files[$f]);
 		my $file_downloaded = $array_tmp2[-1];
-		system("gunzip $file_downloaded");
+		system("gunzip -f $file_downloaded");
 	}
 	chdir "..";
 }

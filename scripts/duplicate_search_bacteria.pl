@@ -2,6 +2,7 @@
 use strict;
 use warnings;
 use Getopt::Long;
+
 ##############################################################################
 ##	Jose Fco. Sanchez Herrero, 25/09/2018 jfsanchezherrero@ub.edu			##
 ##############################################################################
@@ -30,7 +31,7 @@ if (!$sim) {$sim=85;}
 if (!$cpus) {$cpus=2;}
 
 # Lets start
-# 1. Generated folder for files
+# 1. Generate folder for files
 # 2. makeblastdb of proteins
 # 3. blastp proteins vs itself
 # 4. parse results
@@ -72,7 +73,7 @@ print "############################\n";
 print "Step 3: Makeblastdb\n";
 print "############################\n";
 my $db_name = $name."_DB";
-my $blastdb_command = $blast_path."/makeblastdb -in $clean_fasta -input_type fasta -dbtype nucl -out $db_name\n";
+my $blastdb_command = $blast_path."/makeblastdb -in $clean_fasta -input_type fasta -dbtype prot -out $db_name\n";
 print "System call: $blastdb_command\n";
 system($blastdb_command);
 
@@ -80,7 +81,7 @@ print "############################\n";
 print "Step 4: BLAST proteins\n";
 print "############################\n";
 my $output_name = $name."_BLAST.out";
-my $blastp_command = $blast_path."/blastn -query $clean_fasta -db $db_name -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name";
+my $blastp_command = $blast_path."/blastp -query $clean_fasta -db $db_name -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name";
 print "System call: $blastp_command\n";
 system($blastp_command);
 
