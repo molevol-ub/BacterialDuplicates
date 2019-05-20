@@ -66,7 +66,11 @@ perl BacterialDuplicates/scripts/duplicate_search_bacteria.pl
 ```
 
 ##### Mandatory parameters:
-fasta: proteins in fasta format E.g. *.protein.faa
+fasta: protein sequences in fasta format translated from CDS E.g. *.translated_cds.faa
+
+   ***NOTE: DO NOT use protein.faa.***
+   
+   ***Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.***
 
 name: name to add to identify files
 
