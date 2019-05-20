@@ -165,5 +165,20 @@ Edit the script for each strain desired and add the coordinate full path to the 
 ```
 bed_info <- read.table("coordinates.csv",sep=",",header=FALSE)
 ```
+##### Results explained.
+This image is an example plot generated for the example provided here (GCA_000027125.1_Ecoli042) [Click image to see details].
+
+![Example Plot Ecoli 042](example/example_Ecoli042.png "Example Plot Ecoli 042")
+
+Plot of the duplicated genes along the chromosome:
+- The "X" axis corresponds to the linear map of the chromosome. 
+- Numbers on the "Y" axis correspond to the different duplicated genes, which have been numbered by their order starting from the origin of the chromosomal map. 
+- Each group of spots connected by a horizontal dashed line corresponds to a single gene duplicated in different positions on the chromosome. 
+- Different spots indicate the map positions of the different copies of the gene. 
+- Point shapes represent the strand on which a protein is encoded: filled circle for (+) strand and circle for (−) strand.
+- Black closed and open circles correspond to transposases. 
+- Some groups are not shown because because they map to a plasmid (if present) (not shown in the figure).
+
+
 
 #### 3) Gene duplication between strains analysis
