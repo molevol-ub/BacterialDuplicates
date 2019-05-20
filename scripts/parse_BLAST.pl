@@ -174,7 +174,7 @@ foreach my $keys (sort keys %better_relations) {
 	if ($new_annot{$locus_tag}{"gene"}) { $string .= $new_annot{$locus_tag}{"gene"}.","; } else { $string .=",";}
 	
 	$string .= $new_annot{$locus_tag}{"prot_name"}.",".$new_annot{$locus_tag}{"annot"}.",".$new_annot{$locus_tag}{"start"}.",".$new_annot{$locus_tag}{"end"}.",".$new_annot{$locus_tag}{"strand"}.",".$new_annot{$locus_tag}{"origin"};
-					
+	
 	## save annotation for protein
 	$annotation{$keys} = $string;
 	#print $keys."\t".$string."\n";
