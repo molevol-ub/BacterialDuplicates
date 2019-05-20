@@ -15,7 +15,7 @@ Gene duplications in the E. coli genome: common themes among pathotypes. Manuel 
 
 In order to provide an example of the procedure we followed we have generated an example set in the example folder.
 
-1) Retrieve data
+#### 1) Retrieve data
 
 Data can be downloaded from NCBI or could be provided by the user. Necessary data is basically protein annotated genes, gff file and genome fasta file for each strain. 
 
@@ -78,8 +78,7 @@ total 17224
 
 ```
 
-
-2) Gene duplication among strains analysis
+#### 2) Gene duplication among strains analysis
 
 The script [duplicate_search_bacteria.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/duplicate_search_bacteria.pl) generates a blast database of the provide protein fasta and searches for putative duplicates.
 
@@ -167,4 +166,4 @@ Edit the script for each strain desired and add the coordinate full path to the 
 bed_info <- read.table("coordinates.csv",sep=",",header=FALSE)
 ```
 
-3) Gene duplication between strains analysis
+#### 3) Gene duplication between strains analysis
