@@ -17,7 +17,13 @@ In order to provide an example of the procedure we followed we have generated an
 
 #### 1) Retrieve data
 
-Data can be downloaded from NCBI or could be provided by the user. Necessary data is basically protein annotated genes, gff file and genome fasta file for each strain. 
+Data can be downloaded from NCBI or could be provided by the user. Necessary data is basically translated cds protein for each strain. 
+
+```
+ATTENTION: DO NOT use file *protein.faa
+   
+Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.
+```
 
 If strains are deposited on GenBank, data can be downloaded using a script we provide here: [NCBI_downloader.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/NCBI_downloader.pl).
 
@@ -77,6 +83,17 @@ total 17224
 -rw-r--r-- 1 jsanchez 2281872 Dec 13  2017 GCF_000482265.1_EC_K12_MG1655_Broad_SNP_translated_cds.faa
 
 ```
+
+We will retrieve all information for each strain but we basically rely on the header information supplied by translated_cds.faa file
+
+```
+>lcl|FN554766.1_prot_CBG32835.1_1 [gene=thrA] [locus_tag=EC042_0001] [db_xref=GOA:D3H385,InterPro:IPR001048,InterPro:IPR001341,InterPro:IPR001342,InterPro:IPR002912,InterPro:IPR005106,InterPro:IPR011147,InterPro:IPR016040,InterPro:IPR018042,InterPro:IPR019811,InterPro:IPR027795,UniProtKB/TrEMBL:D3H385] [protein=bifunctional aspartokinase I/homoserine dehydrogenase I] [protein_id=CBG32835.1] [location=336..2798] [gbkey=CDS]
+MRVLKFGGTSVANAERFLRVADILESNARQGQVATVLSAPAKITNHLVAMIEKTISGQDALPNISDAERIFAELLTGLAA
+....
+```
+
+NOTE: It is possible to generate the same results from a gff file, but it is not implemented neither intended right now.
+Please contact us for further explanation or clarification or to show interest as we might by thinking of implementing this feature. 
 
 #### 2) Gene duplication among strains analysis
 
