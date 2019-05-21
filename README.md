@@ -288,10 +288,10 @@ total 5924
 -rw-r--r-- 1 jsanchez 1353706 May 21 11:45 Ecoli_K12_DB.psq
 -rw-r--r-- 1 jsanchez  109284 May 21 11:45 Ecoli_K12_DB_BLAST.out
 -rw-r--r-- 1 jsanchez    4878 May 21 11:45 Ecoli_K12_DB_BLAST.out_parsed.txt
--rw-r--r-- 1 jsanchez   11195 May 21 11:45 relations_proteins.csv
+-rw-r--r-- 1 jsanchez   11195 May 21 11:45 relations_proteins.tsv
 -rw-r--r-- 1 jsanchez    3213 May 21 11:45 table.csv
 ```
 - Files that end with suffixs *_DB.phr, *_DB.pin and *_DB.psq correspond to the NCBI BLAST database generated.
 - Files that endswith *BLAST.out correspond to the original BLAST result (tabular format) and *BLAST_parsed.txt the information filtered according to user input similarity and length thresholds.
-- table.csv and relations_proteins.csv are the results generated in a comma separated values format.
+- table.csv and relations_proteins.tsv are the results generated in a comma/tabular separated values format.
 - Examples of this files could be seen in the example folder under this [repository](example/) and they basically summarize the relations among proteins between different strains and the protein ids (relations.csv) or just the raw count for each group (table.csv). 
