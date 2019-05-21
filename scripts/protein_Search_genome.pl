@@ -133,7 +133,7 @@ sub print_help {
 	print "\tHELP Message:\n";
 	print "############################\n";
 	print "\nThis script generates a blast database for each strain provided and search the given proteins.\n";
-	print "Usage:\nperl $0 -proteins proteins.fasta -name example -BLAST_path /path/to/BLAST/bin/\n-strain /mydirectory/DATA/ecoli/strain_BL21_proteins.faa,BL21 -strain /mydirectory/DATA/ecoli/strain_042_proteins.faa,Ecoli042 [-n CPUs -sim 85 -len 85]\n\n";
+	print "Usage:\nperl $0 -proteins proteins.fasta -name example -BLAST_path /path/to/BLAST/bin/\n-strain /mydirectory/DATA/ecoli/strain_BL21_proteins.faa,BL21 -strain /mydirectory/DATA/ecoli/strain_042_proteins.faa,Ecoli042 [-CPU nCPUs -sim 85 -len 85]\n\n";
 
 	print "\nMandatory parameters:\n";
 	print "############################\n";
@@ -145,7 +145,7 @@ sub print_help {
 	
 	print "Default parameters [in brakets]:\n";
 	print "############################\n";
-	print "CPUs: 2\n";
+	print "CPU: 2\n";
 	print "sim: 85 (BLAST similarity threshold)\n";
 	print "len: 85 (BLAST similarity threshold)\n\n";
 	
