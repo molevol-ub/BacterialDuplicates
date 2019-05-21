@@ -214,9 +214,7 @@ name: name to add to identify files
 
 BLAST_path: binary path containing blastp and makeblastdb. E.g. /usr/bin/, /software/ncbi-blast/bin, etc.
 
-strain: Protein fasta file and id for each strain of interest to compare. Several strains can be provided. 
-
-	Provide a comma separated value with path to protein file and id for the strain.
+strain: Protein fasta file and id for each strain of interest to compare. Several strains can be provided. Provide a comma separated value with path to protein file and id for the strain.
 
 	Example: -strain /mydirectory/DATA/ecoli/strain_BL21_translated_cds.faa,BL21 -strain /mydirectory/DATA/ecoli/strain_042_translated_cds.faa,Ecoli042
 
@@ -241,7 +239,7 @@ We initially identified (in step 2) putative duplicated proteins in our strains 
 
 1. You can manually copy and paste sequences into a new file
 
-2. You can employ a script to automatically perform this task. To do so, we will employ the script add it here named:(get-seq_ids.pl)[] 
+2. You can employ a script to automatically perform this task. To do so, we will employ the script add it here named: [get-seq_ids.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/get-seq_ids.pl)
 
 ```
 Usage:
@@ -293,5 +291,7 @@ total 5924
 -rw-r--r-- 1 jsanchez   11195 May 21 11:45 relations_proteins.csv
 -rw-r--r-- 1 jsanchez    3213 May 21 11:45 table.csv
 ```
-
-
+- Files that end with suffixs *_DB.phr, *_DB.pin and *_DB.psq correspond to the NCBI BLAST database generated.
+- Files that endswith *BLAST.out correspond to the original BLAST result (tabular format) and *BLAST_parsed.txt the information filtered according to user input similarity and length thresholds.
+- table.csv and relations_proteins.csv are the results generated in a comma separated values format.
+- Examples of this files could be seen in the example folder under this [repository](example/) and they basically summarize the relations among proteins between different strains and the protein ids (relations.csv) or just the raw count for each group (table.csv). 
