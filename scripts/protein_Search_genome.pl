@@ -50,7 +50,7 @@ mkdir $name, 0755;
 chdir $name;
 
 my %proteins;
-my $relations = "relations_proteins.csv";
+my $relations = "relations_proteins.tsv";
 open (REL,">$relations");
 print REL "#taxa\tQuery_Protein\tSubject_Proteins\n";
 for (my $i=0; $i < scalar @strain; $i++) {	
