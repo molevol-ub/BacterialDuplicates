@@ -21,67 +21,6 @@ if (!$aln) {$aln=80;}
 #if (!$evalue) {$evalue=1e-05;}
 
 my $annot_feature_file = &get_feature($protein_file);
-my %new_annot;
-my %locus;
-foreach my $keys (keys $annot_feature_file) {
-	my $locus_tag;+
-	my @array = split("\t",$$annot_feature_file{$keys});
-	for (my $i=0; $i < scalar @array; $i++) {
-		my $id = $array[$i];
-		if ($id =~ /locus_tag=(.*)\]/) {
-			$locus_tag = $1;
-			$new_annot{$locus_tag}{"id"} = $keys;
-			$locus{$keys} = $locus_tag;
-			if ($locus_tag =~ /.*pAA.*/) {
-				$new_annot{$locus_tag}{"origin"} = "plasmid";
-			} else { $new_annot{$locus_tag}{"origin"} = "chrm";}
-	}}
-	
-	for (my $i=0; $i < scalar @array; $i++) {
-		my $id = $array[$i];
-		if ($id =~ /db_xref=(.*)\]/) {
-			my $temp = $1;
-			$temp =~ s/,/;/g;
-			$new_annot{$locus_tag}{"annot"} = $temp;
-
-		} elsif ($id =~ /protein=(.*)\]/) {
-			my $temp = $1;
-			$temp =~ s/,/;/g;
-			$new_annot{$locus_tag}{"prot_name"} = $temp;
-
-		} elsif ($id =~ /protein_id=(.*)\]/) {
-			$new_annot{$locus_tag}{"prot_id"} = $1;
-
-		} elsif ($id =~ /gene=(.*)\]/) {
-			$new_annot{$locus_tag}{"gene"} = $1;
-
-		} elsif ($id =~ /location=(.*)\]/) {		
-			my $locat = $1;
-			my $location;			
-			if ($locat=~ /join\((.*)\)/) {
-				$location = $1;
-				if ($locat=~ /complement\((.*)\)/) {
-					$new_annot{$locus_tag}{"strand"} = "-";
-				} else {
-					$new_annot{$locus_tag}{"strand"} = "+";
-				}
-			} else {
-				if ($locat=~ /complement\((.*)\)/) {
-					$location = $1;
-					$new_annot{$locus_tag}{"strand"} = "-";
-				} else {
-					$location = $locat;
-					$new_annot{$locus_tag}{"strand"} = "+";
-				}
-			}
-			$location =~ s/\../,/g;
-			my @position = split(",",$location);
-			$new_annot{$locus_tag}{"start"} = $position[0];
-			$new_annot{$locus_tag}{"end"} = $position[-1];
-		
-		}
-	}
-}
 
 my %relations;
 my $blast_file_parsed = $output_name.".BLAST_parsed.txt\n";
@@ -275,12 +214,80 @@ sub get_feature {
     	$hash{$ident} = join("\t",@split);
 	}
 	close(FILE); $/ = "\n";
-	my $hashRef = \%hash;
+
+	my %new_annot;
+	my %locus;
+	foreach my $keys (keys %hash) {
+		my $locus_tag;+
+		my @array = split("\t",$hash{$keys});
+		for (my $i=0; $i < scalar @array; $i++) {
+			my $id = $array[$i];
+			if ($id =~ /locus_tag=(.*)\]/) {
+				$locus_tag = $1;
+				$new_annot{$locus_tag}{"id"} = $keys;
+				$locus{$keys} = $locus_tag;
+				
+				my @sequence_id = split("_prot_", $array[0]);
+				my @seq_id = split("lcl\\|", $sequence_id[0]);
+				$new_annot{$locus_tag}{"origin"} = $seq_id[1];
+		}}
+
+		for (my $i=0; $i < scalar @array; $i++) {
+			my $id = $array[$i];
+			if ($id =~ /db_xref=(.*)\]/) {
+				my $temp = $1;
+				$temp =~ s/,/;/g;
+				$new_annot{$locus_tag}{"annot"} = $temp;
+
+			} elsif ($id =~ /protein=(.*)\]/) {
+				my $temp = $1;
+				$temp =~ s/,/;/g;
+				$new_annot{$locus_tag}{"prot_name"} = $temp;
+
+			} elsif ($id =~ /protein_id=(.*)\]/) {
+				$new_annot{$locus_tag}{"prot_id"} = $1;
+
+			} elsif ($id =~ /gene=(.*)\]/) {
+				$new_annot{$locus_tag}{"gene"} = $1;
+
+			} elsif ($id =~ /location=(.*)\]/) {		
+				my $locat = $1;
+				my $location;			
+				if ($locat=~ /join\((.*)\)/) {
+					$location = $1;
+					if ($locat=~ /complement\((.*)\)/) {
+						$new_annot{$locus_tag}{"strand"} = "-";
+					} else {
+						$new_annot{$locus_tag}{"strand"} = "+";
+					}
+				} else {
+					if ($locat=~ /complement\((.*)\)/) {
+						$location = $1;
+						$new_annot{$locus_tag}{"strand"} = "-";
+					} else {
+						$location = $locat;
+						$new_annot{$locus_tag}{"strand"} = "+";
+					}
+				}
+				$location =~ s/\../,/g;
+				my @position = split(",",$location);
+				$new_annot{$locus_tag}{"start"} = $position[0];
+				$new_annot{$locus_tag}{"end"} = $position[-1];
+
+			}
+		}
+	}
+
+	my $hashRef = \%new_annot;
 	return $hashRef;
 }
 
-__END__
 sub get_feature_TABLE {
+	## get information from table, gff/gtf file
+}
+
+__END__
+
 	my $id = $_[0];
 	my $output = $output_name.".results.tmp";
 
