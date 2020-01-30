@@ -189,6 +189,7 @@ my $coordinates = $output_name.".coordinates.csv"; 	open (OUT, ">$coordinates");
 print CSV "Group,ID-1,Locus_Tag,Protein1,symbol,name Prot1,Annotation,start,end,strand,Origin,pseudo,ID-2,Locus_tag,Protein2,symbol,name Prot2,Annotation,start,end,strand,Origin,pseudo\n";
 my %done; my $set=1;
 #print Dumper \%group;
+my @all_seqs;
 for (my $i=0; $i < scalar @sort_array; $i++) {
 	my $ident = $position{ $sort_array[$i] };
 	if ($done{ $ids{$ident} } ) { next; } else {	
@@ -200,13 +201,14 @@ for (my $i=0; $i < scalar @sort_array; $i++) {
 			# $array[5]: END
 			# $array[6]: STRAND
 			# $array[7]: LOCATION
-		
+		push (@all_seqs, $ident);
 		my @group = @{ $group{$ids{$ident} } };
 		$done{$ids{$ident}}++;
 		
 		for (my $j=0; $j < scalar @group; $j++) {
 			my $id = $group[$j];		
 			if ($id eq $ident) {next;} else {
+		                push (@all_seqs, $id);
 				#CSV
 				print CSV $set.",,,,,,,,,,,".$id.",".$annotation{$id}."\n";
 				# OUT	
@@ -218,6 +220,15 @@ for (my $i=0; $i < scalar @sort_array; $i++) {
 
 ## remove temp file
 system("rm *tmp*");
+
+my $allseqs = $output_name.".allseqs_duplicated.ids.txt";
+open (ALL, ">$allseqs");
+for(my $i=0; $i<scalar @all_seqs; $i++){
+	print ALL $all_seqs[$i]."\n";
+}
+close(ALL);
+
+
 
 sub get_feature {
 
