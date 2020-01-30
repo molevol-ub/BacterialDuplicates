@@ -20,7 +20,7 @@ if (!$similarity) {$similarity=80;}
 if (!$aln) {$aln=80;}
 #if (!$evalue) {$evalue=1e-05;}
 
-my $annot_feature_file = &get_feature($protein_file);
+#my $annot_feature_file = &get_feature($protein_file);
 
 my %relations;
 my $blast_file_parsed = $output_name.".BLAST_parsed.txt\n";
@@ -60,6 +60,8 @@ while (<BLAST>) {
 }}}}
 close (BLAST); close (OUT);
 
+##print Dumper \%relations;
+
 my $file2grep = "tmp.txt";
 open (F, ">$file2grep");
 foreach my $keys (keys %relations) {
@@ -71,6 +73,7 @@ close (F);
 my @array = keys %relations;
 my %better_relations;
 for (my $i=0; $i < scalar @array; $i++) {
+	##print "Searching $array[$i]\n";
 	system("grep $array[$i] $file2grep > tmp2.txt");
 	my @sub_subkeys = keys %{ $relations{$array[$i]} };
 	
@@ -99,7 +102,26 @@ for (my $i=0; $i < scalar @array; $i++) {
 #print "######### Initial ###########\n";
 #print Dumper \%relations;
 #print "######### Final ###########\n";
-#print Dumper \%better_relations;
+print Dumper \%better_relations;
+#exit();
+
+## get feature annotations
+my ($annot_feature, $locus_tag_hash) = &get_feature($protein_file);
+
+## possible: add get_feature_table for gtf/gff format files
+my %new_annot = %{$annot_feature};
+my %locus = %{$locus_tag_hash};
+
+#print Dumper %new_annot;
+#print Dumper %locus;
+my $annotation_results = $output_name.".annotation_results.csv";          
+open (ANNOT, ">$annotation_results");
+print ANNOT "locus_tag,origin,strand,start,end,gene,pseudo,prot_id,prot_name,annot\n";
+foreach my $keys (keys %new_annot) {
+	print ANNOT $keys.",".$new_annot{$keys}{"origin"}.",".$new_annot{$keys}{"strand"}.",".$new_annot{$keys}{"start"}.",".$new_annot{$keys}{"end"}.",".$new_annot{$keys}{"gene"}.",". $new_annot{$keys}{"pseudo"}.",".$new_annot{$keys}{"prot_id"}.",\"".$new_annot{$keys}{"prot_name"}."\",\"".$new_annot{$keys}{"annot"}."\"\n";
+	#print $keys.",".$new_annot{$keys}{""}.",".
+}
+close(ANNOT);
 
 my $group=0; my (%annotation, %position, %group, %ids); my $count=0;
 foreach my $keys (sort keys %better_relations) {
@@ -107,12 +129,12 @@ foreach my $keys (sort keys %better_relations) {
 	my $locus_tag = $locus{$keys};
 	$count++;
 	
-	#Protein1,symbol,name Prot1,Annotation,start,end,strand,Origin
+	#Protein1,symbol,name Prot1,Annotation,start,end,strand,Origin,pseudo
 	my $string = $locus_tag.",".$new_annot{$locus_tag}{"prot_id"}.",";
 	
 	if ($new_annot{$locus_tag}{"gene"}) { $string .= $new_annot{$locus_tag}{"gene"}.","; } else { $string .=",";}
 	
-	$string .= $new_annot{$locus_tag}{"prot_name"}.",".$new_annot{$locus_tag}{"annot"}.",".$new_annot{$locus_tag}{"start"}.",".$new_annot{$locus_tag}{"end"}.",".$new_annot{$locus_tag}{"strand"}.",".$new_annot{$locus_tag}{"origin"};
+	$string .= $new_annot{$locus_tag}{"prot_name"}.",".$new_annot{$locus_tag}{"annot"}.",".$new_annot{$locus_tag}{"start"}.",".$new_annot{$locus_tag}{"end"}.",".$new_annot{$locus_tag}{"strand"}.",".$new_annot{$locus_tag}{"origin"}.",".$new_annot{$locus_tag}{"pseudo"};
 	
 	## save annotation for protein
 	$annotation{$keys} = $string;
@@ -133,12 +155,12 @@ foreach my $keys (sort keys %better_relations) {
 	foreach my $subkeys (keys %{ $better_relations{$keys} } ) {
 		my $locus_sub_tag = $locus{$subkeys};
 		
-		#Protein1,symbol,name Prot1,Annotation,start,end,strand,Origin
+		#Protein1,symbol,name Prot1,Annotation,start,end,strand,Origin,pseudo
 		my $string_sub = $locus_sub_tag.",".$new_annot{$locus_sub_tag}{"prot_id"}.",";
 
 		if ($new_annot{$locus_sub_tag}{"gene"}) { $string_sub .= $new_annot{$locus_sub_tag}{"gene"}.","; } else { $string_sub .= ",";}
 		
-		$string_sub .= $new_annot{$locus_sub_tag}{"prot_name"}.",".$new_annot{$locus_sub_tag}{"annot"}.",".$new_annot{$locus_sub_tag}{"start"}.",".$new_annot{$locus_sub_tag}{"end"}.",".$new_annot{$locus_sub_tag}{"strand"}.",".$new_annot{$locus_sub_tag}{"origin"}.",";
+		$string_sub .= $new_annot{$locus_sub_tag}{"prot_name"}.",".$new_annot{$locus_sub_tag}{"annot"}.",".$new_annot{$locus_sub_tag}{"start"}.",".$new_annot{$locus_sub_tag}{"end"}.",".$new_annot{$locus_sub_tag}{"strand"}.",".$new_annot{$locus_sub_tag}{"origin"}.",".$new_annot{$locus_sub_tag}{"pseudo"};
 						
 		## save annotation for protein
 		$annotation{$subkeys} = $string_sub;
@@ -164,7 +186,7 @@ my @sort_array = sort {$a <=> $b} keys %position;
 
 my $csv_results = $output_name.".results.csv"; 		open (CSV, ">$csv_results");
 my $coordinates = $output_name.".coordinates.csv"; 	open (OUT, ">$coordinates");
-print CSV "Group,ID-1,Locus_Tag,Protein1,symbol,name Prot1,Annotation,start,end,strand,Origin,ID-2,Locus_tag,Protein2,symbol,name Prot2,Annotation,start,end,strand,Origin\n";
+print CSV "Group,ID-1,Locus_Tag,Protein1,symbol,name Prot1,Annotation,start,end,strand,Origin,pseudo,ID-2,Locus_tag,Protein2,symbol,name Prot2,Annotation,start,end,strand,Origin,pseudo\n";
 my %done; my $set=1;
 #print Dumper \%group;
 for (my $i=0; $i < scalar @sort_array; $i++) {
@@ -218,7 +240,7 @@ sub get_feature {
 	my %new_annot;
 	my %locus;
 	foreach my $keys (keys %hash) {
-		my $locus_tag;+
+		my $locus_tag;
 		my @array = split("\t",$hash{$keys});
 		for (my $i=0; $i < scalar @array; $i++) {
 			my $id = $array[$i];
@@ -226,11 +248,24 @@ sub get_feature {
 				$locus_tag = $1;
 				$new_annot{$locus_tag}{"id"} = $keys;
 				$locus{$keys} = $locus_tag;
-				
-				my @sequence_id = split("_prot_", $array[0]);
-				my @seq_id = split("lcl\\|", $sequence_id[0]);
-				$new_annot{$locus_tag}{"origin"} = $seq_id[1];
+
 		}}
+		
+		## init all
+		$new_annot{$locus_tag}{"pseudo"} = "false";
+		$new_annot{$locus_tag}{"origin"} = "n.a";
+		$new_annot{$locus_tag}{"start"} = "n.a";
+		$new_annot{$locus_tag}{"end"} = "n.a";
+		$new_annot{$locus_tag}{"strand"} = "n.a";
+		$new_annot{$locus_tag}{"annot"} = "n.a";
+		$new_annot{$locus_tag}{"prot_name"} = "n.a";
+		$new_annot{$locus_tag}{"prot_id"} = "n.a";
+		$new_annot{$locus_tag}{"gene"} = "n.a";	
+		
+		## set origin
+		my @sequence_id = split("_prot_", $array[0]);
+		my @seq_id = split("lcl\\_", $sequence_id[0]);
+		$new_annot{$locus_tag}{"origin"} = $seq_id[1];
 
 		for (my $i=0; $i < scalar @array; $i++) {
 			my $id = $array[$i];
@@ -244,6 +279,13 @@ sub get_feature {
 				$temp =~ s/,/;/g;
 				$new_annot{$locus_tag}{"prot_name"} = $temp;
 
+			} elsif ($id =~ /pseudo=(.*)\]/) {
+                                my $temp = $1;
+				if ($temp eq "true") {
+	                                $new_annot{$locus_tag}{"pseudo"} = "true";                                 
+				}
+			#$new_annot{$locus_tag}{"pseudo"} = "false";
+                              
 			} elsif ($id =~ /protein_id=(.*)\]/) {
 				$new_annot{$locus_tag}{"prot_id"} = $1;
 
@@ -279,7 +321,8 @@ sub get_feature {
 	}
 
 	my $hashRef = \%new_annot;
-	return $hashRef;
+	my $hash_locus = \%locus;
+	return ($hashRef, $hash_locus);
 }
 
 sub get_feature_TABLE {

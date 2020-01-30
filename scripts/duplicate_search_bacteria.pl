@@ -44,13 +44,17 @@ mkdir $name, 0755;
 chdir $name;
 
 print "############################\n";
-print "Step 2: Discard pseudogenes\n";
+print "Step 2: Clean sequences\n";
 print "############################\n";
 
 my $fasta1 = $fasta."_tmp1";
 my $fasta2 = $fasta."_tmp";
+my $fasta3 = $fasta."_tmp_1";
 system("sed 's/.>/./g' $fasta > $fasta1");
-system("sed 's/=</=/g' $fasta1 > $fasta2");
+system("sed 's/<././g' $fasta1 > $fasta3");
+system("sed 's/=</=/g' $fasta3 > $fasta2");
+
+
 open(FILE, $fasta2) || die "Could not open the file $fasta\n";
 my $clean_fasta = $fasta."_clean.fasta";
 open (CLEAN, ">$clean_fasta");
@@ -61,7 +65,7 @@ while (<FILE>) {
    	my ($titleline, $sequence) = split(/\n/,$_,2);
    	next unless ($sequence && $titleline);
    	chop $sequence;
-	if ($titleline =~ /.*pseudo=true.*/) { next; }
+	#if ($titleline =~ /.*pseudo=true.*/) { next; }
 	$titleline =~ s/\-/\_/g;
 	$titleline =~ s/\|/\_/g;
 	print CLEAN ">".$titleline."\n".$sequence."\n";
