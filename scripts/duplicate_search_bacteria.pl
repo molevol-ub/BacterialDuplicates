@@ -112,7 +112,7 @@ print "Step 5: Parse results\n";
 print "############################\n";
 my $out_duplicates = $name."_duplicates.fasta";
 my $ids_duplicated = $out_parsed.".allseqs_duplicated.ids.txt";
-my $parse_command_duplicates= "perl ".$get_ids_script." $ids_duplicated $clean_fasta > $out_duplicates";
+my $parse_command_duplicates= "perl ".$get_ids_script." $ids_duplicated $clean_fasta $out_duplicates";
 print "System call: $parse_command_duplicates\n";
 system($parse_command_duplicates);
 

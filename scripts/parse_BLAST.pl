@@ -99,11 +99,11 @@ for (my $i=0; $i < scalar @array; $i++) {
 	close(IN);
 }
 
-#print "######### Initial ###########\n";
-#print Dumper \%relations;
-#print "######### Final ###########\n";
+print "######### Initial ###########\n";
+print Dumper \%relations;
+print "######### Final ###########\n";
 print Dumper \%better_relations;
-#exit();
+exit();
 
 ## get feature annotations
 my ($annot_feature, $locus_tag_hash) = &get_feature($protein_file);
