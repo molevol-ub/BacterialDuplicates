@@ -19,8 +19,8 @@ GetOptions(
 	"CPU=i" => \$cpus,
 	"h|help" => \$help,
 	"BLAST_path=s" => \$blast_path,
-	"CARD_db"=s => $CARD_blast_db,
-	"vfdb_db"=s => $vfdb_blast_db	
+	"CARD_db=s" => \$CARD_blast_db,
+	"vfdb_db=s" => \$vfdb_blast_db	
 );
 
 my $script_paths = abs_path($0);
@@ -120,17 +120,17 @@ print "############################\n";
 print "Step 6: BLAST proteins vs. CARD\n";
 print "############################\n";
 my $output_name_CARD = $name."_CARD_BLAST.out";
-my $blastp_command = $blast_path."/blastp -query $out_duplicates -db $CARD_blast_db -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name_CARD";
-print "System call: $blastp_command\n";
-system($blastp_command);
+my $blastp_command_card = $blast_path."/blastp -query $out_duplicates -db $CARD_blast_db -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name_CARD";
+print "System call: $blastp_command_card\n";
+system($blastp_command_card);
 
 print "############################\n";
 print "Step 7: BLAST proteins vs. VFDB\n";
 print "############################\n";
 my $output_name_VFDB = $name."_VFDB_BLAST.out";
-my $blastp_command = $blast_path."/blastp -query $out_duplicates -db $VFDB_blast_db -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name_VFDB";
-print "System call: $blastp_command\n";
-system($blastp_command);
+my $blastp_command_vfdb = $blast_path."/blastp -query $out_duplicates -db $vfdb_blast_db -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name_VFDB";
+print "System call: $blastp_command_vfdb\n";
+system($blastp_command_vfdb);
 
 print "############################\n";
 print "Step 8: Generate Plot\n";
