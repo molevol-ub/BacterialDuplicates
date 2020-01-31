@@ -146,7 +146,7 @@ sub print_help {
 		-BLAST_path /path/to/BLAST/bin 
 		-CARD_db /path/to/CARD_databases/blast_id_name
 		-vfdb_db /path/to/VFDB_databases/blast_id_name
-		[-n CPUs -sim 85 -len 85]\n\n";
+		[-CPU nCPU -sim 85 -len 85]\n\n";
 
 	print "\nMandatory parameters:\n";
 	print "############################\n";
@@ -158,7 +158,7 @@ sub print_help {
 	
 	print "Default parameters [in brakets]:\n";
 	print "############################\n";
-	print "CPUs: 2\n";
+	print "CPU: 2\n";
 	print "sim: 85 (BLAST similarity threshold)\n";
 	print "len: 85 (BLAST similarity threshold)\n\n";
 	
