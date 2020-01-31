@@ -2,12 +2,14 @@
 use strict;
 use warnings;
 use Getopt::Long;
+use Cwd 'abs_path';
 
 ##############################################################################
-##	Jose Fco. Sanchez Herrero, 25/09/2018 jfsanchezherrero@ub.edu			##
+##	Jose Fco. Sanchez Herrero, 25/09/2018 jfsanchezherrero@ub.edu	    ##
+##	Updated: January, 2020						    ##
 ##############################################################################
 
-my ($fasta, $cpus, $sim, $len, $help, $blast_path, $name, $script_path);
+my ($fasta, $cpus, $sim, $len, $help, $blast_path, $name, $CARD_blast_db, $vfdb_blast_db);
 
 GetOptions(
 	"fasta=s" => \$fasta,
@@ -16,26 +18,35 @@ GetOptions(
 	"name=s" => \$name,
 	"CPU=i" => \$cpus,
 	"h|help" => \$help,
-	"script_path=s" => \$script_path,
-	"BLAST_path=s" => \$blast_path
+	"BLAST_path=s" => \$blast_path,
+	"CARD_db"=s => $CARD_blast_db,
+	"vfdb_db"=s => $vfdb_blast_db	
 );
+
+my $script_paths = abs_path($0);
+my $parse_blast_script = $script_paths."/parse_BLAST.pl";
+my $get_ids_script = $script_paths."/get-seq_ids.pl";
 
 ## Controlling options are provided
 if (!$fasta) { &print_help; exit(); }
 if (!$blast_path) { &print_help; exit(); }
 if (!$name) { &print_help; exit(); }
-if (!$script_path) { &print_help; exit(); }
+if (!$CARD_blast_db) { &print_help; exit(); }
+if (!$vfdb_blast_db) { &print_help; exit(); }
 
 if (!$len) {$len=85;}
 if (!$sim) {$sim=85;}
 if (!$cpus) {$cpus=2;}
 
 # Lets start
+# 0. Clean fasta files and discard putative characters
 # 1. Generate folder for files
 # 2. makeblastdb of proteins
 # 3. blastp proteins vs itself
 # 4. parse results
-# 5. generate plot
+# 5. blastp vs. card
+# 6. blastp vs. vfdb
+# 7. generate plot
 
 print "############################\n";
 print "Step 1: Make folder\n";
@@ -53,7 +64,6 @@ my $fasta3 = $fasta."_tmp_1";
 system("sed 's/.>/./g' $fasta > $fasta1");
 system("sed 's/<././g' $fasta1 > $fasta3");
 system("sed 's/=</=/g' $fasta3 > $fasta2");
-
 
 open(FILE, $fasta2) || die "Could not open the file $fasta\n";
 my $clean_fasta = $fasta."_clean.fasta";
@@ -93,12 +103,37 @@ print "############################\n";
 print "Step 5: Parse results\n";
 print "############################\n";
 my $out_parsed = $name."_parsed.txt";
-my $parse_command = "perl ".$script_path." $output_name	$clean_fasta $out_parsed $sim $len";
+my $parse_command = "perl ".$parse_blast_script." $output_name	$clean_fasta $out_parsed $sim $len";
 print "System call: $parse_command\n";
 system($parse_command);
 
 print "############################\n";
-print "Step 6: Generate Plot\n";
+print "Step 5: Parse results\n";
+print "############################\n";
+my $out_duplicates = $name."_duplicates.fasta";
+my $ids_duplicated = $out_parsed.".allseqs_duplicated.ids.txt";
+my $parse_command_duplicates= "perl ".$get_ids_script." $ids_duplicated $clean_fasta > $out_duplicates";
+print "System call: $parse_command_duplicates\n";
+system($parse_command_duplicates);
+
+print "############################\n";
+print "Step 6: BLAST proteins vs. CARD\n";
+print "############################\n";
+my $output_name_CARD = $name."_CARD_BLAST.out";
+my $blastp_command = $blast_path."/blastp -query $out_duplicates -db $CARD_blast_db -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name_CARD";
+print "System call: $blastp_command\n";
+system($blastp_command);
+
+print "############################\n";
+print "Step 7: BLAST proteins vs. VFDB\n";
+print "############################\n";
+my $output_name_VFDB = $name."_VFDB_BLAST.out";
+my $blastp_command = $blast_path."/blastp -query $out_duplicates -db $VFDB_blast_db -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name_VFDB";
+print "System call: $blastp_command\n";
+system($blastp_command);
+
+print "############################\n";
+print "Step 8: Generate Plot\n";
 print "############################\n";
 print "Open RStudio and run script with the output coordinates generated\n";
 
@@ -107,14 +142,20 @@ sub print_help {
 	print "\tHELP Message:\n";
 	print "############################\n";
 	print "\nThis script generates a blast database of the provide protein fasta and searches for putative duplicates.\n";
-	print "Usage:\nperl $0 -fasta proteins.fasta -script_path /path/to/script/parse_BLAST.pl -name example -BLAST_path /path/to/BLAST/bin [-n CPUs -sim 85 -len 85]\n\n";
+	print "Usage:\nperl $0 -fasta proteins.fasta -name example 
+		-BLAST_path /path/to/BLAST/bin 
+		-CARD_db /path/to/CARD_databases/blast_id_name
+		-vfdb_db /path/to/VFDB_databases/blast_id_name
+		[-n CPUs -sim 85 -len 85]\n\n";
 
 	print "\nMandatory parameters:\n";
 	print "############################\n";
 	print "fasta: proteins in fasta format\n";
 	print "name: name to add to identify files\n";
 	print "BLAST_path: binary path contain blastp and makeblastdb\n\n\n";
-	print "script_path: path for parse_BLAST.pl\n";
+	print "CARD_db: path for CARD protein databases indexed by makeblast db\n";
+	print "vfdb_db: path for VFDB protein databases indexed by makeblast db\n";
+	
 	print "Default parameters [in brakets]:\n";
 	print "############################\n";
 	print "CPUs: 2\n";
