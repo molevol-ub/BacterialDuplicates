@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use Getopt::Long;
 use Cwd 'abs_path';
+use FindBin '$Bin';
 
 ##############################################################################
 ##	Jose Fco. Sanchez Herrero, 25/09/2018 jfsanchezherrero@ub.edu	    ##
@@ -23,7 +24,7 @@ GetOptions(
 	"vfdb_db=s" => \$vfdb_blast_db	
 );
 
-my $script_paths = abs_path($0);
+my $script_paths = $Bin;
 my $parse_blast_script = $script_paths."/parse_BLAST.pl";
 my $get_ids_script = $script_paths."/get-seq_ids.pl";
 
@@ -111,7 +112,7 @@ print "############################\n";
 print "Step 5: Parse results\n";
 print "############################\n";
 my $out_duplicates = $name."_duplicates.fasta";
-my $ids_duplicated = $out_parsed.".allseqs_duplicated.ids.txt";
+my $ids_duplicated = abs_path()."/".$out_parsed.".allseqs_duplicated.ids.txt";
 my $parse_command_duplicates= "perl ".$get_ids_script." $ids_duplicated $clean_fasta $out_duplicates";
 print "System call: $parse_command_duplicates\n";
 system($parse_command_duplicates);
