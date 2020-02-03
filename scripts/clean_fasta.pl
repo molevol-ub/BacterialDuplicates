@@ -17,8 +17,6 @@ system("sed 's/<././g' $fasta1 > $fasta3");
 system("sed 's/=</=/g' $fasta3 > $fasta2");
 
 open(FILE, $fasta2) || die "Could not open the file $fasta\n";
-my $clean_fasta = $fasta."_clean.fasta";
-open (CLEAN, ">$clean_fasta");
 $/ = ">"; ## Telling perl where a new line starts
 while (<FILE>) {		
 	next if /^#/ || /^\s*$/;
@@ -29,10 +27,9 @@ while (<FILE>) {
 	#if ($titleline =~ /.*pseudo=true.*/) { next; }
 	$titleline =~ s/\-/\_/g;
 	$titleline =~ s/\|/\_/g;
-	print CLEAN ">".$titleline."\n".$sequence."\n";
+	print ">".$titleline."\n".$sequence."\n";
 }
 close(FILE); $/ = "\n";
-close(CLEAN);
 
 ## remove temp file
 system("rm *_tmp*");

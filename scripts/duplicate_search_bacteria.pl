@@ -62,10 +62,10 @@ print "############################\n";
 print "Step 2: Clean sequences\n";
 print "############################\n";
 my $clean_fasta_script = $script_paths."/clean_fasta.pl";
-my $clean_command = "perl ".$clean_fasta_script." $fasta";
+my $clean_fasta = $name."_clean.fasta";
+my $clean_command = "perl ".$clean_fasta_script." $fasta > $clean_fasta";
 print "System call: $clean_command\n";
 system($clean_command);
-my $clean_fasta = $name."_clean.fasta";
 
 print "############################\n";
 print "Step 3: Makeblastdb\n";
