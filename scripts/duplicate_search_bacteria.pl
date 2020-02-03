@@ -27,7 +27,6 @@ GetOptions(
 ## get path for scripts
 my $script_paths = $Bin;
 
-
 ## Controlling options are provided
 if (!$fasta) { &print_help; exit(); }
 if (!$blast_path) { &print_help; exit(); }
@@ -40,14 +39,18 @@ if (!$sim) {$sim=85;}
 if (!$cpus) {$cpus=2;}
 
 # Lets start
-# 0. Clean fasta files and discard putative characters
 # 1. Generate folder for files
-# 2. makeblastdb of proteins
-# 3. blastp proteins vs itself
-# 4. parse results
-# 5. blastp vs. card
-# 6. blastp vs. vfdb
-# 7. generate plot
+# 2. Clean fasta files and discard putative characters
+# 3. makeblastdb of proteins
+# 4. blastp proteins vs itself
+# 5. parse blast results
+# 6. generate duplicate results
+# 7. get duplicate sequences
+# 8. blastp vs. card
+# 9. parse CARD blast results
+# 10. blastp vs. vfdb
+# 11 parse VFDB blast results
+# 12. generate plot
 
 print "############################\n";
 print "Step 1: Make folder\n";
@@ -62,7 +65,7 @@ my $clean_fasta_script = $script_paths."/clean_fasta.pl";
 my $clean_command = "perl ".$clean_fasta_script." $fasta";
 print "System call: $clean_command\n";
 system($clean_command);
-my $clean_fasta = $fasta."_clean.fasta";
+my $clean_fasta = $name."_clean.fasta";
 
 print "############################\n";
 print "Step 3: Makeblastdb\n";
