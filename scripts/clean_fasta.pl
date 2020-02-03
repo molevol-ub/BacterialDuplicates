@@ -9,14 +9,14 @@ use Data::Dumper;
 my $fasta = $ARGV[0];
 if (!@ARGV) {print "Usage:\nperl $0 fasta_file\n";exit();}
 
-my $fasta1 = $fasta."_tmp1";
-my $fasta2 = $fasta."_tmp";
-my $fasta3 = $fasta."_tmp_1";
+my $fasta1 = "tmp";
+my $fasta2 = "tmp1";
+my $fasta3 = "tmp2";
 system("sed 's/.>/./g' $fasta > $fasta1");
-system("sed 's/<././g' $fasta1 > $fasta3");
-system("sed 's/=</=/g' $fasta3 > $fasta2");
+system("sed 's/<././g' $fasta1 > $fasta2");
+system("sed 's/=</=/g' $fasta2 > $fasta3");
 
-open(FILE, $fasta2) || die "Could not open the file $fasta\n";
+open(FILE, $fasta3) || die "Could not open the file $fasta\n";
 $/ = ">"; ## Telling perl where a new line starts
 while (<FILE>) {		
 	next if /^#/ || /^\s*$/;
@@ -32,4 +32,4 @@ while (<FILE>) {
 close(FILE); $/ = "\n";
 
 ## remove temp file
-system("rm *_tmp*");
+system("rm tmp*");
