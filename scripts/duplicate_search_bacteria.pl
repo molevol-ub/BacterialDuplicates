@@ -88,7 +88,7 @@ print "Step 5: Parse BLAST\n";
 print "############################\n";
 my $parse_blast_script = $script_paths."/parse_BLAST.pl";
 my $out_parsed = $name."_parsed.txt";
-my $parse_command = "perl ".$parse_blast_script." $output_name	$clean_fasta $out_parsed $sim $len";
+my $parse_command = "perl ".$parse_blast_script." $output_name	$out_parsed $sim $len";
 print "System call: $parse_command\n";
 system($parse_command);
 
@@ -105,8 +105,8 @@ print "############################\n";
 print "Step 7: Get fasta seqs results\n";
 print "############################\n";
 my $get_ids_script = $script_paths."/get-seq_ids.pl";
-my $out_duplicates = $name."_duplicates.fasta";
-my $ids_duplicated = abs_path()."/".$out_parsed.".allseqs_duplicated.ids.txt";
+my $out_duplicates = $output_name.".allseqs_duplicated.fasta";
+my $ids_duplicated = abs_path()."/".$output_name.".allseqs_duplicated.ids.txt";
 my $parse_command_duplicates= "perl ".$get_ids_script." $ids_duplicated $clean_fasta $out_duplicates";
 print "System call: $parse_command_duplicates\n";
 system($parse_command_duplicates);
@@ -123,7 +123,7 @@ print "############################\n";
 print "Step 9: Parse BLAST CARD results\n";
 print "############################\n";
 my $out_parsed_CARD = $output_name_CARD."_parsed.txt";
-my $parse_command_CARD = "perl ".$parse_blast_script." $output_name_CARD	$out_parsed_CARD $sim $len";
+my $parse_command_CARD = "perl ".$parse_blast_script." $output_name_CARD $out_parsed_CARD $sim $len";
 print "System call: $parse_command_CARD\n";
 system($parse_command_CARD);
 
@@ -139,7 +139,7 @@ print "############################\n";
 print "Step 11: Parse BLAST VFDB results\n";
 print "############################\n";
 my $out_parsed_VFDB = $output_name_VFDB."_parsed.txt";
-my $parse_command_VFDB = "perl ".$parse_blast_script." $output_name_VFDB	$out_parsed_VFDB $sim $len";
+my $parse_command_VFDB = "perl ".$parse_blast_script." $output_name_VFDB $out_parsed_VFDB $sim $len";
 print "System call: $parse_command_VFDB\n";
 system($parse_command_VFDB);
 
