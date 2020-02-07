@@ -37,9 +37,9 @@ my %locus = %{$locus_tag_hash};
 #print Dumper %locus;
 my $annotation_results = $output_name.".annotation_results.csv";          
 open (ANNOT, ">$annotation_results");
-print ANNOT "locus_tag,origin,strand,start,end,gene,pseudo,prot_id,prot_name,annot\n";
+print ANNOT "seq_id,locus_tag,origin,strand,start,end,gene,pseudo,prot_id,prot_name,annot\n";
 foreach my $keys (keys %new_annot) {
-	print ANNOT $keys.",".$new_annot{$keys}{"origin"}.",".$new_annot{$keys}{"strand"}.",".$new_annot{$keys}{"start"}.",".$new_annot{$keys}{"end"}.",".$new_annot{$keys}{"gene"}.",". $new_annot{$keys}{"pseudo"}.",".$new_annot{$keys}{"prot_id"}.",\"".$new_annot{$keys}{"prot_name"}."\",\"".$new_annot{$keys}{"annot"}."\"\n";
+	print ANNOT $new_annot{$keys}{"seq_id"}.",".$keys.",".$new_annot{$keys}{"origin"}.",".$new_annot{$keys}{"strand"}.",".$new_annot{$keys}{"start"}.",".$new_annot{$keys}{"end"}.",".$new_annot{$keys}{"gene"}.",". $new_annot{$keys}{"pseudo"}.",".$new_annot{$keys}{"prot_id"}.",\"".$new_annot{$keys}{"prot_name"}."\",\"".$new_annot{$keys}{"annot"}."\"\n";
 	#print $keys.",".$new_annot{$keys}{""}.",".
 }
 close(ANNOT);
@@ -189,6 +189,9 @@ sub get_feature {
 		$new_annot{$locus_tag}{"prot_name"} = "n.a";
 		$new_annot{$locus_tag}{"prot_id"} = "n.a";
 		$new_annot{$locus_tag}{"gene"} = "n.a";	
+
+		### seq id
+		$new_annot{$locus_tag}{"seq_id"} = $array[0];	
 		
 		## set origin
 		my @sequence_id = split("_prot_", $array[0]);
