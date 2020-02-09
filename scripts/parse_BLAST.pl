@@ -26,9 +26,11 @@ my $blast_file = $ARGV[0];
 my $output_name = $ARGV[1];
 my $similarity = $ARGV[2];
 my $aln = $ARGV[3];
+
+my $stop_signal = $ARGV[4];
 #my $evalue=$ARGV[4];
 
-if (!@ARGV) {print "Usage:\nperl $0 blast_results output [aln_len similarity]\n";exit();}
+if (!@ARGV) {print "Usage:\nperl $0 blast_results output [aln_len similarity] [stop_signal]\n";exit();}
 
 ## default
 if (!$similarity) {$similarity=80;}
@@ -53,12 +55,18 @@ while (<BLAST>) {
 # 12: query length
 # 13: subject length
 
+	#print $_."\n";
 	chomp;
+	
 	my @line = split("\t", $_);
 	next if $line[0] eq $line[1]; #discard autohits
 	next if $line[2] < $similarity; #similarity
-	next if $evalue > $line[10]; #evalue
-	next if $bit_score > $line[11]; #bit_score	
+	next if $line[10] > $evalue; #evalue
+	next if $line[11] < $bit_score; #bit_score	
+
+	#print "##############\n";
+	#print $_."\n";
+	#print "······················\n";
 
 	#my $perc_len = ($line[3]/$line[13])*100;	
 	my $perc_len_sub = ($line[3]/$line[13])*100; ## subject alignment 
@@ -71,8 +79,8 @@ while (<BLAST>) {
 		my $flag=0;
 		foreach my $keys (sort keys %relations) {
 			if ($relations{$keys}{$line[0]}) {$flag++; last;}
-        	if ($relations{$keys}{$line[1]}) {$flag++; last;}
-        }
+	        	if ($relations{$keys}{$line[1]}) {$flag++; last;}
+        	}
 		if ($flag == 0) {  
 			my @array = ($line[2], $line[3], $line[12], $line[13]); 
 			#	     similarity aln-length qlen       slen
@@ -81,8 +89,10 @@ while (<BLAST>) {
 }}}}
 close (BLAST); close (OUT);
 
-##print Dumper \%relations;
+## if no further processing
+if ($stop_signal){ exit(); }
 
+##print Dumper \%relations;
 my $file2grep = "tmp.txt";
 open (F, ">$file2grep");
 foreach my $keys (keys %relations) {
@@ -127,7 +137,6 @@ system("rm *tmp*");
 #print Dumper \%relations;
 #print "######### Final ###########\n";
 #print Dumper \%better_relations;
-#exit();
 
 open (RES, ">$results_file_parsed");
 foreach my $keys (keys %better_relations) {

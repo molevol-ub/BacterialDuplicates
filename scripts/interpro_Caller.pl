@@ -6,17 +6,15 @@ use Data::Dumper;
 ##	Jose Fco. Sanchez Herrero, 06/02/2020 jfsanchezherrero@ub.edu			##
 ##############################################################################
 
-my $duplicates_file = $ARGV[0];
+my $fasta_file = $ARGV[0];
 my $interpro_bin = $ARGV[1];
 my $name = $ARGV[2];
 
-if (!@ARGV) {print "Usage:\nperl $0 duplicate_relations translated_cds output\n";exit();}
+if (!@ARGV) {print "Usage:\nperl $0 fasta_file interpro_bin output\n";exit();}
 
-my $intepro_command = $interpro_bin "-i ".$duplicates_file." -appl TIGRFAM,SFLD,SUPERFAMILY,Gene3D,Hamap,Coils,ProSiteProfiles,SMART,PRINTS,ProSitePatterns,Pfam,ProDom,MobiDBLite,PIRSF -b $name -pa -dp -goterms";
+my $intepro_command = $interpro_bin." -i $fasta_file -appl TIGRFAM,SFLD,SUPERFAMILY,Gene3D,Hamap,Coils,ProSiteProfiles,SMART,PRINTS,ProSitePatterns,Pfam,ProDom,MobiDBLite,PIRSF -b $name -pa -dp -goterms";
 print "System call: $intepro_command\n";
 system($intepro_command);
-
-
 
 
 __END__

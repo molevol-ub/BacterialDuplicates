@@ -10,7 +10,7 @@ use FindBin '$Bin';
 ##	Updated: January, 2020						    ##
 ##############################################################################
 
-my ($fasta, $cpus, $sim, $len, $help, $blast_path, $name, $CARD_blast_db, $vfdb_blast_db);
+my ($fasta, $cpus, $sim, $len, $help, $blast_path, $name, $CARD_blast_db, $vfdb_blast_db, $interpro_bin);
 
 GetOptions(
 	"fasta=s" => \$fasta,
@@ -21,7 +21,8 @@ GetOptions(
 	"h|help" => \$help,
 	"BLAST_path=s" => \$blast_path,
 	"CARD_db=s" => \$CARD_blast_db,
-	"vfdb_db=s" => \$vfdb_blast_db	
+	"vfdb_db=s" => \$vfdb_blast_db,
+	"interpro_bin" => \$interpro_bin
 );
 
 ## get path for scripts
@@ -33,6 +34,7 @@ if (!$blast_path) { &print_help; exit(); }
 if (!$name) { &print_help; exit(); }
 if (!$CARD_blast_db) { &print_help; exit(); }
 if (!$vfdb_blast_db) { &print_help; exit(); }
+if (!$interpro_bin) { &print_help; exit();}
 
 if (!$len) {$len=85;}
 if (!$sim) {$sim=85;}
@@ -120,8 +122,8 @@ print "System call: $blastp_command_card\n";
 system($blastp_command_card);
 
 ### relaxed similarity and length thresholds
-my $sim_Relaxed = 70;
-my $len_Relaxed = 70;
+my $sim_Relaxed = 30;
+my $len_Relaxed = 85;
 
 print "############################\n";
 print "Step 9: Parse BLAST duplicated CARD results\n";
@@ -130,6 +132,7 @@ my $out_parsed_CARD = $output_name_CARD;
 my $parse_command_CARD = "perl ".$parse_blast_script." $output_name_CARD $out_parsed_CARD $sim_Relaxed $len_Relaxed";
 print "System call: $parse_command_CARD\n";
 system($parse_command_CARD);
+## It returns the number of duplicated groups of duplicates within CARD db
 
 print "############################\n";
 print "Step 10: BLAST ALL proteins vs. CARD\n";
@@ -143,7 +146,7 @@ print "############################\n";
 print "Step 11: Parse BLAST ALL CARD results\n";
 print "############################\n";
 my $out_parsed_CARD_all = $output_name_CARD_all;
-my $parse_command_CARD_all = "perl ".$parse_blast_script." $output_name_CARD_all $out_parsed_CARD_all $sim_Relaxed $len_Relaxed";
+my $parse_command_CARD_all = "perl ".$parse_blast_script." $output_name_CARD_all $out_parsed_CARD_all $sim_Relaxed $len_Relaxed stop";
 print "System call: $parse_command_CARD_all\n";
 system($parse_command_CARD_all);
 
@@ -162,6 +165,7 @@ my $out_parsed_VFDB = $output_name_VFDB;
 my $parse_command_VFDB = "perl ".$parse_blast_script." $output_name_VFDB $out_parsed_VFDB $sim_Relaxed $len_Relaxed";
 print "System call: $parse_command_VFDB\n";
 system($parse_command_VFDB);
+## It returns the number of duplicated groups of duplicates within VFDB db
 
 print "############################\n";
 print "Step 14: BLAST ALL proteins vs. VFDB\n";
@@ -175,16 +179,24 @@ print "############################\n";
 print "Step 15: Parse BLAST ALL VFDB results\n";
 print "############################\n";
 my $out_parsed_VFDB_all = $output_name_VFDB_all;
-my $parse_command_VFDB_all = "perl ".$parse_blast_script." $output_name_VFDB_all $out_parsed_VFDB_all $sim_Relaxed $len_Relaxed";
+my $parse_command_VFDB_all = "perl ".$parse_blast_script." $output_name_VFDB_all $out_parsed_VFDB_all $sim_Relaxed $len_Relaxed stop";
 print "System call: $parse_command_VFDB_all\n";
 system($parse_command_VFDB_all);
 
 
-
+print "####################################\n";
+print "Step 16: InterPro duplicated proteins\n";
+print "####################################\n";
+my $out_interpro = $name."-InterPro";
+my $interpro_script = $script_paths."/interpro_Caller.pl";
+my $interpro_command_all = "perl ".$interpro_script." $clean_fasta $interpro_bin $out_interpro";
+## no interpro cpu command: generates infinite loop...
+print "System call: $interpro_command_all\n";
+system($interpro_command_all);
 
 
 print "############################\n";
-print "Step 16: Generate Plot\n";
+print "Step 17: Generate Plot\n";
 print "############################\n";
 
 
@@ -198,6 +210,7 @@ sub print_help {
 		-BLAST_path /path/to/BLAST/bin 
 		-CARD_db /path/to/CARD_databases/blast_id_name
 		-vfdb_db /path/to/VFDB_databases/blast_id_name
+		-interpro_bin /path/to/interpro/sh_file.sh
 		[-CPU nCPU -sim 85 -len 85]\n\n";
 
 	print "\nMandatory parameters:\n";
@@ -207,6 +220,7 @@ sub print_help {
 	print "BLAST_path: binary path contain blastp and makeblastdb\n\n\n";
 	print "CARD_db: path for CARD protein databases indexed by makeblast db\n";
 	print "vfdb_db: path for VFDB protein databases indexed by makeblast db\n";
+	print "interpro_bin: shell script for interpro software\n";
 	
 	print "Default parameters [in brakets]:\n";
 	print "############################\n";
