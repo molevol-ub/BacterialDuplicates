@@ -4,7 +4,23 @@ use warnings;
 use Data::Dumper;
 ##############################################################################
 ##	Jose Fco. Sanchez Herrero, 25/09/2018 jfsanchezherrero@ub.edu			##
+##	Updated: February 2020
 ##############################################################################
+##
+## https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3820096/
+##
+## An introduction to sequence similarity ("homology") searching:
+##
+## BLAST, FASTA, SSEARCH, and other commonly used similarity searching programs
+## produce accurate statistical estimates that can be used to reliably infer homology. Searches
+## with protein sequences (BLASTP, FASTP, SSEARCH,) or translated DNA sequences
+## (BLASTX, FASTX) are preferred because they are 5- to 10-fold more sensitive than
+## DNA:DNA sequence comparison. The 30% identity rule-of-thumb is too conservative;
+## statistically significant [E() < 10−6 – 10−3] protein homologs can share less than 20%
+## identity. E()-values and bit scores (bits >50) are far more sensitive and reliable than
+## percent identity for inferring homology.
+##
+#######################################################################################
 
 my $blast_file = $ARGV[0];
 my $output_name = $ARGV[1];
@@ -17,7 +33,11 @@ if (!@ARGV) {print "Usage:\nperl $0 blast_results output [aln_len similarity]\n"
 ## default
 if (!$similarity) {$similarity=80;}
 if (!$aln) {$aln=80;}
-#if (!$evalue) {$evalue=1e-05;}
+
+my $evalue = 1e-05;
+## protein:protein aln = evalue 1e-03
+## DNA:DNA aln = evalue 1e-10
+my $bit_score = 50;
 
 my %relations;
 my $blast_file_parsed = $output_name.".BLAST_parsed.txt\n";
@@ -28,6 +48,8 @@ while (<BLAST>) {
 #
 #CBG27754.1     CBG27899.1      100.00  285     0       0       1       285     1       285     0.0     582     285     285     N/A
 #0				1				2		3		4		5		6		7		8		9		10		11		12		13		14
+# 10: E-value
+# 11: Bit-Score
 # 12: query length
 # 13: subject length
 
@@ -35,8 +57,9 @@ while (<BLAST>) {
 	my @line = split("\t", $_);
 	next if $line[0] eq $line[1]; #discard autohits
 	next if $line[2] < $similarity; #similarity
-	#next if $evalue > $line[10]; #evalue
-	
+	next if $evalue > $line[10]; #evalue
+	next if $bit_score > $line[11]; #bit_score	
+
 	#my $perc_len = ($line[3]/$line[13])*100;	
 	my $perc_len_sub = ($line[3]/$line[13])*100; ## subject alignment 
 	my $perc_len_query = ($line[3]/$line[12])*100; ## subject alignment 
