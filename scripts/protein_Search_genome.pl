@@ -3,6 +3,8 @@ use strict;
 use warnings;
 use Getopt::Long;
 use Data::Dumper;
+use Cwd 'abs_path';
+use FindBin '$Bin';
 
 my ($fasta, $cpus, $sim, $len, $evalue, $help, $blast_path, $name, @strain);
 
@@ -36,6 +38,10 @@ if (!$cpus) {$cpus=2}
 # 4. parse results
 # 5. generate plot
 
+## get path for scripts
+my $script_paths = $Bin;
+my $parse_blast_script = $script_paths."/parse_BLAST.pl";
+
 print "############################\n";
 print "Step 0: Check proteins\n";
 print "############################\n";
@@ -49,10 +55,7 @@ print "############################\n";
 mkdir $name, 0755;
 chdir $name;
 
-my %proteins;
-my $relations = "relations_proteins.tsv";
-open (REL,">$relations");
-print REL "#taxa\tQuery_Protein\tSubject_Proteins\n";
+my %files;
 for (my $i=0; $i < scalar @strain; $i++) {	
 	my @strain_Provided = split(",",$strain[$i]);
 	my $strain_path = $strain_Provided[0];
@@ -82,35 +85,37 @@ for (my $i=0; $i < scalar @strain; $i++) {
 	system($blastp_command);
 	
 	## parse_results
-	my %relations;
-	my $blast_file_parsed = $output_name."_parsed.txt";
-	open (OUT, ">$blast_file_parsed");
-	open (BLAST, $output_name);
-	while (<BLAST>) {
-		chomp;
-		my @line = split("\t", $_);
-		next if $line[0] eq $line[1]; #discard autohits
-		next if $line[2] < $sim; ## Similarity > 85%
-		next if $line[10] > $evalue;
+	print "############################\n";
+	print "Step 4: Parse BLAST duplicated CARD results\n";
+	print "############################\n";
+	my $out_parsed = $output_name;
+	my $parse_command = "perl ".$parse_blast_script." $output_name $out_parsed $sim $len";
+	print "System call: $parse_command\n";
+	system($parse_command);
 
-		my $perc_len_sub = ($line[3]/$line[13])*100; ## subject alignment 
-		my $perc_len_query = ($line[3]/$line[12])*100; ## subject alignment 
-		if ($perc_len_sub > $len) { ## len
-			if ($perc_len_query > $len) { ## len
-				print OUT $_."\n";
-				my $flag=0;
-				$relations{$line[0]}{$line[1]}++;
-	}}}
-	close (BLAST); close (OUT);
-	#print Dumper \%relations;
-	
-	## Initialize hash
-	foreach my $ids (keys %proteins_ids) { $proteins{$strain_name}{$ids}=0; }
-	foreach my $keys (keys %relations) {
-		my @ids = keys %{ $relations{$keys} };
-		$proteins{$strain_name}{$keys} = scalar @ids;
-		print REL $strain_name."\t".$keys."\t".join(",",@ids)."\n";
-}}
+	##	
+	$files{$strain_name} = $output_name.".duplicate_relations.txt"
+}
+
+## read duplicate relations & generate table
+my $relations = "relations_proteins.tsv";
+open (REL,">$relations");
+print REL "#taxa\tQuery_Protein\tSubject_Proteins\n";
+
+my %proteins;
+foreach my $strain_name (keys %files) {
+	my $file2read = $files{$strain_name};	
+	open(RESULTS, "<$file2read");
+	while (<RESULTS>) {
+		chomp;
+		my @items = split("\t", $_);
+		my @subitems = split(",", $items[1]);
+		$proteins{$strain_name}{$items[0]} = scalar @subitems;
+		print REL $strain_name."\t".$items[0]."\t".join(",",@subitems)."\n";
+	}
+	close (RESULTS);
+}
+
 close (REL);
 
 #print Dumper \%proteins;
