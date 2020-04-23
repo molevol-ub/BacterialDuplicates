@@ -9,7 +9,7 @@ use warnings;
 if (!@ARGV) {
 	print "Usage: perl $0 csv_file option\n";
 	print "\t- csv_file: containing ftp site and name\n";
-	print "\t- option: gff,protein,feature,CDS,genome,ALL\n";
+	print "\t- option: gff,gbf,protein,feature,CDS,genome,ALL\n";
 	exit();
 }
 
@@ -35,51 +35,60 @@ foreach my $keys (keys %strains) {
 	
 	if (-d $keys) {
 		print "DIR $keys exists...\n";
+		next;
 	} else {
 		mkdir $keys,0755;
 	}	
 	chdir $keys;
 	
-	my @files;
-	my $temp_GFF = $file."*gff.gz";
-	my $temp_PRO = $file."*protein.faa.gz";
-	my $temp_FEA = $file."*feature_table.txt.gz";
+	my %files;
+	my $temp_GFF = $file."*gff*";
+	my $temp_PRO = $file."*protein.faa*";
+	my $temp_FEA = $file."*feature_table.txt*";
 	my $temp_CDS = $file."*cds*";
-	my $temp_geno = $file."*genomic.fna.gz";
+	my $temp_geno = $file."*genomic.fna*";
+	my $temp_gbf = $file."*genomic.gbff*";
 	
 	if ($id eq "gff") {
-		push (@files, $temp_GFF);
+		$files{"gff"} = $temp_GFF;
 	} elsif ($id eq "protein") {
-		push (@files, $temp_PRO);
+		$files{"protein.faa"} = $temp_PRO;
 	} elsif ($id eq "feature") {
-		push (@files, $temp_FEA);
+		$files{"feature_table.txt"} = $temp_FEA;
 	} elsif ($id eq "CDS") {
-		push (@files, $temp_CDS);
+		$files{"cds"} = $temp_CDS;
         } elsif ($id eq "genome") {
-                push (@files, $temp_geno);
+                $files{"genomic.fna"} = $temp_geno;
+        } elsif ($id eq "gbf") {
+                $files{"genomic.gbf"} = $temp_gbf;
 	} elsif ($id eq "ALL") {
-		push (@files, $temp_GFF);
-		push (@files, $temp_PRO);
-		push (@files, $temp_FEA);
-		push (@files, $temp_CDS);
-		push (@files, $temp_geno);
+                $files{"gff"} = $temp_GFF;
+                $files{"protein.faa"} = $temp_PRO;
+                $files{"feature_table.txt"} = $temp_FEA;
+                $files{"cds"} = $temp_CDS;
+                $files{"genomic.fna"} = $temp_geno;
+		$files{"genomic.gbff"} = $temp_gbf;
 	}
 	
 	print "+ Downloading now:\n\n";
 	print "\n\n+ Download file(s) for: $name\n\n";
 	
-	for (my $f=0; $f < scalar @files;$f++) {
-		print "wget --passive-ftp $files[$f]\n";
-		system("wget --passive-ftp $files[$f]");
+	foreach my $keys2 (keys %files) {
+		
+		print "File $keys2: $files{$keys2}\n";
+		print "wget --passive-ftp $files{$keys2}\n";
+		system("wget --passive-ftp $files{$keys2}");
 	
 		# Gunzip file
-		my @array_tmp2 = split("/", $files[$f]);
+		my @array_tmp2 = split("/", $files{$keys2});
 		my $file_downloaded = $array_tmp2[-1];
 		system("gunzip -f $file_downloaded");
 	}
 	chdir "..";
 }
-print "+ Finish Donwloading of files\n";
+print "+ Finish downloading of files\n";
 
 
-
+sub filesExist { 
+	return scalar ( my @x = `ls -1a "$_[0]" 2> /dev/null` ) 
+}

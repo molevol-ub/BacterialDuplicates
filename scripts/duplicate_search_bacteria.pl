@@ -22,7 +22,7 @@ GetOptions(
 	"BLAST_path=s" => \$blast_path,
 	"CARD_db=s" => \$CARD_blast_db,
 	"vfdb_db=s" => \$vfdb_blast_db,
-	"interpro_bin" => \$interpro_bin
+	#"interpro_bin" => \$interpro_bin
 );
 
 ## get path for scripts
@@ -34,7 +34,7 @@ if (!$blast_path) { &print_help; exit(); }
 if (!$name) { &print_help; exit(); }
 if (!$CARD_blast_db) { &print_help; exit(); }
 if (!$vfdb_blast_db) { &print_help; exit(); }
-if (!$interpro_bin) { &print_help; exit();}
+#if (!$interpro_bin) { &print_help; exit();}
 
 if (!$len) {$len=85;}
 if (!$sim) {$sim=85;}
@@ -66,24 +66,24 @@ print "############################\n";
 my $clean_fasta_script = $script_paths."/clean_fasta.pl";
 my $clean_fasta = $name."_clean.fasta";
 my $clean_command = "perl ".$clean_fasta_script." $fasta > $clean_fasta";
-#print "System call: $clean_command\n";
-#system($clean_command);
+print "System call: $clean_command\n";
+system($clean_command);
 
 print "############################\n";
 print "Step 3: Makeblastdb\n";
 print "############################\n";
 my $db_name = $name."_DB";
 my $blastdb_command = $blast_path."/makeblastdb -in $clean_fasta -input_type fasta -dbtype prot -out $db_name\n";
-#print "System call: $blastdb_command\n";
-#system($blastdb_command);
+print "System call: $blastdb_command\n";
+system($blastdb_command);
 
 print "############################\n";
 print "Step 4: BLAST proteins\n";
 print "############################\n";
 my $output_name = $name."_BLAST.out";
 my $blastp_command = $blast_path."/blastp -query $clean_fasta -db $db_name -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name";
-#print "System call: $blastp_command\n";
-#system($blastp_command);
+print "System call: $blastp_command\n";
+system($blastp_command);
 
 print "############################\n";
 print "Step 5: Parse BLAST\n";
@@ -91,8 +91,8 @@ print "############################\n";
 my $parse_blast_script = $script_paths."/parse_BLAST.pl";
 my $out_parsed = $name."_parsed.txt";
 my $parse_command = "perl ".$parse_blast_script." $output_name	$out_parsed $sim $len";
-#print "System call: $parse_command\n";
-#system($parse_command);
+print "System call: $parse_command\n";
+system($parse_command);
 
 print "############################\n";
 print "Step 6: Generate duplicate results\n";
@@ -100,8 +100,8 @@ print "############################\n";
 my $duplicate_results = $script_paths."/generate_results_duplicates.pl";
 my $duplicates_relations = $name."_parsed.txt.duplicate_relations.txt";
 my $results_command = "perl ".$duplicate_results." $duplicates_relations $clean_fasta $output_name";
-#print "System call: $results_command\n";
-#system($results_command);
+print "System call: $results_command\n";
+system($results_command);
 
 print "############################\n";
 print "Step 7: Get fasta seqs results\n";
@@ -110,8 +110,8 @@ my $get_ids_script = $script_paths."/get-seq_ids.pl";
 my $out_duplicates = $output_name.".allseqs_duplicated.fasta";
 my $ids_duplicated = abs_path()."/".$output_name.".allseqs_duplicated.ids.txt";
 my $parse_command_duplicates= "perl ".$get_ids_script." $ids_duplicated $clean_fasta $out_duplicates";
-#print "System call: $parse_command_duplicates\n";
-#system($parse_command_duplicates);
+print "System call: $parse_command_duplicates\n";
+system($parse_command_duplicates);
 
 print "############################\n";
 print "Step 8: BLAST duplicated proteins vs. CARD\n";
@@ -183,7 +183,6 @@ my $parse_command_VFDB_all = "perl ".$parse_blast_script." $output_name_VFDB_all
 print "System call: $parse_command_VFDB_all\n";
 system($parse_command_VFDB_all);
 
-
 print "####################################\n";
 print "Step 16: InterPro duplicated proteins\n";
 print "####################################\n";
@@ -191,15 +190,12 @@ my $out_interpro = $name."-InterPro";
 my $interpro_script = $script_paths."/interpro_Caller.pl";
 my $interpro_command_all = "perl ".$interpro_script." $clean_fasta $interpro_bin $out_interpro";
 ## no interpro cpu command: generates infinite loop...
-print "System call: $interpro_command_all\n";
-system($interpro_command_all);
-
+#print "System call: $interpro_command_all\n";
+#system($interpro_command_all);
 
 print "############################\n";
 print "Step 17: Generate Plot\n";
 print "############################\n";
-
-
 
 sub print_help {
 	print "############################\n";

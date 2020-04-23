@@ -80,13 +80,13 @@ for (my $i=0; $i < scalar @strain; $i++) {
 	print "Step 3: BLAST proteins: $strain_name\n";
 	print "#########################################\n";
 	my $output_name = $db_name."_BLAST.out";
-	my $blastp_command = $blast_path."/blastp -query $fasta -db $db_name -outfmt '6 std qlen slen staxids' -num_threads $cpus -out $output_name";
+	my $blastp_command = $blast_path."/blastp -query $fasta -db $db_name -outfmt '6 std qlen slen' -num_threads $cpus -out $output_name";
 	print "System call: $blastp_command\n";
 	system($blastp_command);
 	
 	## parse_results
 	print "############################\n";
-	print "Step 4: Parse BLAST duplicated CARD results\n";
+	print "Step 4: Parse duplicate results\n";
 	print "############################\n";
 	my $out_parsed = $output_name;
 	my $parse_command = "perl ".$parse_blast_script." $output_name $out_parsed $sim $len";
@@ -118,7 +118,9 @@ foreach my $strain_name (keys %files) {
 
 close (REL);
 
-#print Dumper \%proteins;
+sleep 3;
+print Dumper \%proteins;
+sleep 3;
 
 my $table_count = "table.csv";
 open (TAB,">$table_count");
@@ -127,6 +129,8 @@ foreach my $taxa (keys %proteins) {
 	my $string = "$taxa";
 	for (my $i=0; $i < scalar @order_proteins; $i++) {
 		$string .= ",".$proteins{$taxa}{$order_proteins[$i]};
+		print $string."\n";
+		sleep 0.5;
 	}
 	print TAB $string."\n";
 }
