@@ -21,7 +21,7 @@ split_into_multiple <- function(column, pattern = ",", into_prefix){
   names(cols) <- paste(into_prefix, 1:m, sep = "_")
   return(cols)
 }
-order_by_phylo <- function(summary_results, order_nwk_file, PhiSpy_results, resistance_results) {
+order_data <- function(summary_results, order_nwk_file, PhiSpy_results, resistance_results) {
   
   splitted <- summary_results %>% bind_cols(split_into_multiple(.$strain, "_", "fields"))
   summary_results_new <- splitted %>% separate(fields_2, c("Refseq", "version"), "\\.") %>% mutate(new_ID=paste0(fields_1, "_", Refseq)) 
@@ -192,7 +192,7 @@ order_Efaecium_nwk <- paste0(Efaecium_stats_files,"/20200423_Efaecium_order-tree
 Efaecium_phispy <- paste0(Efaecium_stats_files,"/20200423_Efaecium_phispy_results.csv")
 Efaecium_resistance <- paste0(Efaecium_stats_files,"/20200423_Efaecium_resistance.csv")
 
-Efaecium_summary_results_ordered <- order_by_phylo(Efaecium_stats, order_Efaecium_nwk, Efaecium_phispy, Efaecium_resistance)
+Efaecium_summary_results_ordered <- order_data(Efaecium_stats, order_Efaecium_nwk, Efaecium_phispy, Efaecium_resistance)
 head(Efaecium_summary_results_ordered)
 dim(Efaecium_summary_results_ordered)
 
@@ -221,7 +221,7 @@ Efaecalis_phispy <- paste0(Efaecalis_stats_files,"/20200423_Efaecalis_phispy_res
 Efaecalis_resistance <- paste0(Efaecalis_stats_files,"/20200423_Efaecalis_resistance.csv")
 
 ## order results
-Efaecalis_summary_results_ordered <- order_by_phylo(Efaecalis_stats, order_Efaecalis_nwk, Efaecalis_phispy, Efaecalis_resistance)
+Efaecalis_summary_results_ordered <- order_data(Efaecalis_stats, order_Efaecalis_nwk, Efaecalis_phispy, Efaecalis_resistance)
 
 ## create new resistance column
 Efaecalis_summary_results_ordered["resistance_original"] <- Efaecalis_summary_results_ordered$resistance
@@ -247,7 +247,7 @@ order_Saureus_nwk <- paste0(Saureus_stats_files, "/20200423_Saureus_order-tree.t
 Saureus_phispy <- paste0(Saureus_stats_files, "/20200423_Saureus_phispy_results.csv")
 Saureus_resistance <- paste0(Saureus_stats_files, "/20200423_Saureus_resistance.csv")
 
-Saureus_summary_results_ordered <- order_by_phylo(Saureus_stats, order_Saureus_nwk, Saureus_phispy, Saureus_resistance)
+Saureus_summary_results_ordered <- order_data(Saureus_stats, order_Saureus_nwk, Saureus_phispy, Saureus_resistance)
 Saureus_summary_results_ordered
 
 ## check variables
