@@ -30,7 +30,7 @@ Please provide a csv file and option to download data. Use ALL for the download 
 
 Please select from https://www.ncbi.nlm.nih.gov/genome your strains of interest and generate a comma separated (csv) table containing the ftp site for each strain and the strain name you would like to add. Please do not use any spaces or special characters.
 
-Example data file ([example_strains2download.csv](https://github.com/molevol-ub/BacterialDuplicates/blob/master/example/example_strains2download.csv)): 
+Example data file ([example_strains2download.csv](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Ecoli/example/example_strains2download.csv)): 
 
 ```
 ## Commensal
@@ -44,7 +44,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/027/125/GCA_000027125.1_ASM2712v1
 To reproduce the example provided here:
 
 ```
-perl BacterialDuplicates/scripts/NCBI_downloader.pl BacterialDuplicates/example/strains2download.csv ALL
+perl BacterialDuplicates/scripts/NCBI_downloader.pl BacterialDuplicates/Ecoli/example/strains2download.csv ALL
 ```
 
 Two folders should be generated named as the strain provided containing several files: GFF, protein and nucleotide sequences of the protein-coding genes, genomic sequence and other information.
