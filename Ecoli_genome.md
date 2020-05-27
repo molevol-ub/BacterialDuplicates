@@ -1,3 +1,9 @@
+This is an example workflow and additional details for the bioinformatic analysis generated for the analysis of duplicated genes within E. coli
+
+## Citation
+
+Gene duplications in the E. coli genome: common themes among pathotypes. Manuel Bernabeu, José Francisco Sánchez-Herrero, Pol Huedo, Alejandro Prieto, Mário Hüttener, Julio Rozas and Antonio Juárez. BMC Genomics 2019 20:313, https://doi.org/10.1186/s12864-019-5683-4
+
 ## Usage
 
 In order to provide an example of the procedure we followed we have generated an example set in the example folder.
