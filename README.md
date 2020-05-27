@@ -10,7 +10,7 @@ Gene duplications in the E. coli genome: common themes among pathotypes. Manuel 
 
 The source code to replicate these analysis corresponds to the GitHub release of this source code [v1.0](https://github.com/molevol-ub/BacterialDuplicates/releases/tag/v1.0)
 
-See an example workflow here: Ecoli gene duplications [example](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Ecoli_genome.md) 
+See an example workflow here: Ecoli gene duplications [example](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Ecoli/Ecoli_genome.md) 
 
 - Duplicates in Gram positive cocci: [ to be included when available]
 
