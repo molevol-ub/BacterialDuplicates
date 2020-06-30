@@ -18,11 +18,11 @@ ATTENTION: DO NOT use file *protein.faa
 Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.
 ```
 
-If strains are deposited on GenBank, data can be downloaded using a script we provide here: [NCBI_downloader.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/NCBI_downloader.pl).
+If strains are deposited on GenBank, data can be downloaded using a script we provide here: [NCBI_downloader.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/NCBI_downloader.pl).
 
 ```
 Usage: 
-perl BacterialDuplicates/scripts/NCBI_downloader.pl csv_file option
+perl BacterialDuplicates/scripts/perl/NCBI_downloader.pl csv_file option
     csv_file: csv file containing ftp site and name
     option: gff,protein,feature,CDS,genome,ALL
 ```
@@ -44,7 +44,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/027/125/GCA_000027125.1_ASM2712v1
 To reproduce the example provided here:
 
 ```
-perl BacterialDuplicates/scripts/NCBI_downloader.pl BacterialDuplicates/Ecoli/example/strains2download.csv ALL
+perl BacterialDuplicates/scripts/perl/NCBI_downloader.pl BacterialDuplicates/Ecoli/example/strains2download.csv ALL
 ```
 
 Two folders should be generated named as the strain provided containing several files: GFF, protein and nucleotide sequences of the protein-coding genes, genomic sequence and other information.
@@ -90,11 +90,11 @@ Please contact us for further explanation or clarification or to show interest a
 
 #### 2) Gene duplication among strains analysis
 
-The script [duplicate_search_bacteria.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/duplicate_search_bacteria.pl) generates a blast database of the provide protein fasta and searches for putative duplicates.
+The script [duplicate_search_bacteria.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/duplicate_search_bacteria.pl) generates a blast database of the provide protein fasta and searches for putative duplicates.
 
 ```
 Usage:
-perl BacterialDuplicates/scripts/duplicate_search_bacteria.pl 
+perl BacterialDuplicates/scripts/perl/duplicate_search_bacteria.pl 
     -fasta proteins.fasta 
     -script_path /path/to/script/parse_BLAST.pl 
     -name example 
@@ -109,7 +109,7 @@ name: name to add to identify files
 
 BLAST_path: binary path containing blastp and makeblastdb. E.g. /usr/bin/, /software/ncbi-blast/bin, etc.
 
-script_path: path for [parse_BLAST.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/parse_BLAST.pl)
+script_path: path for [parse_BLAST.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/parse_BLAST.pl)
 
 ```
 ATTENTION: DO NOT use file *protein.faa
@@ -136,9 +136,9 @@ A new clean file is generated (*_translated_cds.faa_clean.fasta) that will be us
 
 To reproduce the example provided here:
 ```
-perl BacterialDuplicates/scripts/duplicate_search_bacteria.pl -fasta test_BacterialDuplicates/GCA_000027125.1_Ecoli042/GCA_000027125.1_ASM2712v1_translated_cds.faa -name GCA_000027125.1_Ecoli042_results -BLAST_path /software/ncbi-blast/bin -script_path BacterialDuplicates/scripts/parse_BLAST.pl
+perl BacterialDuplicates/scripts/perl/duplicate_search_bacteria.pl -fasta test_BacterialDuplicates/GCA_000027125.1_Ecoli042/GCA_000027125.1_ASM2712v1_translated_cds.faa -name GCA_000027125.1_Ecoli042_results -BLAST_path /software/ncbi-blast/bin -script_path BacterialDuplicates/scripts/perl/parse_BLAST.pl
 
-perl BacterialDuplicates/scripts/duplicate_search_bacteria.pl -fasta test_BacterialDuplicates/GCF_000482265.1_K-12_MG1655/GCF_000482265.1_EC_K12_MG1655_Broad_SNP_translated_cds.faa -name GCF_000482265.1_K-12_MG1655_results -BLAST_path /software/ncbi-blast/bin -script_path BacterialDuplicates/scripts/parse_BLAST.pl
+perl BacterialDuplicates/scripts/perl/duplicate_search_bacteria.pl -fasta test_BacterialDuplicates/GCF_000482265.1_K-12_MG1655/GCF_000482265.1_EC_K12_MG1655_Broad_SNP_translated_cds.faa -name GCF_000482265.1_K-12_MG1655_results -BLAST_path /software/ncbi-blast/bin -script_path BacterialDuplicates/scripts/perl/parse_BLAST.pl
 ```
 
 Please provide absolute path for files and folders and remember that names can not contain spaces or special characters.
@@ -176,7 +176,7 @@ total 11712
 - File *results.csv summarizes all results and contains all the relevant information for the interpretation of results.
 
 ##### Generate plot
-Use the coordinates file generated to obtain the plot using the R script: [Plot_ChromoseDuplicates.R](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/Plot_ChromoseDuplicates.R)
+Use the coordinates file generated to obtain the plot using the R script: [Plot_ChromoseDuplicates.R](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/R/Plot_ChromoseDuplicates.R)
 
 Edit the script for each strain desired and add the coordinate full path to the line 4:
 
@@ -202,11 +202,11 @@ Plot of the duplicated genes along the chromosome:
 
 Once you have identified a set of putative duplicated proteins in your strain of interest, you might want to know if these are also duplicated in other strains. Also you might have a set of proteins and you may just want to have a quick view of the duplication among any other strains.
 
-For the analysis of putative duplicated proteins between strains, we use the script [protein_Search_genome.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/protein_Search_genome.pl):
+For the analysis of putative duplicated proteins between strains, we use the script [protein_Search_genome.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/protein_Search_genome.pl):
 
 ```
 Usage:
-	perl BacterialDuplicates/scripts/protein_Search_genome.pl 
+	perl BacterialDuplicates/scripts/perl/protein_Search_genome.pl 
 	-proteins proteins.fasta 
 	-name example 
 	-BLAST_path /path/to/BLAST/bin/
@@ -249,11 +249,11 @@ We initially identified (in step 2) putative duplicated proteins in our strains 
 
 1. You can manually copy and paste sequences into a new file
 
-2. You can employ a script to automatically perform this task. To do so, we will employ the script add it here named: [get-seq_ids.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/get-seq_ids.pl)
+2. You can employ a script to automatically perform this task. To do so, we will employ the script add it here named: [get-seq_ids.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/get-seq_ids.pl)
 
 ```
 Usage:
-perl BacterialDuplicates/scripts/get-seq_ids.pl ids.txt sequences.fasta output_file.fasta
+perl BacterialDuplicates/scripts/perl/get-seq_ids.pl ids.txt sequences.fasta output_file.fasta
 
 ```
 Basically, this script takes as a first argument a group of ids in a txt file (one per line), a sequence fasta file and the name for the output fasta file generated.
@@ -267,7 +267,7 @@ awk -F "," '{print $2}' GCA_000027125.1_Ecoli042_results/GCA_000027125.1_Ecoli04
 Now, we will retrieve these ids from the clean file previously generated (*_translated_cds.faa_clean.fasta).
 
 ```
-perl BacterialDuplicates/scripts/get-seq_ids.pl ids.txt GCA_000027125.1_Ecoli042/GCA_000027125.1_ASM2712v1_translated_cds.faa_clean.fasta duplicated_proteins_Ecoli042.fasta
+perl BacterialDuplicates/scripts/perl/get-seq_ids.pl ids.txt GCA_000027125.1_Ecoli042/GCA_000027125.1_ASM2712v1_translated_cds.faa_clean.fasta duplicated_proteins_Ecoli042.fasta
 ```
 
 duplicated_proteins_Ecoli042.fasta will contain the fasta sequences of the duplicated proteins (one per group of duplicates).
@@ -277,7 +277,7 @@ Once you have the set of interest proteins, the strains of interest selected, we
 To reproduce the example provided here, we did:
 
 ```
-perl BacterialDuplicates/scripts/protein_Search_genome.pl -proteins duplicated_proteins_Ecoli042.fasta -BLAST_path /soft/bin/ -strain GCA_000027125.1_Ecoli042/GCA_000027125.1_ASM2712v1_translated_cds.faa_clean.fasta,Ecoli042 -strain GCF_000482265.1_K-12_MG1655/GCF_000482265.1_EC_K12_MG1655_Broad_SNP_translated_cds.faa_clean.fasta,Ecoli_K12 -name example_analysis
+perl BacterialDuplicates/scripts/perl/protein_Search_genome.pl -proteins duplicated_proteins_Ecoli042.fasta -BLAST_path /soft/bin/ -strain GCA_000027125.1_Ecoli042/GCA_000027125.1_ASM2712v1_translated_cds.faa_clean.fasta,Ecoli042 -strain GCF_000482265.1_K-12_MG1655/GCF_000482265.1_EC_K12_MG1655_Broad_SNP_translated_cds.faa_clean.fasta,Ecoli_K12 -name example_analysis
 ```
 Please provide absolute path for files and folders and remember that names can not contain spaces or special characters.
 
