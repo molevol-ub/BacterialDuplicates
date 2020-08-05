@@ -1,22 +1,39 @@
-This is an example workflow and additional details for the bioinformatic analysis generated for the analysis of duplicated genes within E. coli
+# Duplicates in E. coli genomes
 
-## Citation
+This is an example workflow and additional details for the bioinformatic analysis generated 
+for the analysis of duplicated genes within E. coli
 
-Gene duplications in the E. coli genome: common themes among pathotypes. Manuel Bernabeu, José Francisco Sánchez-Herrero, Pol Huedo, Alejandro Prieto, Mário Hüttener, Julio Rozas and Antonio Juárez. BMC Genomics 2019 20:313, https://doi.org/10.1186/s12864-019-5683-4
+## Table of Contents
+
+- [Usage](#usage)
+  * [Retrieve data](#retrieve-data)
+     * [Example](#example)
+  * [Gene duplication among strains analysis](#gene-duplication-among-strains-analysis)
+     * [Parameters](#parameters)
+     * [Explanation of the workflow](#explanation-of-the-workflow)
+     * [Example of use](#example-of-use)
+     * [Generate plot](#generate-plot)
+  * [Gene duplication between strains analysis](#gene-duplication-between-strains-analysis)
+     * [Parameters](#parameters)
+     * [Example](#example)
+- [Supplementary information](#supplementary-information)
+- [Citation](#citation)
 
 ## Usage
 
-In order to provide an example of the procedure we followed we have generated an example set in the example folder.
+In order to provide an example of the procedure we followed we have generated an example set in the example folder 
+under the `Ecoli` [folder](https://github.com/molevol-ub/BacterialDuplicates/tree/master/Ecoli).
 
-#### 1) Retrieve data
+```
+ATTENTION: To replicate the analysis and the example we provide here, we encourage to download the GitHub release corresponding [v1.0](https://github.com/molevol-ub/BacterialDuplicates/releases/tag/v1.0).
+Some scripts, options and parameters might have changed since that moment and we do not assure 100% resemblance with latest Github release.
+```
+
+Here, we show different steps for the retrieval of the data, analysis and visualization.
+
+### Retrieve data
 
 Data can be downloaded from NCBI or could be provided by the user. Necessary data is basically translated cds protein for each strain. 
-
-```
-ATTENTION: DO NOT use file *protein.faa
-   
-Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.
-```
 
 If strains are deposited on GenBank, data can be downloaded using a script we provide here: [NCBI_downloader.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/NCBI_downloader.pl).
 
@@ -35,11 +52,12 @@ Example data file ([example_strains2download.csv](https://github.com/molevol-ub/
 ```
 ## Commensal
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/482/265/GCF_000482265.1_EC_K12_MG1655_Broad_SNP,GCF_000482265.1_K-12_MG1655
+
 ## EAEC
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/027/125/GCA_000027125.1_ASM2712v1,GCA_000027125.1_Ecoli042
 ```
 
-##### Example
+#### Example
 
 To reproduce the example provided here:
 
@@ -83,12 +101,19 @@ We will retrieve all information for each strain but we basically rely on the he
 >lcl|FN554766.1_prot_CBG32835.1_1 [gene=thrA] [locus_tag=EC042_0001] [db_xref=GOA:D3H385,InterPro:IPR001048,InterPro:IPR001341,InterPro:IPR001342,InterPro:IPR002912,InterPro:IPR005106,InterPro:IPR011147,InterPro:IPR016040,InterPro:IPR018042,InterPro:IPR019811,InterPro:IPR027795,UniProtKB/TrEMBL:D3H385] [protein=bifunctional aspartokinase I/homoserine dehydrogenase I] [protein_id=CBG32835.1] [location=336..2798] [gbkey=CDS]
 MRVLKFGGTSVANAERFLRVADILESNARQGQVATVLSAPAKITNHLVAMIEKTISGQDALPNISDAERIFAELLTGLAA
 ....
+
+```
+ATTENTION: DO NOT use file *protein.faa
+   
+Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.
+```
+
 ```
 
 NOTE: It is possible to generate the same results from a gff file, but it is not implemented neither intended right now.
 Please contact us for further explanation or clarification or to show interest as we might by thinking of implementing this feature. 
 
-#### 2) Gene duplication among strains analysis
+### Gene duplication among strains analysis
 
 The script [duplicate_search_bacteria.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/duplicate_search_bacteria.pl) generates a blast database of the provide protein fasta and searches for putative duplicates.
 
@@ -101,6 +126,7 @@ perl BacterialDuplicates/scripts/perl/duplicate_search_bacteria.pl
     -BLAST_path /path/to/BLAST/bin 
     [-n CPUs -sim 85 -len 85]
 ```
+#### Parameters
 
 ##### Mandatory parameters:
 fasta: protein sequences in fasta format translated from CDS E.g. *.translated_cds.faa
@@ -124,15 +150,14 @@ sim: 85 (% of similarity between any pair of putative duplicated proteins)
 
 len: 85 (% of minimum length of the query protein fulfilling the similarity cutoff)
 
-##### Explanation of the workflow
+#### Explanation of the workflow
 In order to discard possible parsing problems, the script modifies the original protein fasta provided and cleanes it.
 
 We discard pseudogenes sequences (marked as pseudo=true in the header) and we change special characters from sequence headers such as "|" that might prevent the process to continue. 
 
 A new clean file is generated (*_translated_cds.faa_clean.fasta) that will be used from now on in the analysis. We need to take this into account as we might need to recover these proteins later.
  
-
-##### Example of use
+#### Example of use
 
 To reproduce the example provided here:
 ```
@@ -175,7 +200,7 @@ total 11712
 - File *coordinates.csv contains the information of the coordinates of the different groups obtained.
 - File *results.csv summarizes all results and contains all the relevant information for the interpretation of results.
 
-##### Generate plot
+#### Generate plot
 Use the coordinates file generated to obtain the plot using the R script: [Plot_ChromoseDuplicates.R](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/R/Plot_ChromoseDuplicates.R)
 
 Edit the script for each strain desired and add the coordinate full path to the line 4:
@@ -198,7 +223,7 @@ Plot of the duplicated genes along the chromosome:
 - Some groups are not shown because because they map to a plasmid (if present) (not shown in the figure).
 
 
-#### 3) Gene duplication between strains analysis
+### Gene duplication between strains analysis
 
 Once you have identified a set of putative duplicated proteins in your strain of interest, you might want to know if these are also duplicated in other strains. Also you might have a set of proteins and you may just want to have a quick view of the duplication among any other strains.
 
@@ -216,6 +241,8 @@ Usage:
 This script generates a blast database for each strain provided and search the given proteins.
 
 Please provide absolute path for files and folders and remember that names can not contain spaces or special characters.
+
+#### Parameters
 
 ##### Mandatory parameters:
 proteins: proteins of interest in fasta format
@@ -305,3 +332,12 @@ total 5924
 - Files that endswith *BLAST.out correspond to the original BLAST result (tabular format) and *BLAST_parsed.txt the information filtered according to user input similarity and length thresholds.
 - table.csv and relations_proteins.tsv are the results generated in a comma/tabular separated values format.
 - Examples of this files could be seen in the example folder under this [repository](example/) and they basically summarize the relations among proteins between different strains and the protein ids (relations.csv) or just the raw count for each group (table.csv). 
+
+## Supplementary information
+
+Strains analyzed in the corresponding analysis are deposited in file `Ecoli/data/ecoli_strains_download.txt`.
+See additional details [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Ecoli/data/ecoli_strains_download.txt)
+
+## Citation
+
+Gene duplications in the E. coli genome: common themes among pathotypes. Bernabeu M., Sánchez-Herrero JF., Huedo P., Prieto A., Hüttener M., Rozas J. and Juárez A. **BMC Genomics** *2019 20:313*, https://doi.org/10.1186/s12864-019-5683-4

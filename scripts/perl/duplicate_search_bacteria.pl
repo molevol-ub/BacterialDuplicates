@@ -10,7 +10,7 @@ use FindBin '$Bin';
 ##	Updated: January, 2020						    ##
 ##############################################################################
 
-my ($fasta, $cpus, $sim, $len, $help, $blast_path, $name, $CARD_blast_db, $vfdb_blast_db, $interpro_bin);
+my ($fasta, $cpus, $sim, $len, $help, $blast_path, $name, $CARD_blast_db, $vfdb_blast_db);
 
 GetOptions(
 	"fasta=s" => \$fasta,
@@ -21,8 +21,7 @@ GetOptions(
 	"h|help" => \$help,
 	"BLAST_path=s" => \$blast_path,
 	"CARD_db=s" => \$CARD_blast_db,
-	"vfdb_db=s" => \$vfdb_blast_db,
-	#"interpro_bin" => \$interpro_bin
+	"vfdb_db=s" => \$vfdb_blast_db
 );
 
 ## get path for scripts
@@ -34,25 +33,28 @@ if (!$blast_path) { &print_help; exit(); }
 if (!$name) { &print_help; exit(); }
 if (!$CARD_blast_db) { &print_help; exit(); }
 if (!$vfdb_blast_db) { &print_help; exit(); }
-#if (!$interpro_bin) { &print_help; exit();}
 
 if (!$len) {$len=85;}
 if (!$sim) {$sim=85;}
 if (!$cpus) {$cpus=2;}
 
 # Lets start
-# 1. Generate folder for files
-# 2. Clean fasta files and discard putative error prone characters
-# 3. makeblastdb of proteins
-# 4. blastp proteins vs itself
-# 5. parse blast results
-# 6. generate duplicate results
-# 7. get duplicate sequences
-# 8. blastp vs. card
-# 9. parse CARD blast results
-# 10. blastp vs. vfdb
-# 11 parse VFDB blast results
-# 12. generate plot
+# 1: Make folder
+# 2: Clean sequences
+# 3: Makeblastdb
+# 4: BLAST proteins
+# 5: Parse BLAST
+# 6: Generate duplicate results
+# 7: Get fasta seqs results
+# 8: BLAST duplicated proteins vs. CARD
+# 9: Parse BLAST duplicated CARD results
+# 10: BLAST ALL proteins vs. CARD
+# 11: Parse BLAST ALL CARD results
+# 12: BLAST proteins vs. VFDB
+# 13: Parse BLAST VFDB results
+# 14: BLAST ALL proteins vs. VFDB
+# 15: Parse BLAST ALL VFDB results
+# 16: Generate Plot
 
 print "############################\n";
 print "Step 1: Make folder\n";
@@ -183,18 +185,8 @@ my $parse_command_VFDB_all = "perl ".$parse_blast_script." $output_name_VFDB_all
 print "System call: $parse_command_VFDB_all\n";
 system($parse_command_VFDB_all);
 
-print "####################################\n";
-print "Step 16: InterPro duplicated proteins\n";
-print "####################################\n";
-my $out_interpro = $name."-InterPro";
-my $interpro_script = $script_paths."/interpro_Caller.pl";
-my $interpro_command_all = "perl ".$interpro_script." $clean_fasta $interpro_bin $out_interpro";
-## no interpro cpu command: generates infinite loop...
-#print "System call: $interpro_command_all\n";
-#system($interpro_command_all);
-
 print "############################\n";
-print "Step 17: Generate Plot\n";
+print "Step 16: Generate Plot\n";
 print "############################\n";
 
 sub print_help {
@@ -206,7 +198,6 @@ sub print_help {
 		-BLAST_path /path/to/BLAST/bin 
 		-CARD_db /path/to/CARD_databases/blast_id_name
 		-vfdb_db /path/to/VFDB_databases/blast_id_name
-		-interpro_bin /path/to/interpro/sh_file.sh
 		[-CPU nCPU -sim 85 -len 85]\n\n";
 
 	print "\nMandatory parameters:\n";
@@ -216,7 +207,6 @@ sub print_help {
 	print "BLAST_path: binary path contain blastp and makeblastdb\n\n\n";
 	print "CARD_db: path for CARD protein databases indexed by makeblast db\n";
 	print "vfdb_db: path for VFDB protein databases indexed by makeblast db\n";
-	print "interpro_bin: shell script for interpro software\n";
 	
 	print "Default parameters [in brakets]:\n";
 	print "############################\n";
