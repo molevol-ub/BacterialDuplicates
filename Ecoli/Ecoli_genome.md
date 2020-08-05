@@ -1,7 +1,7 @@
-# Duplicates in E. coli genomes
+# Duplicates in _Escherichia coli_ genomes
 
 This is an example workflow and additional details for the bioinformatic analysis generated 
-for the analysis of duplicated genes within E. coli
+for the analysis of duplicated genes within _E. coli_
 
 ## Table of Contents
 
@@ -24,10 +24,8 @@ for the analysis of duplicated genes within E. coli
 In order to provide an example of the procedure we followed we have generated an example set in the example folder 
 under the `Ecoli` [folder](https://github.com/molevol-ub/BacterialDuplicates/tree/master/Ecoli).
 
-```
-ATTENTION: To replicate the analysis and the example we provide here, we encourage to download the GitHub release corresponding [v1.0](https://github.com/molevol-ub/BacterialDuplicates/releases/tag/v1.0).
-Some scripts, options and parameters might have changed since that moment and we do not assure 100% resemblance with latest Github release.
-```
+> ATTENTION: To replicate the analysis and the example we provide here, we encourage to download the GitHub release corresponding [v1.0](https://github.com/molevol-ub/BacterialDuplicates/releases/tag/v1.0). Some scripts, options and parameters might have changed since that moment and we do not assure 100% resemblance with latest Github release.
+
 
 Here, we show different steps for the retrieval of the data, analysis and visualization.
 
@@ -98,20 +96,19 @@ total 17224
 We will retrieve all information for each strain but we basically rely on the header information supplied by translated_cds.faa file
 
 ```
->lcl|FN554766.1_prot_CBG32835.1_1 [gene=thrA] [locus_tag=EC042_0001] [db_xref=GOA:D3H385,InterPro:IPR001048,InterPro:IPR001341,InterPro:IPR001342,InterPro:IPR002912,InterPro:IPR005106,InterPro:IPR011147,InterPro:IPR016040,InterPro:IPR018042,InterPro:IPR019811,InterPro:IPR027795,UniProtKB/TrEMBL:D3H385] [protein=bifunctional aspartokinase I/homoserine dehydrogenase I] [protein_id=CBG32835.1] [location=336..2798] [gbkey=CDS]
+>lcl|FN554766.1_prot_CBG32835.1_1 [gene=thrA] [locus_tag=EC042_0001] [db_xref=GOA:D3H385,InterPro:IPR001048,
+InterPro:IPR001341,InterPro:IPR001342,InterPro:IPR002912,InterPro:IPR005106,InterPro:IPR011147,InterPro:IPR016040,
+InterPro:IPR018042,InterPro:IPR019811,InterPro:IPR027795,UniProtKB/TrEMBL:D3H385] 
+[protein=bifunctional aspartokinase I/homoserine dehydrogenase I] [protein_id=CBG32835.1] [location=336..2798] [gbkey=CDS]
 MRVLKFGGTSVANAERFLRVADILESNARQGQVATVLSAPAKITNHLVAMIEKTISGQDALPNISDAERIFAELLTGLAA
 ....
-
-```
-ATTENTION: DO NOT use file *protein.faa
-   
-Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.
 ```
 
-```
+> __ATTENTION: DO NOT use file *protein.faa__
+> Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.
 
-NOTE: It is possible to generate the same results from a gff file, but it is not implemented neither intended right now.
-Please contact us for further explanation or clarification or to show interest as we might by thinking of implementing this feature. 
+> **NOTE**: It is possible to generate the same results from a gff file, but it is not implemented neither intended right now.
+> Please contact us for further explanation or clarification or to show interest as we might by thinking of implementing this feature. 
 
 ### Gene duplication among strains analysis
 
@@ -136,12 +133,6 @@ name: name to add to identify files
 BLAST_path: binary path containing blastp and makeblastdb. E.g. /usr/bin/, /software/ncbi-blast/bin, etc.
 
 script_path: path for [parse_BLAST.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/parse_BLAST.pl)
-
-```
-ATTENTION: DO NOT use file *protein.faa
-   
-Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.
-```
 
 ##### Default parameters [in brakets]:
 CPU: 2
