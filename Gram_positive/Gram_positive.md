@@ -379,8 +379,7 @@ This script, will basically generate some information that could guide us in the
 As an example see the following plot (Figure 1a Sanchez-Herrero et. al 2020) where we show the amount 
 of duplicates groups foreach strain and the total number of duplicated genes and duplicated transposases. 
 
-![Figure 1a Sanchez-Herrero et. al 2020](figure/Saureus_groups.pdf)
-
+![Figure](figure/Saureus_groups.png "Figure 1a Sanchez-Herrero et. al 2020")
 
 ## Supplementary information
 
