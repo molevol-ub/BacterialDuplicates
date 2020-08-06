@@ -35,26 +35,25 @@ while (<FILE>) {
 	$counter_seqs++;
 	
 	if ($option eq "ADD") {
-	        $titleline =~ s/ /_/g;
+		$titleline =~ s/ /_/g;
 		print OUT ">".$titleline."-".$name."_".$counter_seqs."\n".$sequence."\n";
+	
 	} elsif ($option eq "REPLACE") {
-	        $titleline =~ s/ /_/g;
+	    $titleline =~ s/ /_/g;
 		print OUT ">".$name."_".$counter_seqs."\n".$sequence."\n";
 		print $titleline."\t".$name."_".$counter_seqs."\n";
-        } elsif ($option eq "BEGIN") {
-                my @array = split("-", $titleline);
-               #if ($array[0] =~ /.*prot_(.*)/) {$protein_name=$1;} else {$protein_name=$array[0];}
-#               print $protein_name."\n";
-                print OUT ">$array[0]\n$sequence\n";
-                #print $name."_".$protein_name."\t".$titleline."\n";
+	     
+     } elsif ($option eq "BEGIN") {
+        my @array = split("-", $titleline);
+        print OUT ">$array[0]\n$sequence\n";
+                
 	} elsif ($option eq "ADD_BEGIN") {
-        	my @array = split(" ", $titleline);
+       	my @array = split(" ", $titleline);
 		my $protein_name;
 		if ($array[0] =~ /.*prot_(.*)/) {$protein_name=$1;} else {$protein_name=$array[0];}
-#		print $protein_name."\n";
-	        print OUT ">".$name."_".$protein_name."\n".$sequence."\n";
-                print $name."_".$protein_name."\t".$titleline."\n";
 
+        print OUT ">".$name."_".$protein_name."\n".$sequence."\n";
+        print $name."_".$protein_name."\t".$titleline."\n";
 	}
 }
 close (FILE); close (OUT);
