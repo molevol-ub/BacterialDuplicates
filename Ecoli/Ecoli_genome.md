@@ -126,20 +126,20 @@ perl BacterialDuplicates/scripts/perl/duplicate_search_bacteria.pl
 #### Parameters
 
 ##### Mandatory parameters:
-fasta: protein sequences in fasta format translated from CDS E.g. *.translated_cds.faa
+- fasta: protein sequences in fasta format translated from CDS E.g. *.translated_cds.faa
 
-name: name to add to identify files
+- name: name to add to identify files
 
-BLAST_path: binary path containing blastp and makeblastdb. E.g. /usr/bin/, /software/ncbi-blast/bin, etc.
+- BLAST_path: binary path containing blastp and makeblastdb. E.g. /usr/bin/, /software/ncbi-blast/bin, etc.
 
-script_path: path for [parse_BLAST.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/parse_BLAST.pl)
+- script_path: path for [parse_BLAST.pl](https://github.com/molevol-ub/BacterialDuplicates/blob/master/scripts/perl/parse_BLAST.pl)
 
 ##### Default parameters [in brakets]:
-CPU: 2
+- CPU: 2
 
-sim: 85 (% of similarity between any pair of putative duplicated proteins)
+- sim: 85 (% of similarity between any pair of putative duplicated proteins)
 
-len: 85 (% of minimum length of the query protein fulfilling the similarity cutoff)
+- len: 85 (% of minimum length of the query protein fulfilling the similarity cutoff)
 
 #### Explanation of the workflow
 In order to discard possible parsing problems, the script modifies the original protein fasta provided and cleanes it.

@@ -48,7 +48,8 @@ perl BacterialDuplicates/scripts/NCBI_downloader.pl csv_file option
 ```
 Please provide a csv file and option to download data. Use ALL for the download of all information available for each strain specified. 
 
-Please select from https://www.ncbi.nlm.nih.gov/genome your strains of interest and generate a comma separated (csv) table containing the ftp site for each strain and the strain name you would like to add. Please do not use any spaces or special characters.
+Please select from https://www.ncbi.nlm.nih.gov/genome your strains of interest and generate a comma separated (csv) 
+table containing the ftp site for each strain and the strain name you would like to add. Please do not use any spaces or special characters.
 
 Example data file ([example_strains2download.csv](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Gram_positive/example/example_strains2download.csv)): 
 ```
@@ -70,7 +71,8 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/009/405/GCF_000009405.1_ASM940v1,
 ## Sxylosus
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/709/415/GCF_000709415.1_ASM70941v1,GCA_000709415.1_SMQ-121
 ```
-We will retrieve all information for each strain but we basically rely on the header information supplied by translated_cds.faa file
+We will retrieve all information for each strain but we basically rely on the header information supplied by 
+translated_cds.faa file
 
 ```
 >lcl|FN554766.1_prot_CBG32835.1_1 [gene=thrA] [locus_tag=EC042_0001] [db_xref=GOA:D3H385,InterPro:IPR001048,InterPro:IPR001341,InterPro:IPR001342,InterPro:IPR002912,InterPro:IPR005106,InterPro:IPR011147,InterPro:IPR016040,InterPro:IPR018042,InterPro:IPR019811,InterPro:IPR027795,UniProtKB/TrEMBL:D3H385] [protein=bifunctional aspartokinase I/homoserine dehydrogenase I] [protein_id=CBG32835.1] [location=336..2798] [gbkey=CDS]
@@ -78,7 +80,8 @@ MRVLKFGGTSVANAERFLRVADILESNARQGQVATVLSAPAKITNHLVAMIEKTISGQDALPNISDAERIFAELLTGLAA
 ....
 ```
 > __ATTENTION: DO NOT use file *protein.faa__
-> Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.
+> Translated CDS contain directly translated coding sequence regions and sometimes proteins that are identically 
+> the same are collapsed into 1 entry into database, so a duplicated gene that has two different positions in the genome, two translated cds would only have one protein.
 
 > **NOTE**: It is possible to generate the same results from a gff file, but it is not implemented neither intended right now.
 > Please contact us for further explanation or clarification or to show interest as we might by thinking of implementing this feature. 
@@ -99,24 +102,24 @@ This will produce several folders, one for each strain, containing multiple data
 ```
 jfsanchez@debian:~/BacterialDuplicates$ ls data/
 total 204
-drwxr-xr-x 2 jsanchez 464 Aug  6 12:54 GCA_000009405.1_TM300/
-drwxr-xr-x 2 jsanchez 472 Aug  6 12:55 GCA_000013425.1_Saureus_NCTC8325/
-drwxr-xr-x 2 jsanchez 480 Aug  6 12:55 GCA_000391485.2_B594/
-drwxr-xr-x 2 jsanchez 480 Aug  6 12:56 GCA_000709415.1_SMQ-121/
-drwxr-xr-x 2 jsanchez 488 Aug  6 12:56 GCA_001720945.1_ISMMS_VRE_1/
-drwxr-xr-x 2 jsanchez 488 Aug  6 12:55 GCA_006094375.1_ATCC_14990/
+drwxr-xr-x 2 jfsanchez 464 Aug  6 12:54 GCA_000009405.1_TM300/
+drwxr-xr-x 2 jfsanchez 472 Aug  6 12:55 GCA_000013425.1_Saureus_NCTC8325/
+drwxr-xr-x 2 jfsanchez 480 Aug  6 12:55 GCA_000391485.2_B594/
+drwxr-xr-x 2 jfsanchez 480 Aug  6 12:56 GCA_000709415.1_SMQ-121/
+drwxr-xr-x 2 jfsanchez 488 Aug  6 12:56 GCA_001720945.1_ISMMS_VRE_1/
+drwxr-xr-x 2 jfsanchez 488 Aug  6 12:55 GCA_006094375.1_ATCC_14990/
 
 
 jfsanchez@debian:~/BacterialDuplicates$ ls data/GCA_000009405.1_TM300/
 total 21652
--rw-r--r-- 1 jsanchez 2680312 Apr 18 14:36 GCF_000009405.1_ASM940v1_cds_from_genomic.fna
--rw-r--r-- 1 jsanchez  798976 Apr 18 14:36 GCF_000009405.1_ASM940v1_feature_table.txt
--rw-r--r-- 1 jsanchez 2598581 Apr  1 13:46 GCF_000009405.1_ASM940v1_genomic.fna
--rw-r--r-- 1 jsanchez 6324175 Apr 18 14:36 GCF_000009405.1_ASM940v1_genomic.gbff
--rw-r--r-- 1 jsanchez 1276237 Apr 18 14:36 GCF_000009405.1_ASM940v1_genomic.gff
--rw-r--r-- 1 jsanchez  890709 Apr 18 14:36 GCF_000009405.1_ASM940v1_protein.faa
--rw-r--r-- 1 jsanchez   39300 Apr 18 14:36 GCF_000009405.1_ASM940v1_rna_from_genomic.fna
--rw-r--r-- 1 jsanchez 1190618 Apr 18 14:36 GCF_000009405.1_ASM940v1_translated_cds.faa
+-rw-r--r-- 1 jfsanchez 2680312 Apr 18 14:36 GCF_000009405.1_ASM940v1_cds_from_genomic.fna
+-rw-r--r-- 1 jfsanchez  798976 Apr 18 14:36 GCF_000009405.1_ASM940v1_feature_table.txt
+-rw-r--r-- 1 jfsanchez 2598581 Apr  1 13:46 GCF_000009405.1_ASM940v1_genomic.fna
+-rw-r--r-- 1 jfsanchez 6324175 Apr 18 14:36 GCF_000009405.1_ASM940v1_genomic.gbff
+-rw-r--r-- 1 jfsanchez 1276237 Apr 18 14:36 GCF_000009405.1_ASM940v1_genomic.gff
+-rw-r--r-- 1 jfsanchez  890709 Apr 18 14:36 GCF_000009405.1_ASM940v1_protein.faa
+-rw-r--r-- 1 jfsanchez   39300 Apr 18 14:36 GCF_000009405.1_ASM940v1_rna_from_genomic.fna
+-rw-r--r-- 1 jfsanchez 1190618 Apr 18 14:36 GCF_000009405.1_ASM940v1_translated_cds.faa
 ```
 
 ## Gene duplication among strains analysis
@@ -199,7 +202,6 @@ Duplicated proteins identified are retrieved from the total set using script `ge
 Now, only for the duplicated proteins identified and later for all the proteins, virulence and resistance databases 
 are searched. The similarity cutoff is automatically relaxed to 35% following homology search strategies ([PMID: 23749753](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3820096/)).
 
-
 ### Virulence and Resistance Databases retrieval
 
 We downloaded the Virulence Factor Database ([VFDB](http://www.mgc.ac.cn/cgi-bin/VFs/search.cgi)) 
@@ -250,6 +252,27 @@ perl /users/jfsanchez/jfsh_scripts/rename_FASTA_seqs.pl VFDB_setB_pro.fas VFDB_s
 makeblastdb -in VFDB_setB_pro.renamed.fas -dbtype prot -input_type fasta -out VFDB_db
 ```
 
+### Parameters
+
+#### Mandatory parameters:
+- fasta: protein sequences in fasta format translated from CDS E.g. *.translated_cds.faa
+
+- name: name to add to identify files
+
+- BLAST_path: binary path containing blastp and makeblastdb. E.g. /usr/bin/, /software/ncbi-blast/bin, etc.
+
+- CARD_db: Absolute path to the indexed CARD database generated
+
+- vfdb_db: Absolute path to the indexed VFDB database
+
+#### Default parameters [in brakets]:
+
+- CPU: 2
+
+- sim: 85 (% of similarity between any pair of putative duplicated proteins)
+
+- len: 85 (% of minimum length of the query protein fulfilling the similarity cutoff)
+
 ### Example of usage
 
 We illustrate the process of duplication analysis by analyzing the example strains provided in file `Gram_positive/example/example_strains2downaload.csv`.
@@ -265,10 +288,13 @@ perl scripts/perl/duplicate_search_bacteria.pl -fasta proteins.fasta -name examp
 		[-CPU nCPU -sim 85 -len 85]
 
 ```
-To do it for all strains, we did a shell loop with the contents of data folder 
-and store commands in file `commands_sent.sh`. We then execute it appropiately. 
+To do it for all strains, we create a new folder named `results/` and we  
+loop with the contents of `data/` folder. We store commands in file 
+`commands_sent.sh` and execute it appropiately according to your system.
 
 ```
+mkdir results
+cd results
 for i in `dir ../data/`; 
 do 
 	file=`readlink -f ../data/$i/*translated_cds.faa`; 
@@ -276,20 +302,94 @@ do
 	echo "# Processing file: " $file; 
 	echo "##############################"; 
 	echo "perl ../BacterialDuplicates/scripts/perl/duplicate_search_bacteria.pl \
-		-fasta $file -script_path BacterialDuplicates/scripts/perl/parse_BLAST.pl \
-		-name $i -BLAST_path /soft/ncbi-blast-2.4.0/bin -CPU 2 
-		-CARD_db ../databases/CARD/card_db
-		-vfdb_db ../databases/VFDB/VFDB_db"; 
+		-fasta $file -name $i -BLAST_path /soft/ncbi-blast-2.4.0/bin -CPU 2 \ 
+		-CARD_db ../databases/CARD/card_db \
+		-vfdb_db ../databases/VFDB/VFDB_db."; 
 	echo "";  
 done > commands_sent.sh
 ```
 
+> __ATTENTION__: Provide always absolute paths. Here we just provide an example of the command.
+
+For each folder, several results will be produce. See and example here:
+
+```
+jfsanchez@debian:~/BacterialDuplicates/results$ ls GCA_000009405.1_TM300/
+total 17876
+-rw-r--r-- 1 jfsanchez 2535783 Aug  6 19:33 GCA_000009405.1_TM300-BLAST_CARD_all.out
+-rw-r--r-- 1 jfsanchez   22481 Aug  6 19:33 GCA_000009405.1_TM300-BLAST_CARD_all.out.BLAST_parsed.txt
+-rw-r--r-- 1 jfsanchez    2923 Aug  6 19:32 GCA_000009405.1_TM300-BLAST_CARD_duplicates.out
+-rw-r--r-- 1 jfsanchez       0 Aug  6 19:32 GCA_000009405.1_TM300-BLAST_CARD_duplicates.out.BLAST_parsed.txt
+-rw-r--r-- 1 jfsanchez       0 Aug  6 19:32 GCA_000009405.1_TM300-BLAST_CARD_duplicates.out.duplicate_relations.txt
+-rw-r--r-- 1 jfsanchez 8079682 Aug  6 19:40 GCA_000009405.1_TM300-BLAST_VFDB_all.out
+-rw-r--r-- 1 jfsanchez  286001 Aug  6 19:40 GCA_000009405.1_TM300-BLAST_VFDB_all.out.BLAST_parsed.txt
+-rw-r--r-- 1 jfsanchez   21201 Aug  6 19:33 GCA_000009405.1_TM300-BLAST_VFDB_duplicates.out
+-rw-r--r-- 1 jfsanchez     304 Aug  6 19:33 GCA_000009405.1_TM300-BLAST_VFDB_duplicates.out.BLAST_parsed.txt
+-rw-r--r-- 1 jfsanchez      50 Aug  6 19:33 GCA_000009405.1_TM300-BLAST_VFDB_duplicates.out.duplicate_relations.txt
+-rw-r--r-- 1 jfsanchez 4393728 Aug  6 19:32 GCA_000009405.1_TM300_BLAST.out
+-rw-r--r-- 1 jfsanchez    6184 Aug  6 19:32 GCA_000009405.1_TM300_BLAST.out.allseqs_duplicated.fasta
+-rw-r--r-- 1 jfsanchez     526 Aug  6 19:32 GCA_000009405.1_TM300_BLAST.out.allseqs_duplicated.ids.txt
+-rw-r--r-- 1 jfsanchez  359151 Aug  6 19:32 GCA_000009405.1_TM300_BLAST.out.annotation_results.csv
+-rw-r--r-- 1 jfsanchez     969 Aug  6 19:32 GCA_000009405.1_TM300_BLAST.out.coordinates.csv
+-rw-r--r-- 1 jfsanchez    2127 Aug  6 19:32 GCA_000009405.1_TM300_BLAST.out.results.csv
+-rw-r--r-- 1 jfsanchez  600717 Aug  6 19:30 GCA_000009405.1_TM300_DB.phr
+-rw-r--r-- 1 jfsanchez   19624 Aug  6 19:30 GCA_000009405.1_TM300_DB.pin
+-rw-r--r-- 1 jfsanchez  735661 Aug  6 19:30 GCA_000009405.1_TM300_DB.psq
+-rw-r--r-- 1 jfsanchez 1190610 Aug  6 19:30 GCA_000009405.1_TM300_clean.fasta
+-rw-r--r-- 1 jfsanchez    2030 Aug  6 19:32 GCA_000009405.1_TM300_parsed.txt.BLAST_parsed.txt
+-rw-r--r-- 1 jfsanchez     526 Aug  6 19:32 GCA_000009405.1_TM300_parsed.txt.duplicate_relations.txt
+
+```
+
+- Files that end with suffixs \_DB.phr, \_DB.pin and \*_DB.psq correspond to the NCBI BLAST database generated.
+- Files that end with \_BLAST.out correspond to the original BLAST result (tabular format)
+- Files that contain \_BLAST_parsed.txt contain the filtered BLAST results according to similarity and length thresholds.  
+- Files that contain \_BLAST_out.* contain multiple information:
+ * \_BLAST.out.results.csv: Contains the duplicated groups and proteins with summarized information. We will later use this file to plot duplicated genes.
+ * \_BLAST.out.coordinates.csv: Contains coordinates information for each duplicated gene.
+ * \_BLAST.out.annotation_results.csv: Contains additional annotation results extracted from the original data.
+ * \_BLAST.out.allseqs_duplicated.ids.txt and \_BLAST.out.allseqs_duplicated.fasta: Contains the ids and fasta sequence, respectively of the duplicated genes identified.
+ 
+- Files containing the tag \_CARD_ correspond to results for the total proteins (\_all) or only the duplicated (\_duplicated) against CARD database.
+- Files containing the tag \_VFDB_ correspond to results for the total proteins (\_all) or only the duplicated (\_duplicated) against VFDB database.
+
+To summary all results into a csv file, we execute the following shell command availabe in file `summary_resulsts.sh` `under scripts/bash`.
+
+```
+for i in `dir results/`; do 
+	groups_array=`wc -l "results/"$i"/"$i"_parsed.txt.duplicate_relations.txt"`; 
+	groups=($(echo "$groups_array" | tr '\t' '\n')); 
+	dups=`grep -c '>' results/$i/"$i"_BLAST.out.allseqs_duplicated.fasta`; 
+	all_seqs=`grep -c '>' results/$i/"$i"_clean.fasta`; 
+	transpo=`grep -c 'transposase' "results/"$i"/"$i"_BLAST.out.results.csv"`; 
+	hypo=`grep -c 'hypothetical' "results/"$i"/"$i"_BLAST.out.results.csv"`; 
+	DUF=`grep -c 'DUF' "results/"$i"/"$i"_BLAST.out.results.csv"`; 
+	
+	echo $i,$groups,$dups,$all_seqs,$transpo,$hypo,$DUF; 
+done
+```
+
+In our analysis, once we had generated a summary csv file for all of the strains of interest, we  
+plotted using the R script `exploratory_analysis.R` in folder `scripts/R`.
+
+For the example shown here, we will use the script under `example` folder named as `plotter.R`.
+
+This script, will basically generate some information that could guide us in the following anaylsis. 
+
+As an example see the following plot (Figure 1a Sanchez-Herrero et. al 2020) where we show the amount 
+of duplicates groups foreach strain and the total number of duplicated genes and duplicated transposases. 
+
+![Figure 1a Sanchez-Herrero et. al 2020](figure/Saureus_groups.pdf)
 
 
 ## Supplementary information
 
-Strains analyzed in the corresponding analysis and paper are deposited in files `Gram_positive/data/*samples.csv`.
-See additional details [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Gram_positive/data/)
+Folder `Gram_positive/data` contains supplementary information related to the publication.
+
+Strains analyzed in the corresponding analysis and paper are deposited in files `strains/*samples.csv`.
+See additional details [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Gram_positive/data/strains)
+
+Results to replicate the analysis and plotted included in the publication that was generated are deposited under folder `results/`
 
 ## Citation
 
