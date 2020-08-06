@@ -1,0 +1,13 @@
+## operon Mec
+gb|ABQ47844.1|ARO:3000215|mecR1_[Staphylococcus_aureus_subsp._aureus_JH9]_	card_600
+gb|CCC86795.1|ARO:3001209|mecC_[Staphylococcus_aureus_subsp._aureus_LGA251]_	card_761
+gb|BAB41258.1|ARO:3000124|mecI_[Staphylococcus_aureus_subsp._aureus_N315]_	card_872
+gb|AGC51118.1|ARO:3000617|mecA_[Staphylococcus_aureus]_	card_1241
+
+
+## command
+ident 40
+cat card_mec-IDs.txt | while read line; do echo "## Gene: "$line; for i in `dir ../../400genomes_Saureus/3.results/results`; do file=`readlink -f ../../400genomes_Saureus/3.results/results/$i/*-BLAST_CARD_all.out.BLAST_parsed.txt`; count=`grep -w $line $file | awk '{if ($3 > 40) {print $0}}' | wc -l`; echo $i","$count; done > Saureus/Saureus_ident-40_$line.csv; done
+
+ident 80
+cat card_mec-IDs.txt | while read line; do echo "## Gene: "$line; for i in `dir ../../400genomes_Saureus/3.results/results`; do file=`readlink -f ../../400genomes_Saureus/3.results/results/$i/*-BLAST_CARD_all.out.BLAST_parsed.txt`; count=`grep -w $line $file | awk '{if ($3 > 80) {print $0}}' | wc -l`; echo $i","$count; done > Saureus/Saureus_ident-80_$line.csv; done

@@ -1,0 +1,190 @@
+Group,ID-1,Locus_Tag,Protein1,symbol,name Prot1,Annotation,start,end,strand,Origin,pseudo,ID-2,Locus_tag,Protein2,symbol,name Prot2,Annotation,start,end,strand,Origin,pseudo
+1,lcl_NC_009641.1_prot_WP_000977774.1_49,NWMN_RS00250,WP_000977774.1,n.a,tandem_type lipoprotein,n.a,55461,56231,+,NC_009641.1,false
+1,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000977781.1_51,NWMN_RS00260,WP_000977781.1,n.a,tandem_type lipoprotein,n.a,57117,57887,+,NC_009641.1,false
+2,lcl_NC_009641.1_prot_WP_000667269.1_90,NWMN_RS00465,WP_000667269.1,deoC,deoxyribose_phosphate aldolase,n.a,104485,105147,+,NC_009641.1,false
+2,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001083311.1_2291,NWMN_RS11790,WP_001083311.1,deoC,deoxyribose_phosphate aldolase,n.a,2258847,2259509,-,NC_009641.1,false
+3,lcl_NC_009641.1_prot_227,NWMN_RS01165,n.a,n.a,IS1182 family transposase,n.a,264375,264725,+,NC_009641.1,true
+3,,,,,,,,,,,lcl_NC_009641.1_prot_2472,NWMN_RS15785,n.a,n.a,transposase,n.a,2436214,2436573,+,NC_009641.1,true
+4,lcl_NC_009641.1_prot_WP_000142049.1_249,NWMN_RS01275,WP_000142049.1,n.a,TIGR01741 family protein,n.a,289403,289894,+,NC_009641.1,false
+4,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000141942.1_262,NWMN_RS01335,WP_000141942.1,n.a,TIGR01741 family protein,n.a,297061,297561,+,NC_009641.1,false
+5,lcl_NC_009641.1_prot_WP_000208414.1_250,NWMN_RS01280,WP_000208414.1,n.a,DUF5079 family protein,n.a,290102,290785,+,NC_009641.1,false
+5,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000208389.1_257,NWMN_RS01315,WP_000208389.1,n.a,DUF5079 family protein,n.a,294258,294941,+,NC_009641.1,false
+6,lcl_NC_009641.1_prot_WP_000337827.1_288,NWMN_RS01455,WP_000337827.1,n.a,hypothetical protein,n.a,322162,322341,+,NC_009641.1,false
+6,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000337826.1_1094,NWMN_RS05570,WP_000337826.1,n.a,hypothetical protein,n.a,1100392,1100571,+,NC_009641.1,false
+6,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000337827.1_2020,NWMN_RS10420,WP_000337827.1,n.a,hypothetical protein,n.a,2021835,2022014,-,NC_009641.1,false
+7,lcl_NC_009641.1_prot_WP_000392183.1_289,NWMN_RS01460,WP_000392183.1,n.a,hypothetical protein,n.a,322321,323253,-,NC_009641.1,false
+7,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000392186.1_1095,NWMN_RS05575,WP_000392186.1,n.a,hypothetical protein,n.a,1100551,1101483,-,NC_009641.1,false
+7,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000392183.1_2019,NWMN_RS10415,WP_000392183.1,n.a,hypothetical protein,n.a,2020923,2021855,+,NC_009641.1,false
+8,lcl_NC_009641.1_prot_WP_000066021.1_298,NWMN_RS01505,WP_000066021.1,n.a,DUF1270 family protein,n.a,326588,326749,+,NC_009641.1,false
+8,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000066017.1_2147,NWMN_RS11035,WP_000066017.1,n.a,DUF1270 domain_containing protein,n.a,2124851,2125012,-,NC_009641.1,false
+8,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000066021.1_2011,NWMN_RS15430,WP_000066021.1,n.a,DUF1270 family protein,n.a,2017163,2017324,-,NC_009641.1,false
+9,lcl_NC_009641.1_prot_WP_000291089.1_299,NWMN_RS01510,WP_000291089.1,n.a,DUF1108 family protein,n.a,326841,327101,+,NC_009641.1,false
+9,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000291089.1_2010,NWMN_RS10380,WP_000291089.1,n.a,DUF1108 family protein,n.a,2016811,2017071,-,NC_009641.1,false
+10,lcl_NC_009641.1_prot_WP_000815401.1_300,NWMN_RS01515,WP_000815401.1,n.a,DUF2483 domain_containing protein,n.a,327111,327332,+,NC_009641.1,false
+10,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000815401.1_2009,NWMN_RS10375,WP_000815401.1,n.a,DUF2483 domain_containing protein,n.a,2016580,2016801,-,NC_009641.1,false
+11,lcl_NC_009641.1_prot_WP_000134097.1_301,NWMN_RS01520,WP_000134097.1,n.a,ATP_binding protein,n.a,327325,328113,+,NC_009641.1,false
+11,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000134097.1_2008,NWMN_RS10370,WP_000134097.1,n.a,ATP_binding protein,n.a,2015799,2016587,-,NC_009641.1,false
+12,lcl_NC_009641.1_prot_WP_000704705.1_302,NWMN_RS01525,WP_000704705.1,n.a,single_stranded DNA_binding protein,n.a,328142,328693,+,NC_009641.1,false
+12,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000704705.1_1106,NWMN_RS05630,WP_000704705.1,n.a,single_stranded DNA_binding protein,n.a,1106357,1106908,+,NC_009641.1,false
+12,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000704705.1_2007,NWMN_RS10365,WP_000704705.1,n.a,single_stranded DNA_binding protein,n.a,2015219,2015770,-,NC_009641.1,false
+13,lcl_NC_009641.1_prot_WP_001199439.1_303,NWMN_RS01530,WP_001199439.1,n.a,hypothetical protein,n.a,328706,329377,+,NC_009641.1,false
+13,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001199439.1_1107,NWMN_RS05635,WP_001199439.1,n.a,hypothetical protein,n.a,1106921,1107592,+,NC_009641.1,false
+13,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001199439.1_2006,NWMN_RS10360,WP_001199439.1,n.a,hypothetical protein,n.a,2014535,2015206,-,NC_009641.1,false
+14,lcl_NC_009641.1_prot_WP_000371250.1_304,NWMN_RS01535,WP_000371250.1,n.a,DUF4393 domain_containing protein,n.a,329483,330340,-,NC_009641.1,false
+14,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000371250.1_2005,NWMN_RS10355,WP_000371250.1,n.a,DUF4393 domain_containing protein,n.a,2013572,2014429,+,NC_009641.1,false
+14,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000371250.1_1108,NWMN_RS05640,WP_000371250.1,n.a,DUF4393 domain_containing protein,n.a,1107698,1108555,-,NC_009641.1,false
+15,lcl_NC_009641.1_prot_WP_000190223.1_305,NWMN_RS01540,WP_000190223.1,n.a,hypothetical protein,n.a,330405,331175,+,NC_009641.1,false
+15,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000190223.1_1109,NWMN_RS05645,WP_000190223.1,n.a,hypothetical protein,n.a,1108620,1109390,+,NC_009641.1,false
+15,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000190223.1_2004,NWMN_RS10350,WP_000190223.1,n.a,hypothetical protein,n.a,2012737,2013507,-,NC_009641.1,false
+16,lcl_NC_009641.1_prot_WP_000803062.1_306,NWMN_RS01545,WP_000803062.1,n.a,AAA domain_containing protein,n.a,331185,331964,+,NC_009641.1,false
+16,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000803062.1_2003,NWMN_RS10345,WP_000803062.1,n.a,AAA domain_containing protein,n.a,2011948,2012727,-,NC_009641.1,false
+16,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000803062.1_1110,NWMN_RS05650,WP_000803062.1,n.a,AAA domain_containing protein,n.a,1109400,1110179,+,NC_009641.1,false
+17,lcl_NC_009641.1_prot_WP_000256597.1_307,NWMN_RS01550,WP_000256597.1,n.a,hypothetical protein,n.a,331958,332116,+,NC_009641.1,false
+17,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000256597.1_2002,NWMN_RS10340,WP_000256597.1,n.a,hypothetical protein,n.a,2011796,2011954,-,NC_009641.1,false
+17,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000256597.1_1111,NWMN_RS05655,WP_000256597.1,n.a,hypothetical protein,n.a,1110173,1110331,+,NC_009641.1,false
+18,lcl_NC_009641.1_prot_WP_001123684.1_308,NWMN_RS01555,WP_001123684.1,n.a,DUF3269 family protein,n.a,332129,332350,+,NC_009641.1,false
+18,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001123684.1_1112,NWMN_RS05660,WP_001123684.1,n.a,DUF3269 family protein,n.a,1110344,1110565,+,NC_009641.1,false
+18,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001123684.1_2001,NWMN_RS10335,WP_001123684.1,n.a,DUF3269 family protein,n.a,2011562,2011783,-,NC_009641.1,false
+19,lcl_NC_009641.1_prot_WP_000401950.1_309,NWMN_RS01560,WP_000401950.1,n.a,RusA family crossover junction endodeoxyribonuclease,n.a,332360,332767,+,NC_009641.1,false
+19,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000401950.1_1113,NWMN_RS05665,WP_000401950.1,n.a,RusA family crossover junction endodeoxyribonuclease,n.a,1110575,1110982,+,NC_009641.1,false
+19,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000401950.1_2000,NWMN_RS10330,WP_000401950.1,n.a,RusA family crossover junction endodeoxyribonuclease,n.a,2011145,2011552,-,NC_009641.1,false
+20,lcl_NC_009641.1_prot_WP_001187264.1_310,NWMN_RS01565,WP_001187264.1,n.a,DUF3113 family protein,n.a,332767,332952,+,NC_009641.1,false
+20,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001187264.1_1999,NWMN_RS10325,WP_001187264.1,n.a,DUF3113 family protein,n.a,2010960,2011145,-,NC_009641.1,false
+20,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001187264.1_1114,NWMN_RS05670,WP_001187264.1,n.a,DUF3113 family protein,n.a,1110982,1111167,+,NC_009641.1,false
+21,lcl_NC_009641.1_prot_WP_000117792.1_311,NWMN_RS01570,WP_000117792.1,n.a,hypothetical protein,n.a,332953,333312,+,NC_009641.1,false
+21,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000117792.1_1998,NWMN_RS10320,WP_000117792.1,n.a,hypothetical protein,n.a,2010600,2010959,-,NC_009641.1,false
+21,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000117792.1_1115,NWMN_RS05675,WP_000117792.1,n.a,hypothetical protein,n.a,1111168,1111527,+,NC_009641.1,false
+22,lcl_NC_009641.1_prot_WP_000022735.1_312,NWMN_RS01575,WP_000022735.1,n.a,DUF3310 domain_containing protein,n.a,333312,333566,+,NC_009641.1,false
+22,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000022735.1_1116,NWMN_RS05680,WP_000022735.1,n.a,DUF3310 domain_containing protein,n.a,1111527,1111781,+,NC_009641.1,false
+22,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000022735.1_1997,NWMN_RS10315,WP_000022735.1,n.a,DUF3310 domain_containing protein,n.a,2010346,2010600,-,NC_009641.1,false
+23,lcl_NC_009641.1_prot_WP_012068339.1_313,NWMN_RS01580,WP_012068339.1,n.a,hypothetical protein,n.a,333566,333814,+,NC_009641.1,false
+23,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000131366.1_2135,NWMN_RS10980,WP_000131366.1,n.a,hypothetical protein,n.a,2117695,2117937,-,NC_009641.1,false
+23,,,,,,,,,,,lcl_NC_009641.1_prot_WP_012068339.1_1996,NWMN_RS10310,WP_012068339.1,n.a,hypothetical protein,n.a,2010098,2010346,-,NC_009641.1,false
+23,,,,,,,,,,,lcl_NC_009641.1_prot_WP_012068339.1_1117,NWMN_RS05685,WP_012068339.1,n.a,hypothetical protein,n.a,1111781,1112029,+,NC_009641.1,false
+24,lcl_NC_009641.1_prot_WP_000695747.1_314,NWMN_RS01585,WP_000695747.1,n.a,hypothetical protein,n.a,333829,334230,+,NC_009641.1,false
+24,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000695747.1_1118,NWMN_RS05690,WP_000695747.1,n.a,hypothetical protein,n.a,1112044,1112445,+,NC_009641.1,false
+24,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000695747.1_1995,NWMN_RS10305,WP_000695747.1,n.a,hypothetical protein,n.a,2009682,2010083,-,NC_009641.1,false
+25,lcl_NC_009641.1_prot_WP_000983954.1_315,NWMN_RS01590,WP_000983954.1,n.a,hypothetical protein,n.a,334227,334421,+,NC_009641.1,false
+25,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000983954.1_1119,NWMN_RS05695,WP_000983954.1,n.a,hypothetical protein,n.a,1112442,1112636,+,NC_009641.1,false
+25,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000983954.1_1994,NWMN_RS10300,WP_000983954.1,n.a,hypothetical protein,n.a,2009491,2009685,-,NC_009641.1,false
+26,lcl_NC_009641.1_prot_WP_000982708.1_316,NWMN_RS01595,WP_000982708.1,n.a,hypothetical protein,n.a,334418,334867,+,NC_009641.1,false
+26,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000982708.1_1120,NWMN_RS05700,WP_000982708.1,n.a,hypothetical protein,n.a,1112633,1113082,+,NC_009641.1,false
+26,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000982708.1_1993,NWMN_RS10295,WP_000982708.1,n.a,hypothetical protein,n.a,2009045,2009494,-,NC_009641.1,false
+27,lcl_NC_009641.1_prot_WP_001105621.1_317,NWMN_RS01600,WP_001105621.1,n.a,hypothetical protein,n.a,334864,335148,+,NC_009641.1,false
+27,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001105621.1_1121,NWMN_RS05705,WP_001105621.1,n.a,hypothetical protein,n.a,1113079,1113363,+,NC_009641.1,false
+27,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001105621.1_1992,NWMN_RS10290,WP_001105621.1,n.a,hypothetical protein,n.a,2008764,2009048,-,NC_009641.1,false
+28,lcl_NC_009641.1_prot_WP_001065083.1_318,NWMN_RS01605,WP_001065083.1,n.a,DUF1024 family protein,n.a,335141,335389,+,NC_009641.1,false
+28,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001065083.1_1122,NWMN_RS05710,WP_001065083.1,n.a,DUF1024 family protein,n.a,1113356,1113604,+,NC_009641.1,false
+28,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001065091.1_2134,NWMN_RS10975,WP_001065091.1,n.a,DUF1024 family protein,n.a,2117272,2117523,-,NC_009641.1,false
+28,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001065083.1_1991,NWMN_RS10285,WP_001065083.1,n.a,DUF1024 family protein,n.a,2008523,2008771,-,NC_009641.1,false
+29,lcl_NC_009641.1_prot_WP_000185669.1_319,NWMN_RS01610,WP_000185669.1,n.a,hypothetical protein,n.a,335382,335918,+,NC_009641.1,false
+29,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000185669.1_1990,NWMN_RS10280,WP_000185669.1,n.a,hypothetical protein,n.a,2007994,2008530,-,NC_009641.1,false
+29,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000185669.1_1123,NWMN_RS05715,WP_000185669.1,n.a,hypothetical protein,n.a,1113597,1114133,+,NC_009641.1,false
+30,lcl_NC_009641.1_prot_WP_000195799.1_320,NWMN_RS01615,WP_000195799.1,n.a,DUF1381 domain_containing protein,n.a,335955,336161,+,NC_009641.1,false
+30,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000195803.1_2131,NWMN_RS10960,WP_000195803.1,n.a,DUF1381 domain_containing protein,n.a,2116322,2116528,-,NC_009641.1,false
+31,lcl_NC_009641.1_prot_WP_031765538.1_324,NWMN_RS01635,WP_031765538.1,n.a,phage protein,n.a,336765,337160,+,NC_009641.1,false
+31,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000592210.1_2130,NWMN_RS10955,WP_000592210.1,n.a,hypothetical protein,n.a,2115939,2116325,-,NC_009641.1,false
+32,lcl_NC_009641.1_prot_WP_000595257.1_325,NWMN_RS01640,WP_000595257.1,n.a,transcriptional activator RinB,n.a,337157,337330,+,NC_009641.1,false
+32,,,,,,,,,,,lcl_NC_009641.1_prot_WP_033858883.1_1126,NWMN_RS05730,WP_033858883.1,n.a,transcriptional regulator,n.a,1114521,1114709,+,NC_009641.1,false
+32,,,,,,,,,,,lcl_NC_009641.1_prot_WP_033858883.1_1987,NWMN_RS10265,WP_033858883.1,n.a,transcriptional regulator,n.a,2007419,2007607,-,NC_009641.1,false
+33,lcl_NC_009641.1_prot_WP_000323259.1_344,NWMN_RS01735,WP_000323259.1,n.a,hypothetical protein,n.a,353131,355029,+,NC_009641.1,false
+33,,,,,,,,,,,lcl_NC_009641.1_prot_WP_012068325.1_1147,NWMN_RS05835,WP_012068325.1,n.a,hypothetical protein,n.a,1131180,1133090,+,NC_009641.1,false
+33,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000369015.1_1966,NWMN_RS10160,WP_000369015.1,n.a,hypothetical protein,n.a,1989036,1990946,-,NC_009641.1,false
+34,lcl_NC_009641.1_prot_WP_000634521.1_345,NWMN_RS01740,WP_000634521.1,n.a,phage baseplate upper protein,n.a,355029,356852,+,NC_009641.1,false
+34,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000634517.1_1148,NWMN_RS05840,WP_000634517.1,n.a,BppU family phage baseplate upper protein,n.a,1133090,1134913,+,NC_009641.1,false
+34,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000259598.1_1965,NWMN_RS10155,WP_000259598.1,n.a,BppU family phage baseplate upper protein,n.a,1987213,1989036,-,NC_009641.1,false
+35,lcl_NC_009641.1_prot_WP_000705895.1_346,NWMN_RS01745,WP_000705895.1,n.a,DUF2977 domain_containing protein,n.a,356852,357229,+,NC_009641.1,false
+35,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000406972.1_1149,NWMN_RS05845,WP_000406972.1,n.a,DUF2977 domain_containing protein,n.a,1134913,1135290,+,NC_009641.1,false
+35,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000406972.1_1964,NWMN_RS10150,WP_000406972.1,n.a,DUF2977 domain_containing protein,n.a,1986836,1987213,-,NC_009641.1,false
+36,lcl_NC_009641.1_prot_WP_000782200.1_347,NWMN_RS01750,WP_000782200.1,n.a,XkdX family protein,n.a,357233,357406,+,NC_009641.1,false
+36,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001800921.1_1150,NWMN_RS05850,WP_001800921.1,n.a,XkdX family protein,n.a,1135294,1135467,+,NC_009641.1,false
+36,,,,,,,,,,,lcl_NC_009641.1_prot_WP_078061239.1_1963,NWMN_RS10145,WP_078061239.1,n.a,XkdX family protein,n.a,1986659,1986832,-,NC_009641.1,false
+37,lcl_NC_009641.1_prot_WP_000466778.1_348,NWMN_RS01755,WP_000466778.1,n.a,DUF2951 domain_containing protein,n.a,357446,357745,+,NC_009641.1,false
+37,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000466787.1_1151,NWMN_RS05855,WP_000466787.1,n.a,DUF2951 domain_containing protein,n.a,1135508,1135807,+,NC_009641.1,false
+37,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000466787.1_1962,NWMN_RS10140,WP_000466787.1,n.a,DUF2951 domain_containing protein,n.a,1986319,1986618,-,NC_009641.1,false
+38,lcl_NC_009641.1_prot_WP_000524021.1_349,NWMN_RS01760,WP_000524021.1,n.a,CHAP domain_containing protein,n.a,357882,359780,+,NC_009641.1,false
+38,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000524009.1_1961,NWMN_RS10135,WP_000524009.1,n.a,CHAP domain_containing protein,n.a,1984284,1986182,-,NC_009641.1,false
+38,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000524009.1_1152,NWMN_RS05860,WP_000524009.1,n.a,CHAP domain_containing protein,n.a,1135944,1137842,+,NC_009641.1,false
+39,lcl_NC_009641.1_prot_WP_000276627.1_350,NWMN_RS01765,WP_000276627.1,n.a,BppU family phage baseplate upper protein,n.a,359793,360965,+,NC_009641.1,false
+39,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000276643.1_1960,NWMN_RS10130,WP_000276643.1,n.a,BppU family phage baseplate upper protein,n.a,1983099,1984271,-,NC_009641.1,false
+39,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000276647.1_1153,NWMN_RS05865,WP_000276647.1,n.a,BppU family phage baseplate upper protein,n.a,1137855,1139027,+,NC_009641.1,false
+40,lcl_NC_009641.1_prot_WP_000398878.1_351,NWMN_RS01770,WP_000398878.1,n.a,hypothetical protein,n.a,360971,361366,+,NC_009641.1,false
+40,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000398863.1_1154,NWMN_RS05870,WP_000398863.1,n.a,hypothetical protein,n.a,1139033,1139428,+,NC_009641.1,false
+40,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000398879.1_1959,NWMN_RS10125,WP_000398879.1,n.a,hypothetical protein,n.a,1982698,1983093,-,NC_009641.1,false
+41,lcl_NC_009641.1_prot_WP_000339146.1_352,NWMN_RS01775,WP_000339146.1,n.a,phage holin,n.a,361422,361724,+,NC_009641.1,false
+41,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000339146.1_1958,NWMN_RS10120,WP_000339146.1,n.a,phage holin,n.a,1982340,1982642,-,NC_009641.1,false
+42,lcl_NC_009641.1_prot_WP_000930256.1_353,NWMN_RS01780,WP_000930256.1,n.a,CHAP domain_containing protein,n.a,361736,363190,+,NC_009641.1,false
+42,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000930256.1_1957,NWMN_RS10115,WP_000930256.1,n.a,CHAP domain_containing protein,n.a,1980874,1982328,-,NC_009641.1,false
+43,lcl_NC_009641.1_prot_354,NWMN_RS15080,n.a,n.a,hypothetical protein,n.a,363556,363817,+,NC_009641.1,true
+43,,,,,,,,,,,lcl_NC_009641.1_prot_1956,NWMN_RS15425,n.a,n.a,hypothetical protein,n.a,1980284,1980508,-,NC_009641.1,true
+44,lcl_NC_009641.1_prot_WP_000028628.1_448,NWMN_RS02255,WP_000028628.1,n.a,type I restriction_modification system subunit M,n.a,447091,448647,+,NC_009641.1,false
+44,,,,,,,,,,,lcl_NC_009641.1_prot_WP_011443644.1_1873,NWMN_RS09550,WP_011443644.1,n.a,type I restriction_modification system subunit M,n.a,1897366,1899105,-,NC_009641.1,false
+45,lcl_NC_009641.1_prot_WP_014373780.1_470,NWMN_RS15690,WP_014373780.1,n.a,phenol_soluble modulin PSM_alpha_2,n.a,466495,466560,-,NC_009641.1,false
+45,,,,,,,,,,,lcl_NC_009641.1_prot_WP_014373781.1_471,NWMN_RS15695,WP_014373781.1,n.a,phenol_soluble modulin PSM_alpha_1,n.a,466592,466657,-,NC_009641.1,false
+46,lcl_NC_009641.1_prot_WP_000882085.1_631,NWMN_RS03235,WP_000882085.1,n.a,DUF443 family protein,n.a,647403,648023,+,NC_009641.1,false
+46,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000923053.1_640,NWMN_RS03270,WP_000923053.1,n.a,DUF443 domain_containing protein,n.a,652224,652850,+,NC_009641.1,false
+47,lcl_NC_009641.1_prot_WP_000395457.1_1100,NWMN_RS05600,WP_000395457.1,n.a,hypothetical protein,n.a,1103817,1104047,-,NC_009641.1,false
+47,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000395455.1_2013,NWMN_RS10390,WP_000395455.1,n.a,hypothetical protein,n.a,2017609,2017839,+,NC_009641.1,false
+48,lcl_NC_009641.1_prot_WP_000291474.1_1103,NWMN_RS05615,WP_000291474.1,n.a,DUF1108 family protein,n.a,1104800,1105060,+,NC_009641.1,false
+48,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000291503.1_2145,NWMN_RS11025,WP_000291503.1,n.a,DUF1108 family protein,n.a,2124189,2124449,-,NC_009641.1,false
+49,lcl_NC_009641.1_prot_WP_000195823.1_1124,NWMN_RS05720,WP_000195823.1,n.a,DUF1381 domain_containing protein,n.a,1114170,1114358,+,NC_009641.1,false
+49,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000195823.1_1989,NWMN_RS10275,WP_000195823.1,n.a,DUF1381 domain_containing protein,n.a,2007770,2007958,-,NC_009641.1,false
+50,lcl_NC_009641.1_prot_WP_001125015.1_1125,NWMN_RS05725,WP_001125015.1,n.a,hypothetical protein,n.a,1114333,1114533,+,NC_009641.1,false
+50,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001125015.1_1988,NWMN_RS10270,WP_001125015.1,n.a,hypothetical protein,n.a,2007595,2007795,-,NC_009641.1,false
+51,lcl_NC_009641.1_prot_WP_000990005.1_1127,NWMN_RS05735,WP_000990005.1,n.a,hypothetical protein,n.a,1114710,1114856,+,NC_009641.1,false
+51,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000990005.1_1986,NWMN_RS10260,WP_000990005.1,n.a,hypothetical protein,n.a,2007272,2007418,-,NC_009641.1,false
+52,lcl_NC_009641.1_prot_WP_000162700.1_1128,NWMN_RS05740,WP_000162700.1,n.a,RinA family phage transcriptional activator,n.a,1114880,1115302,+,NC_009641.1,false
+52,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000162700.1_1985,NWMN_RS10255,WP_000162700.1,n.a,RinA family phage transcriptional activator,n.a,2006826,2007248,-,NC_009641.1,false
+53,lcl_NC_009641.1_prot_WP_001003272.1_1129,NWMN_RS05745,WP_001003272.1,n.a,terminase small subunit,n.a,1115489,1115929,+,NC_009641.1,false
+53,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001003272.1_1984,NWMN_RS10250,WP_001003272.1,n.a,terminase small subunit,n.a,2006199,2006639,-,NC_009641.1,false
+54,lcl_NC_009641.1_prot_WP_000169946.1_1130,NWMN_RS05750,WP_000169946.1,n.a,PBSX family phage terminase large subunit,n.a,1115916,1117193,+,NC_009641.1,false
+54,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000169946.1_1983,NWMN_RS10245,WP_000169946.1,n.a,PBSX family phage terminase large subunit,n.a,2004935,2006212,-,NC_009641.1,false
+55,lcl_NC_009641.1_prot_WP_000921879.1_1131,NWMN_RS05755,WP_000921879.1,n.a,phage portal protein,n.a,1117204,1118739,+,NC_009641.1,false
+55,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000921879.1_1982,NWMN_RS10240,WP_000921879.1,n.a,phage portal protein,n.a,2003389,2004924,-,NC_009641.1,false
+56,lcl_NC_009641.1_prot_WP_001133041.1_1132,NWMN_RS05760,WP_001133041.1,n.a,phage head morphogenesis protein,n.a,1118746,1119741,+,NC_009641.1,false
+56,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001133041.1_1981,NWMN_RS10235,WP_001133041.1,n.a,phage head morphogenesis protein,n.a,2002387,2003382,-,NC_009641.1,false
+57,lcl_NC_009641.1_prot_WP_000072207.1_1133,NWMN_RS05765,WP_000072207.1,n.a,hypothetical protein,n.a,1119814,1119984,+,NC_009641.1,false
+57,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000072207.1_1980,NWMN_RS10230,WP_000072207.1,n.a,hypothetical protein,n.a,2002144,2002314,-,NC_009641.1,false
+58,lcl_NC_009641.1_prot_WP_000354307.1_1134,NWMN_RS05770,WP_000354307.1,n.a,DUF4355 domain_containing protein,n.a,1120119,1120733,+,NC_009641.1,false
+58,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000354303.1_1979,NWMN_RS10225,WP_000354303.1,n.a,DUF4355 domain_containing protein,n.a,2001395,2002009,-,NC_009641.1,false
+59,lcl_NC_009641.1_prot_WP_000438504.1_1135,NWMN_RS05775,WP_000438504.1,n.a,phage major capsid protein,n.a,1120747,1121721,+,NC_009641.1,false
+59,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000438504.1_1978,NWMN_RS10220,WP_000438504.1,n.a,phage major capsid protein,n.a,2000407,2001381,-,NC_009641.1,false
+60,lcl_NC_009641.1_prot_WP_001114085.1_1136,NWMN_RS05780,WP_001114085.1,n.a,hypothetical protein,n.a,1121743,1122030,+,NC_009641.1,false
+60,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001114085.1_1977,NWMN_RS10215,WP_001114085.1,n.a,hypothetical protein,n.a,2000098,2000385,-,NC_009641.1,false
+61,lcl_NC_009641.1_prot_WP_000208960.1_1137,NWMN_RS05785,WP_000208960.1,n.a,phage head_tail connector protein,n.a,1122039,1122371,+,NC_009641.1,false
+61,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000208960.1_1976,NWMN_RS10210,WP_000208960.1,n.a,phage head_tail connector protein,n.a,1999757,2000089,-,NC_009641.1,false
+62,lcl_NC_009641.1_prot_WP_001268314.1_1138,NWMN_RS05790,WP_001268314.1,n.a,hypothetical protein,n.a,1122368,1122670,+,NC_009641.1,false
+62,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001268314.1_1975,NWMN_RS10205,WP_001268314.1,n.a,hypothetical protein,n.a,1999458,1999760,-,NC_009641.1,false
+63,lcl_NC_009641.1_prot_WP_001017815.1_1139,NWMN_RS05795,WP_001017815.1,n.a,HK97 gp10 family phage protein,n.a,1122670,1123017,+,NC_009641.1,false
+63,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001017815.1_1974,NWMN_RS10200,WP_001017815.1,n.a,HK97 gp10 family phage protein,n.a,1999111,1999458,-,NC_009641.1,false
+64,lcl_NC_009641.1_prot_WP_000188650.1_1140,NWMN_RS05800,WP_000188650.1,n.a,hypothetical protein,n.a,1123029,1123412,+,NC_009641.1,false
+64,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000188649.1_1973,NWMN_RS10195,WP_000188649.1,n.a,hypothetical protein,n.a,1998716,1999099,-,NC_009641.1,false
+65,lcl_NC_009641.1_prot_WP_000002578.1_1141,NWMN_RS05805,WP_000002578.1,n.a,phage major tail protein; TP901_1 family,n.a,1123431,1124012,+,NC_009641.1,false
+65,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000002577.1_1972,NWMN_RS10190,WP_000002577.1,n.a,phage major tail protein; TP901_1 family,n.a,1998116,1998697,-,NC_009641.1,false
+66,lcl_NC_009641.1_prot_WP_001100161.1_1142,NWMN_RS05810,WP_001100161.1,n.a,hypothetical protein,n.a,1124075,1124440,+,NC_009641.1,false
+66,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001100167.1_1971,NWMN_RS10185,WP_001100167.1,n.a,hypothetical protein,n.a,1997689,1998054,-,NC_009641.1,false
+67,lcl_NC_009641.1_prot_WP_000105584.1_1143,NWMN_RS05815,WP_000105584.1,n.a,hypothetical protein,n.a,1124470,1124814,+,NC_009641.1,false
+67,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000105584.1_1970,NWMN_RS10180,WP_000105584.1,n.a,hypothetical protein,n.a,1997315,1997659,-,NC_009641.1,false
+68,lcl_NC_009641.1_prot_WP_000141464.1_1144,NWMN_RS05820,WP_000141464.1,n.a,hypothetical protein,n.a,1124831,1128295,+,NC_009641.1,false
+68,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000141456.1_1969,NWMN_RS10175,WP_000141456.1,n.a,hypothetical protein,n.a,1993831,1997298,-,NC_009641.1,false
+69,lcl_NC_009641.1_prot_WP_000350684.1_1145,NWMN_RS05825,WP_000350684.1,n.a,phage tail family protein,n.a,1128308,1129255,+,NC_009641.1,false
+69,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000350680.1_1968,NWMN_RS10170,WP_000350680.1,n.a,phage tail family protein,n.a,1992871,1993818,-,NC_009641.1,false
+70,lcl_NC_009641.1_prot_WP_000156406.1_1146,NWMN_RS05830,WP_000156406.1,n.a,peptidase,n.a,1129264,1131165,+,NC_009641.1,false
+70,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000156404.1_1967,NWMN_RS10165,WP_000156404.1,n.a,peptidase,n.a,1990961,1992862,-,NC_009641.1,false
+71,lcl_NC_009641.1_prot_1228,NWMN_RS15715,n.a,n.a,phage portal protein,n.a,1211204,1211269,-,NC_009641.1,true
+71,,,,,,,,,,,lcl_NC_009641.1_prot_1866,NWMN_RS15740,n.a,n.a,phage portal protein,n.a,1889456,1889518,-,NC_009641.1,true
+72,lcl_NC_009641.1_prot_WP_001265708.1_1383,NWMN_RS07040,WP_001265708.1,rpmG,50S ribosomal protein L33,n.a,1371590,1371739,+,NC_009641.1,false
+72,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001265709.1_1608,NWMN_RS08205,WP_001265709.1,rpmG,50S ribosomal protein L33,n.a,1621480,1621629,-,NC_009641.1,false
+73,lcl_NC_009641.1_prot_1747,NWMN_RS15365,n.a,n.a,IS1182 family transposase,n.a,1762474,1764125,-,NC_009641.1,true
+73,,,,,,,,,,,lcl_NC_009641.1_prot_2338,NWMN_RS15535,n.a,n.a,IS1182 family transposase,n.a,2322168,2323792,+,NC_009641.1,true
+73,,,,,,,,,,,lcl_NC_009641.1_prot_1843,NWMN_RS15390,n.a,n.a,IS1182 family transposase,n.a,1870643,1872267,+,NC_009641.1,true
+74,lcl_NC_009641.1_prot_WP_001038688.1_1875,NWMN_RS09560,WP_001038688.1,splF,serine protease SplF,n.a,1899285,1900004,-,NC_009641.1,false
+74,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001038704.1_1878,NWMN_RS09570,WP_001038704.1,splD,serine protease SplD,n.a,1901029,1901748,-,NC_009641.1,false
+75,lcl_NC_009641.1_prot_WP_000416756.1_1891,NWMN_RS09635,WP_000416756.1,n.a,gallidermin/nisin family lantibiotic,n.a,1914593,1914736,-,NC_009641.1,false
+75,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000416759.1_1893,NWMN_RS09640,WP_000416759.1,n.a,gallidermin/nisin family lantibiotic,n.a,1915473,1915616,-,NC_009641.1,false
+76,lcl_NC_009641.1_prot_WP_001808146.1_1935,NWMN_RS09870,WP_001808146.1,n.a,ISL3_like element IS1181 family transposase,n.a,1954178,1955497,+,NC_009641.1,false
+76,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001550301.1_2318,NWMN_RS11925,WP_001550301.1,n.a,ISL3 family transposase,n.a,2294933,2296135,+,NC_009641.1,false
+77,lcl_NC_009641.1_prot_WP_001148638.1_2014,NWMN_RS10395,WP_001148638.1,n.a,oxidoreductase,n.a,2018015,2018761,-,NC_009641.1,false
+77,,,,,,,,,,,lcl_NC_009641.1_prot_WP_001148605.1_2152,NWMN_RS11060,WP_001148605.1,n.a,oxidoreductase,n.a,2126419,2127171,-,NC_009641.1,false
+78,lcl_NC_009641.1_prot_WP_000672038.1_2898,NWMN_RS14900,WP_000672038.1,vraH,peptide resistance ABC transporter activity modulator VraH,n.a,2868245,2868436,+,NC_009641.1,false
+78,,,,,,,,,,,lcl_NC_009641.1_prot_WP_000672039.1_2903,NWMN_RS14915,WP_000672039.1,vraH,peptide resistance ABC transporter activity modulator VraH,n.a,2869999,2870190,+,NC_009641.1,false

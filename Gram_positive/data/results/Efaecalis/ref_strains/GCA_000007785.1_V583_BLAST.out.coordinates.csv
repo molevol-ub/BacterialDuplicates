@@ -1,0 +1,125 @@
+1,NC_004668.1,475403,476083,EF_RS02515,IS6_like element IS1216 family transposase,-
+1,NC_004669.1,44622,45302,EF_RS16390,IS6_like element IS1216 family transposase,-
+1,NC_004670.1,1462,2142,EF_RS16080,IS6_like element IS1216 family transposase,+
+1,NC_004670.1,8607,9287,EF_RS16105,IS6_like element IS1216 family transposase,+
+1,NC_004669.1,10846,11526,EF_RS16220,IS6_like element IS1216 family transposase,-
+1,NC_004669.1,52023,52703,EF_RS16425,IS6_like element IS1216 family transposase,-
+1,NC_004669.1,5445,6125,EF_RS16190,IS6_like element IS1216 family transposase,+
+1,NC_004669.1,7583,8263,EF_RS16205,IS6_like element IS1216 family transposase,-
+1,NC_004668.1,482511,483191,EF_RS02555,IS6_like element IS1216 family transposase,+
+2,NC_004668.1,129645,130817,EF_RS00560,IS256_like element IS256 family transposase,+
+2,NC_004669.1,50710,51882,EF_RS16420,IS256_like element IS256 family transposase,-
+2,NC_004670.1,3525,4697,EF_RS16090,IS256_like element IS256 family transposase,-
+2,NC_004668.1,3084337,3085509,EF_RS15210,IS256_like element IS256 family transposase,+
+2,NC_004668.1,2544006,2545178,EF_RS12485,IS256_like element IS256 family transposase,+
+2,NC_004668.1,489003,490175,EF_RS02590,IS256_like element IS256 family transposase,+
+2,NC_004669.1,47519,48691,EF_RS16405,IS256_like element IS256 family transposase,+
+2,NC_004668.1,2103109,2104281,EF_RS10450,IS256_like element IS256 family transposase,-
+2,NC_004671.1,46844,48016,EF_RS16005,IS256_like element IS256 family transposase,-
+2,NC_004668.1,2975706,2976878,EF_RS14685,IS256_like element IS256 family transposase,+
+3,NC_004668.1,142958,143263,EF_RS00660,hypothetical protein,+
+3,NC_004669.1,42929,43234,EF_RS16380,hypothetical protein,-
+3,NC_004671.1,6776,7081,EF_RS15810,hypothetical protein,+
+4,NC_004668.1,146450,150367,EF_RS00670,LPXTG_anchored aggregation substance,+
+4,NC_004668.1,450206,454123,EF_RS02375,LPXTG_anchored aggregation substance,+
+4,NC_004671.1,9960,13877,EF_RS15820,LPXTG_anchored aggregation substance PrgB/Asc10,+
+5,NC_004669.1,59186,59806,EF_RS16465,recombinase family protein,+
+5,NC_004670.1,10028,10648,EF_RS16115,recombinase family protein,+
+6,NC_004669.1,59823,60110,EF_RS16470,hypothetical protein,+
+6,NC_004670.1,10638,10949,EF_RS16120,hypothetical protein,+
+7,NC_004671.1,53404,54720,EF_RS16045,Y_family DNA polymerase,+
+7,NC_004670.1,12378,13694,EF_RS16140,Y_family DNA polymerase,+
+8,NC_004668.1,454185,454541,EF_RS02380,pheromone response system RNA_binding regulator PrgU,+
+8,NC_004671.1,13939,14295,EF_RS15825,pheromone response system RNA_binding regulator PrgU,+
+8,NC_004669.1,34702,35055,EF_RS16360,pheromone response system RNA_binding regulator PrgU,-
+9,NC_004669.1,15830,16585,EF_RS16255,hypothetical protein,-
+9,NC_004671.1,34284,35060,EF_RS15930,hypothetical protein,-
+10,NC_004668.1,471327,471815,EF_RS02475,hypothetical protein,+
+10,NC_004669.1,17620,18108,EF_RS16270,hypothetical protein,-
+11,NC_004668.1,465423,467768,EF_RS02460,MAEBL family membrane protein,+
+11,NC_004669.1,21957,24302,EF_RS16285,MAEBL family membrane protein,-
+12,NC_004668.1,462563,465055,EF_RS02450,type VI secretion protein,+
+12,NC_004669.1,24672,27164,EF_RS16295,type VI secretion protein,-
+13,NC_004668.1,462000,462458,EF_RS02445,single_stranded DNA_binding protein,+
+13,NC_004669.1,27269,27727,EF_RS16300,single_stranded DNA_binding protein,-
+14,NC_004668.1,461002,461391,EF_RS02435,conjugal transfer protein,+
+14,NC_004669.1,27884,28273,EF_RS16305,conjugal transfer protein,-
+15,NC_004668.1,460727,461002,EF_RS02430,hypothetical protein,+
+15,NC_004669.1,28273,28548,EF_RS16310,hypothetical protein,-
+16,NC_004668.1,459763,460737,EF_RS02425,conjugal transfer protein,+
+16,NC_004669.1,28538,29572,EF_RS16315,conjugal transfer protein,-
+17,NC_004668.1,459396,459710,EF_RS02420,hypothetical protein,+
+17,NC_004669.1,29565,29879,EF_RS16320,hypothetical protein,-
+18,NC_004668.1,458980,459396,EF_RS02415,hypothetical protein,+
+18,NC_004669.1,29879,30295,EF_RS16325,thioredoxin family protein,-
+19,NC_004668.1,458379,458996,EF_RS02410,hypothetical protein,+
+19,NC_004669.1,30279,30896,EF_RS16330,hypothetical protein,-
+20,NC_004668.1,457105,458376,EF_RS02405,CHAP domain_containing protein,+
+20,NC_004669.1,30899,32170,EF_RS16335,CHAP domain_containing protein,-
+21,NC_004668.1,456267,457079,EF_RS02400,LPXTG cell wall anchor domain_containing protein,+
+21,NC_004669.1,32196,33053,EF_RS16340,LPXTG cell wall anchor domain_containing protein,-
+22,NC_004668.1,455366,456244,EF_RS02395,hypothetical protein,+
+22,NC_004669.1,33076,33954,EF_RS16345,hypothetical protein,-
+23,NC_004668.1,455095,455355,EF_RS02390,hypothetical protein,+
+23,NC_004669.1,33965,34225,EF_RS16350,hypothetical protein,-
+24,NC_004668.1,454563,454949,EF_RS02385,hypothetical protein,+
+24,NC_004669.1,34294,34680,EF_RS16355,hypothetical protein,-
+25,NC_004671.1,38654,39232,EF_RS15970,thermonuclease family protein,+
+25,NC_004668.1,473983,474567,EF_RS02500,thermonuclease family protein,+
+26,NC_004668.1,143274,145979,EF_RS00665,surface exclusion protein SEA1/PrgA,+
+26,NC_004669.1,40246,42918,EF_RS16375,surface exclusion protein SEA1/PrgA,-
+27,NC_004668.1,134979,135230,EF_RS00590,hypothetical protein,+
+27,NC_004668.1,2458818,2459069,EF_RS12075,hypothetical protein,-
+28,NC_004668.1,135317,135643,EF_RS00595,hypothetical protein,+
+28,NC_004668.1,2458404,2458730,EF_RS12070,hypothetical protein,-
+29,NC_004668.1,135643,136050,EF_RS00600,DUF961 family protein,+
+29,NC_004668.1,2458000,2458404,EF_RS12065,DUF961 family protein,-
+30,NC_004668.1,136200,136424,EF_RS00605,hypothetical protein,+
+30,NC_004668.1,2457621,2457845,EF_RS12060,hypothetical protein,-
+31,NC_004668.1,137848,139359,EF_RS00630,cell division protein FtsK,+
+31,NC_004668.1,2454576,2456084,EF_RS12035,cell division protein FtsK,-
+32,NC_004668.1,140945,142228,EF_RS00650,XRE family transcriptional regulator,+
+32,NC_004668.1,2451422,2452705,EF_RS12010,XRE family transcriptional regulator,-
+33,NC_004668.1,155071,155379,EF_RS00710,hypothetical protein,-
+33,NC_004668.1,2444341,2444649,EF_RS11960,hypothetical protein,+
+34,NC_004668.1,155385,155603,EF_RS00715,hypothetical protein,-
+34,NC_004668.1,2444117,2444335,EF_RS11955,hypothetical protein,+
+35,NC_004668.1,294030,294209,EF_RS01575,hypothetical protein,+
+35,NC_004668.1,2731837,2732016,EF_RS13470,hypothetical protein,-
+36,NC_004668.1,324675,324881,EF_RS01775,holin,+
+36,NC_004668.1,2704847,2705053,EF_RS13270,holin,-
+37,NC_004668.1,324884,326185,EF_RS01780,LysM peptidoglycan_binding domain_containing protein,+
+37,NC_004668.1,2703543,2704844,EF_RS13265,LysM peptidoglycan_binding domain_containing protein,-
+38,NC_004668.1,331108,332286,EF_RS01820,IS256_like element ISEf1 family transposase,+
+38,NC_004668.1,2082363,2083541,EF_RS10380,IS256_like element ISEf1 family transposase,+
+38,NC_004668.1,2701329,2702507,EF_RS13255,IS256_like element ISEf1 family transposase,-
+38,NC_004668.1,559459,560637,EF_RS02900,IS256_like element ISEf1 family transposase,-
+38,NC_004668.1,2101597,2102775,EF_RS10440,IS256_like element ISEf1 family transposase,+
+39,NC_004668.1,396379,397218,EF_RS02105,5_dehydro_4_deoxy_D_glucuronate isomerase,+
+39,NC_004668.1,2185033,2185872,EF_RS10810,5_dehydro_4_deoxy_D_glucuronate isomerase,-
+40,NC_004668.1,738897,739097,EF_RS03725,cold_shock protein,+
+40,NC_004668.1,1925423,1925623,EF_RS09510,cold_shock protein,-
+41,NC_004668.1,797767,798873,EF_RS03995,DgaE family pyridoxal phosphate_dependent ammonia lyase,+
+41,NC_004668.1,2849153,2850259,EF_RS14115,DgaE family pyridoxal phosphate_dependent ammonia lyase,-
+42,NC_004668.1,798877,799620,EF_RS04000,KDGP aldolase family protein,+
+42,NC_004668.1,2848406,2849149,EF_RS14110,KDGP aldolase family protein,-
+43,NC_004668.1,972246,972563,EF_RS04815,PTS sugar transporter subunit IIB,+
+43,NC_004668.1,975330,975656,EF_RS04840,PTS sugar transporter subunit IIB,+
+44,NC_004668.1,1041858,1042847,EF_RS05170,UDP_glucose 4_epimerase GalE,+
+44,NC_004668.1,2687197,2688189,EF_RS13170,UDP_glucose 4_epimerase GalE,-
+45,NC_004668.1,1445810,1446058,EF_RS07200,hypothetical protein,-
+45,NC_004668.1,2004910,2005158,EF_RS09940,hypothetical protein,+
+46,NC_004668.1,1823909,1826356,EF_RS09015,ATP_binding protein,-
+46,NC_004668.1,2201166,2203613,EF_RS10880,ATP_binding protein,-
+47,NC_004668.1,1826343,1826732,EF_RS09020,conjugal transfer protein,-
+47,NC_004668.1,2203600,2203989,EF_RS10885,conjugal transfer protein,-
+48,NC_004668.1,1828948,1829169,EF_RS09040,hypothetical protein,-
+48,NC_004668.1,2259509,2259730,EF_RS11145,hypothetical protein,-
+49,NC_004668.1,1831079,1832263,EF_RS09055,XRE family transcriptional regulator,-
+49,NC_004668.1,2259869,2261053,EF_RS11155,XRE family transcriptional regulator,-
+50,NC_004668.1,1837899,1838273,EF_RS09085,YdcP family protein,-
+50,NC_004668.1,2265957,2266328,EF_RS11190,YdcP family protein,-
+51,NC_004668.1,1838286,1838600,EF_RS09090,YdcP family protein,-
+51,NC_004668.1,2266341,2266655,EF_RS11195,YdcP family protein,-
+52,NC_004668.1,2952006,2952368,EF_RS14575,LPXTG cell wall anchor domain_containing protein,-
+52,NC_004668.1,3130877,3131239,EF_RS15370,LPXTG cell wall anchor domain_containing protein,-

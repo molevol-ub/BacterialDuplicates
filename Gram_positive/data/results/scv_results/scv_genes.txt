@@ -1,0 +1,4 @@
+lcl|NC_009641.1_prot_WP_000754443.1_781,sstD,Newman
+lcl|NC_009641.1_prot_WP_000667269.1_90,deoC,Newman
+lcl|NC_009641.1_prot_WP_000972781.1_1403,PlsY,Newman
+lcl|NC_017349.1_prot_WP_000769690.1_948,eap,LGA251

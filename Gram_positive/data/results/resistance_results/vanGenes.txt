@@ -1,0 +1,72 @@
+## hay muchos genes que confieren y participan en la resistencia a vancomicina
+
+gb|AAA65958.1|ARO:3002955|vanYA_[Enterococcus_faecium]_	card_79
+gb|AAF61331.1|ARO:3002966|vanXYC_[Enterococcus_gallinarum]_	card_86
+gb|AAB05622.1|ARO:3002921|vanRB_[Enterococcus_faecalis]_	card_127
+gb|AEP40500.1|ARO:3002912|vanN_[Enterococcus_faecium]_	card_149
+gb|AAA65955.1|ARO:3002942|vanHA_[Enterococcus_faecium]_	card_165
+gb|AAA65957.1|ARO:3002949|vanXA_[Enterococcus_faecium]_	card_202
+gb|ABX54689.1|ARO:3002973|vanTmL_[Enterococcus_faecalis]_	card_214
+gb|ABA71732.1|ARO:3003069|vanXYG_[Enterococcus_faecalis]_	card_236
+gb|ABA71729.1|ARO:3002959|vanYG1_[Enterococcus_faecalis]_	card_278
+gb|ABX54687.1|ARO:3002910|vanL_[Enterococcus_faecalis]_	card_325
+gb|ABA71728.1|ARO:3002937|vanSG_[Enterococcus_faecalis]_	card_363
+gb|ABX54691.1|ARO:3002927|vanRL_[Enterococcus_faecalis]_	card_380
+gb|AAA24786.1|ARO:3000368|vanC_[Enterococcus_gallinarum]_	card_423
+gb|AAB05623.1|ARO:3002932|vanSB_[Enterococcus_faecalis]_	card_469
+gb|AEP40501.1|ARO:3002969|vanXYN_[Enterococcus_faecium]_	card_485
+gb|AAB05624.1|ARO:3002956|vanYB_[Enterococcus_faecalis]_	card_518
+gb|AAL27443.1|ARO:3002967|vanXYE_[Enterococcus_faecalis]_	card_521
+gb|AAB05626.1|ARO:3002943|vanHB_[Enterococcus_faecalis]_	card_585
+gb|AAO82019.1|ARO:3004254|vanVB_[Enterococcus_faecalis_V583]_	card_609
+gb|AAL27445.1|ARO:3002924|vanRE_[Enterococcus_faecalis]_	card_649
+gb|AAA65953.1|ARO:3002919|vanRA_[Enterococcus_faecium]_	card_679
+gb|AAD22403.1|ARO:3002970|vanTC_[Enterococcus_gallinarum]_	card_690
+gb|ABX54692.1|ARO:3002938|vanSL_[Enterococcus_faecalis]_	card_699
+gb|ACL82957.1|ARO:3002928|vanRM_[Enterococcus_faecium]_	card_707
+gb|AAM09849.1|ARO:3000005|vanD_[Enterococcus_faecium]_	card_775
+gb|AAF86642.1|ARO:3002933|vanSC_[Enterococcus_gallinarum]_	card_903
+gb|ABA71726.1|ARO:3004253|vanUG_[Enterococcus_faecalis]_	card_912
+gb|AAM09851.1|ARO:3002923|vanRD_[Enterococcus_faecium]_	card_946
+gb|AAA65959.1|ARO:3002962|vanZA_[Enterococcus_faecium]_	card_969
+gb|AEP40504.1|ARO:3002940|vanSN_[Enterococcus_faecium]_	card_972
+gb|AAB05625.1|ARO:3002964|vanWB_[Enterococcus_faecalis]_	card_974
+gb|AHH83938.1|ARO:3000013|vanB_[Enterococcus_faecium]_	card_1028
+gb|ABA71731.1|ARO:3002909|vanG_[Enterococcus_faecalis]_	card_1089
+gb|AEP40503.1|ARO:3002929|vanRN_[Enterococcus_faecium]_	card_1145
+gb|AAL27444.1|ARO:3002971|vanTE_[Enterococcus_faecalis]_	card_1230
+gb|ACL82958.1|ARO:3002939|vanSM_[Enterococcus_faecium]_	card_1247
+gb|AAM09850.1|ARO:3002944|vanHD_[Enterococcus_faecium]_	card_1252
+gb|AAM09853.1|ARO:3002957|vanYD_[Enterococcus_faecium]_	card_1362
+gb|ABX54690.1|ARO:3002974|vanTrL_[Enterococcus_faecalis]_	card_1418
+gb|AAF86641.1|ARO:3002922|vanRC_[Enterococcus_gallinarum]_	card_1452
+gb|ABA71733.1|ARO:3002972|vanTG_[Enterococcus_faecalis]_	card_1465
+gb|AAM09852.1|ARO:3003070|vanXD_[Enterococcus_faecium]_	card_1470
+gb|AAL27446.1|ARO:3002935|vanSE_[Enterococcus_faecalis]_	card_1474
+gb|AAL27442.1|ARO:3002907|vanE_[Enterococcus_faecalis]_	card_1515
+gb|ABA71730.1|ARO:3002965|vanWG_[Enterococcus_faecalis]_	card_1524
+gb|ABA71727.1|ARO:3002926|vanRG_[Enterococcus_faecalis]_	card_1537
+gb|AAB05628.1|ARO:3002950|vanXB_[Enterococcus_faecalis]_	card_1569
+gb|ACL82959.1|ARO:3002961|vanYM_[Enterococcus_faecium]_	card_1612
+gb|ACL82960.1|ARO:3002947|vanHM_[Enterococcus_faecium]_	card_1621
+gb|ABX54688.1|ARO:3002968|vanXYL_[Enterococcus_faecalis]_	card_1765
+gb|AAA65954.1|ARO:3002931|vanSA_[Enterococcus_faecium]_	card_1797
+gb|ACL82961.1|ARO:3002911|vanM_[Enterococcus_faecium]_	card_1813
+gb|AAA65956.1|ARO:3000010|vanA_[Enterococcus_faecium]_	card_1867
+gb|AEP40502.2|ARO:3002975|vanTN_[Enterococcus_faecium]_	card_1869
+gb|ACL82962.1|ARO:3002953|vanXM_[Enterococcus_faecium]_	card_1880
+gb|ACM47284|ARO:3002934|vanSD_[Enterococcus_faecium]_	card_2006
+
+card_van-IDs.txt contiene solo card_XXX ids
+
+## Efaecalis
+
+## ident 40
+cat card_van-IDs.txt | while read line; do echo "## Gene: "$line; for i in `dir ../../Bacillus_Enterococcus/2.results/Enterococcus/`; do file=`readlink -f ../../Bacillus_Enterococcus/2.results/Enterococcus/$i/*-BLAST_CARD_all.out.BLAST_parsed.txt`; count=`grep -w $line $file | awk '{if ($3 > 40) {print $0}}' | wc -l`; echo $i","$count; done > Efaecalis/ident_40/Efaecalis_$line.csv; done
+
+## indet 80
+cat card_van-IDs.txt | while read line; do echo "## Gene: "$line; for i in `dir ../../Bacillus_Enterococcus/2.results/Enterococcus/`; do file=`readlink -f ../../Bacillus_Enterococcus/2.results/Enterococcus/$i/*-BLAST_CARD_all.out.BLAST_parsed.txt`; count=`grep -w $line $file | awk '{if ($3 > 80) {print $0}}' | wc -l`; echo $i","$count; done > Efaecalis/ident_80/Efaecalis_$line.csv; done
+
+## Efaecium
+
+
