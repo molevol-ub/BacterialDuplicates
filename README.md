@@ -8,7 +8,7 @@ This scripts and data collected in this repository correspond to the analysis pe
 
 	The source code to replicate these analysis corresponds to the GitHub release of this source code [v1.0](https://github.com/molevol-ub/BacterialDuplicates/releases/tag/v1.0). 
 
-	See an example workflow and additional bioinformatic details and parameters [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Ecoli/Ecoli_genome.md).
+	See an example workflow and additional bioinformatic details and parameters [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Ecoli/README.md).
 
 	<br/><br/>
 
@@ -18,6 +18,6 @@ This scripts and data collected in this repository correspond to the analysis pe
 
 	The source code to replicate the analysis corresponds to the GitHub release of this source code [v2.0](https://github.com/molevol-ub/BacterialDuplicates/releases/tag/v1.0). 
 
-	See an example workflow and additional bioinformatic details and parameters [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Gram_positive/Gram_positive.md).
+	See an example workflow and additional bioinformatic details and parameters [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Gram_positive/README.md).
 
 
