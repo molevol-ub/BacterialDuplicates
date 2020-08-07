@@ -16,7 +16,7 @@ This scripts and data collected in this repository correspond to the analysis pe
 
 	Gene Duplications in the Genomes of Staphylococci and Enterococci. Sanchez-Herrero JF., Bernabeu M., Prieto A., Hüttener M. and Juárez A. **Front. Mol. Biosci.** *2020 7:160*. https://doi.org/10.3389/fmolb.2020.00160
 
-	The source code to replicate the analysis corresponds to the GitHub release of this source code [v2.0](https://github.com/molevol-ub/BacterialDuplicates/releases/tag/v1.0). 
+	The source code to replicate the analysis corresponds to the GitHub release of this source code [v2.0](https://github.com/molevol-ub/BacterialDuplicates/releases/tag/v2.0). 
 
 	See an example workflow and additional bioinformatic details and parameters [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Gram_positive/README.md).
 
