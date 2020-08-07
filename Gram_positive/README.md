@@ -13,7 +13,7 @@ of duplicated genes within the genomes of gram positive cocci: *Staphylococcus a
      * [Virulence and Resistance Databases retrieval](#virulence-and-resistance-databases-retrieval)
      * [Parameters](#parameters)
      * [Example of use](#example-of-use)
-     * [Generate plot](#generate-plot)
+     * [Plot generation](#plot-generation)
   * [Gene duplication between strains analysis](#gene-duplication-between-strains-analysis)
      * [Parameters](#parameters)
      * [Example](#example)
@@ -345,7 +345,7 @@ total 17876
 - Files that end with \_BLAST.out correspond to the original BLAST result (tabular format)
 - Files that contain \_BLAST_parsed.txt contain the filtered BLAST results according to similarity and length thresholds.  
 - Files that contain \_BLAST_out.* contain multiple information:
- * \_BLAST.out.results.csv: Contains the duplicated groups and proteins with summarized information. We will later use this file to plot duplicated genes.
+ * \_BLAST.out.results.csv: Contains the duplicated groups and proteins with summarized information. 
  * \_BLAST.out.coordinates.csv: Contains coordinates information for each duplicated gene.
  * \_BLAST.out.annotation_results.csv: Contains additional annotation results extracted from the original data.
  * \_BLAST.out.allseqs_duplicated.ids.txt and \_BLAST.out.allseqs_duplicated.fasta: Contains the ids and fasta sequence, respectively of the duplicated genes identified.
@@ -369,17 +369,82 @@ for i in `dir results/`; do
 done
 ```
 
+In our example here, the results generated will be:
+
+```
+GCA_000009405.1_TM300,6,13,2441,0,0,0
+GCA_000709415.1_SMQ-121,6,21,2496,8,0,0
+GCA_000013425.1_Saureus_NCTC8325,22,48,2767,0,22,0
+GCA_001720945.1_ISMMS_VRE_1,122,376,3151,178,90,11
+GCA_000391485.2_B594,22,51,3154,15,4,0
+GCA_006094375.1_ATCC_14990,12,44,2281,19,13,4
+```
+
+Take into account the header we used (strain,groups,dups,all_seqs,transpo,hypo,DUF) where:
+
+- strain: The ID (Genbank ID and strain name)
+- groups: The total count of duplicated group genes
+- dups: The count of total duplicated genes
+- all_seqs: The total amount of proteins for this strain
+- transpo: The count of duplicated genes annotated as transposase
+- hypo: The count of duplicated genes annotated as hypothetical
+- DUF: The count of duplicated genes annotated as Domains of Unknown Function.
+
+<br/><br/>
+
+We will additionaly generate an analysis of putative phages inserted along the genome. We use for
+this purpose the python module [PhiSpy](https://github.com/linsalrob/PhiSpy). See additional details
+in the original publication.
+
+Again, we loop for the directories in the `data/` folder using as input sequence the GenBank file
+retrieved for each strain of interest. 
+	
+<br/><br/>
+
+### Plot generation
+
 In our analysis, once we had generated a summary csv file for all of the strains of interest, we  
 plotted using the R script `exploratory_analysis.R` in folder `scripts/R`.
-
-For the example shown here, we will use the script under `example` folder named as `plotter.R`.
-
-This script, will basically generate some information that could guide us in the following anaylsis. 
 
 As an example see the following plot (Figure 1a Sanchez-Herrero et. al 2020) where we show the amount 
 of duplicates groups foreach strain and the total number of duplicated genes and duplicated transposases. 
 
 ![Figure](figure/Saureus_groups.png "Figure 1a Sanchez-Herrero et. al 2020")
+
+
+<br/><br/>
+
+Additionally, for each strain of interest, we might generate either circular or lineal representations of the
+duplicated genes along the genome. 
+
+- For a linear representation see the example in the previous E.coli analysis [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Ecoli/README.md#results-explained-1). 
+The script to create this lineal representations is available under the `scripts/R` folder as `Plot_ChromosomeDuplicates.R`. 
+It might require small modifications as this script was intended for reference strains used for each of the species analyzed 
+in the publication Sanchez-Herrero et. al 2020. The input data for this representatins is the \_BLAST.out.coordinates.csv files. 
+See as an example, the linear representation of duplicated genes along the Saureus Newman genome.
+
+![Figure](figure/Saureus_dup.png "Duplicated genes in S. aureus Newman")
+
+<br/><br/>
+
+- For a circular representation of the duplicated genes, including all sequences available (plasmids, contigs) and the annotation of putative phages
+along the genome, we created a [BioCircos](https://cran.r-project.org/web/packages/BioCircos/vignettes/BioCircos.html) plot. The script
+is available under the `scripts/R` folder as `BioCircos_plotter.R`. The input information is again the \_BLAST.out.coordinates.csv file, the
+coordinates of annotated phages and the length and names of the different sequences in the genome. See as an example, the
+circular representation of the E. faecalis V583 (Figure 6 Sanchez-Herrero et. al 2020)
+
+![Figure](figure/V583_BioCircos.png "Duplicated genes in E. faecalis V583 chromosome and plasmids")
+
+
+<br/><br/>
+	
+## Gene duplication between strains analysis
+
+For each species we analyzed here, Staphylococcus aures, Enterococcus faecalis and E. faecium, we selected some interesting
+strains and create an analysis of shared duplicated genes with other strains of the same species.
+
+See additional details and an example in the previous E. coli analysis [here](https://github.com/molevol-ub/BacterialDuplicates/blob/master/Ecoli/README.md#gene-duplication-between-strains-analysis)
+
 
 ## Supplementary information
 

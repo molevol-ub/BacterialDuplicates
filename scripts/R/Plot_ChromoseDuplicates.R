@@ -66,9 +66,9 @@ plot_duplicates <- function(df) {
 ## supplementary data folder path (modify it as necessary)
 supData_folder <- "/home/jfsanchez/DATA/BacterialDuplicates/SupData"
 
-#####################################################
+#######################
 ## Saureus Newman
-#####################################################
+#######################
 # the coordinates file desired
 coordinates_duplicates_file_Saures <- paste0(supData_folder, "/SupData/Saureus/ref_strains/GCA_000010465.1_Saureus_Newman_BLAST.out.coordinates.csv")
 
@@ -80,9 +80,9 @@ bed_info_split_Saures <- data_split(bed_info_Saures)
 plot_duplicates(bed_info_split_Saures$NC_009641.1)
 #####################################################
 
-#####################################################
+#######################
 ## Saureus ST398
-#####################################################
+#######################
 # the coordinates file desired
 coordinates_duplicates_file_Saures_ST398 <- paste0(supData_folder, "/SupData/Saureus/ref_strains2/GCA_000009585.1_Saureus_typestrain_ST398_BLAST.out.coordinates.csv")
 
@@ -94,11 +94,9 @@ bed_info_split_Saures_ST398 <- data_split(bed_info_Saures_ST398)
 plot_duplicates(bed_info_split_Saures_ST398$NC_017333.1)
 #####################################################
 
-
-
-#####################################################
+#######################
 ## Efaecalis V583
-#####################################################
+#######################
 # the coordinates file desired
 coordinates_duplicates_file_Efaecalis <-  paste0(supData_folder, "/SupData/Efaecalis/ref_strains/GCA_000007785.1_V583_BLAST.out.coordinates.csv")
 
@@ -110,9 +108,9 @@ bed_info_split_Efaecalis <- data_split(bed_info_Efaecalis)
 plot_duplicates(bed_info_split_Efaecalis$NC_004668.1)
 #####################################################
 
-#####################################################
+#######################
 ## Efaecium 6E6
-#####################################################
+#######################
 # the coordinates file desired
   coordinates_duplicates_file_Efaecium <-  paste0(supData_folder, "/SupData/Efaecium/ref_strains/GCA_001518735.1_Strain_6E6_BLAST.out.coordinates.csv")
 
